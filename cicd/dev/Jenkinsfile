@@ -89,7 +89,7 @@ pipeline {
                     """
                     script {
                         def container = docker.image("${DOCKER_IMAGE}:${DOCKER_IMAGE_TAG}")
-                        container.run("-d -p 4001:3000 --name ${DOCKER_CONTAINER_NAME}")
+                        container.run("-d -p 3000:80 --name ${DOCKER_CONTAINER_NAME}")
                     }
                 }
             }
