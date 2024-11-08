@@ -6,6 +6,9 @@ const nextConfig = {
   },
   reactStrictMode: true,
   transpilePackages: ['primereact'],
+
+  output: 'export', // Static Build
+  distDir: 'dist',
 };
 
 export default nextConfig;
