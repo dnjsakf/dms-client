@@ -31,12 +31,21 @@ pipeline {
                 sh 'npm install'
                 sh 'npm run build'
                 sh "tar -cvf ./build.tar ./dist"
-                sh "cp ./cicd/${env.BUILD_TARGET}/server.conf ."
+                
+                // 특정 파일 두 개를 stash에 저장
+                stash includes: '''
+                    ./build.tar,
+                    ./cicd/${env.BUILD_TARGET}/server.conf
+                ''', name: 'build-output'
             }
         }
 
         stage('Docker Image Build & Push') {
-            steps {                
+            steps {
+                unstash 'build-output'
+
+                sh "ls -al"
+
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', "${env.DOCKER_CREDENTIALS_ID}") {
                         def buildImage = docker.build("${env.DOCKER_IMAGE_TAG}", "-f ./cicd/${env.BUILD_TARGET}/Dockerfile .")
@@ -73,12 +82,12 @@ pipeline {
             steps {
                 script {
                     sh """
-                    if [ \$(docker ps -q -f name=${env.APP_NAME}) ]; then
+                    if [ \$(docker ps -q -f name=\"${env.APP_NAME}\") ]; then
                         docker stop ${env.APP_NAME}
                         docker rm ${env.APP_NAME}
                     fi
                     """
-                    
+
                     def container = docker.image("${env.DOCKER_IMAGE}:${env.DOCKER_IMAGE_TAG}")
                     container.run("-d -p 3000:80 --name ${env.DOCKER_CONTAINER_NAME}")
                 }
