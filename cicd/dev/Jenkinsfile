@@ -107,7 +107,8 @@ pipeline {
 
             script {
                 sh """
-                if [ \$(if docker images -q -f reference=${env.DOCKER_IMAGE_NAME}) ]; then
+                IMAGE_ID=\$(docker images -q -f reference=${env.DOCKER_IMAGE_NAME})
+                if [ -n "\$IMAGE_ID" ]; then
                     echo "Docker Image Clean...  ${env.DOCKER_IMAGE_TAG}"
                     docker rmi ${env.DOCKER_IMAGE_NAME}
                 fi
