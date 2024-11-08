@@ -29,16 +29,14 @@ pipeline {
             }
             steps {
                 sh 'npm install'
-                sh 'npm run build'
-                sh "tar -cvf ./build.tar ./dist"
-                
-                script {
-                    // 특정 파일 두 개를 stash에 저장
-                    stash includes: """
-                        ./build.tar,
-                        ./cicd/${env.BUILD_TARGET}/server.conf
-                    """, name: 'build-output'
-                }
+                sh 'npm run build '
+                sh "tar -cvf build.tar ./dist"
+            
+                // 특정 파일 두 개를 stash에 저장
+                stash includes: """
+                    build.tar,
+                    cicd/${env.BUILD_TARGET}/server.conf
+                """, name: 'build-output'
             }
         }
 
@@ -47,6 +45,7 @@ pipeline {
                 unstash 'build-output'
 
                 sh "ls -al"
+                sh "cp cicd/${env.BUILD_TARGET}/server.conf ."
 
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', "${env.DOCKER_CREDENTIALS_ID}") {
