@@ -1,23 +1,14 @@
-# 베이스 이미지로 Node.js 사용
-FROM node:20.5.0-alpine
+# 베이스 이미지로 Nginx 사용
+FROM docker.io/nginx:1.27.1-alpine-perl
 
-# 작업 디렉토리 설정
-WORKDIR /app
+# build.tar 파일을 해당 경로에 추출(압축해제)
+ADD build.tar /usr/local/nginx/html
 
-# package.json과 package-lock.json 파일을 복사
-COPY package*.json ./
+# 사용권한 수정
+RUN chmod -R 755 /usr/local/nginx/html
 
-# 의존성 설치
-RUN npm install
+# server.conf 파일을 복사
+COPY server.conf /etc/nginx/conf.d/default.conf
 
-# 소스 코드를 복사
-COPY . .
-
-# Next.js 애플리케이션 빌드
-RUN npm run build
-
-# 애플리케이션 실행
-CMD ["npm", "start"]
-
-# 애플리케이션이 3000 포트를 사용
-EXPOSE 3000
+# 애플리케이션이 80 포트를 사용
+EXPOSE 80
