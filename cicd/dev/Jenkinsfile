@@ -78,10 +78,9 @@ pipeline {
                         docker rm ${env.APP_NAME}
                     fi
                     """
-                    script {
-                        def container = docker.image("${env.DOCKER_IMAGE}:${env.DOCKER_IMAGE_TAG}")
-                        container.run("-d -p 3000:80 --name ${env.DOCKER_CONTAINER_NAME}")
-                    }
+                    
+                    def container = docker.image("${env.DOCKER_IMAGE}:${env.DOCKER_IMAGE_TAG}")
+                    container.run("-d -p 3000:80 --name ${env.DOCKER_CONTAINER_NAME}")
                 }
             }
         }
@@ -90,12 +89,15 @@ pipeline {
     post {
         always {
             cleanWs()
-            sh """
-            if [ \$(if docker images -q -f reference=${env.DOCKER_IMAGE}) ]; then
-                echo "Docker Image Clean...  ${env.DOCKER_IMAGE_TAG}"
-                docker rmi ${env.DOCKER_IMAGE}
-            fi
-            """
+
+            script {
+                sh """
+                if [ \$(if docker images -q -f reference=${env.DOCKER_IMAGE}) ]; then
+                    echo "Docker Image Clean...  ${env.DOCKER_IMAGE_TAG}"
+                    docker rmi ${env.DOCKER_IMAGE}
+                fi
+                """
+            }
         }
         success {
             echo 'This will run only if all stages succeed'
