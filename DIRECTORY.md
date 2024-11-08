@@ -1,0 +1,29 @@
+my-nextjs-app/
+├── public/             # Static files
+│   ├── images/
+│   └── ...
+├── src/
+│   ├── components/     # Reusable UI components
+│   │   ├── Button.js
+│   │   └── ...
+│   ├── app/            # Next.js pages
+│   │   ├── page.js     # Home Page
+│   │   ├── layout.js   # Layout UI
+│   │   └── ...
+│   ├── styles/         # CSS/SCSS files
+│   │   ├── globals.css
+│   │   └── ...
+│   ├── context/        # Custom React Context
+│   │   └── ...
+│   ├── interfaces/     # Model Types
+│   │   └── ...
+│   ├── hooks/          # Custom hooks
+│   │   └── ...
+│   ├── utils/          # Utility functions
+│   │   └── ...
+│   └── services/       # API calls and services
+│       └── ...
+├── .env                # Environment variables
+├── .gitignore          # Git ignore file
+├── package.json        # Project dependencies and scripts
+└── README.md           # Project documentation
