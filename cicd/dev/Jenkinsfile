@@ -12,8 +12,8 @@ pipeline {
         DEPLOY_PATH = "${env.APP_NAME}/${env.APP_NAME}-deployment.yaml"
 
         DOCKER_CREDENTIALS_ID = 'docker-user'
-        DOCKER_IMAGE = "dnjsakf/${env.APP_NAME}"
-        DOCKER_IMAGE_TAG = "${env.DOCKER_IMAGE}:${env.BUILD_VERSION}"
+        DOCKER_IMAGE_NAME = "dnjsakf/${env.APP_NAME}"
+        DOCKER_IMAGE_TAG = "${env.DOCKER_IMAGE_NAME}:${env.BUILD_VERSION}"
 
         ARGOCD_SERVER = 'https://host.docker.internal:38080'
         ARGOCD_AUTH_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhcmdvY2QiLCJzdWIiOiJhcGl1c2VyOmFwaUtleSIsIm5iZiI6MTcyODAyMDM1OCwiaWF0IjoxNzI4MDIwMzU4LCJqdGkiOiI1NjIzODM5Yy0yY2VmLTQzMzktYjc5NS02OGM5OTJiOTJhNjcifQ.XLd48Zyd1bU14SpFDnGZrJlf5t4ua3rqKHBHJAo6n3k'
@@ -51,6 +51,9 @@ pipeline {
                     docker.withRegistry('https://index.docker.io/v1/', "${env.DOCKER_CREDENTIALS_ID}") {
                         def buildImage = docker.build("${env.DOCKER_IMAGE_TAG}", "-f ./cicd/${env.BUILD_TARGET}/Dockerfile .")
                         buildImage.push()
+
+                        sh "docker tag ${env.DOCKER_IMAGE_TAG} ${env.DOCKER_IMAGE_NAME}:latest"
+                        sh "docker push ${env.DOCKER_IMAGE_NAME}:latest"
                     }
                 }
             }
@@ -73,7 +76,7 @@ pipeline {
                     git config user.name "${GIT_USERNAME}"
                     git add ${env.DEPLOY_PATH}
                     git commit -m "Update image to ${env.DOCKER_IMAGE_TAG}"
-                    git push https://${GIT_USERNAME}:${GIT_PASSWORD}@${env.DEPLOY_REPO}
+                    git push https://${GIT_USERNAME}:${GIT_PASSWORD}@${env.DEPLOY_REPO_URL}
                     """
                 }
             }
@@ -89,7 +92,7 @@ pipeline {
                     fi
                     """
 
-                    def container = docker.image("${env.DOCKER_IMAGE}:${env.DOCKER_IMAGE_TAG}")
+                    def container = docker.image("${env.DOCKER_IMAGE_TAG}")
                     container.run("-d -p 3000:80 --name ${env.DOCKER_CONTAINER_NAME}")
                 }
             }
@@ -102,9 +105,9 @@ pipeline {
 
             script {
                 sh """
-                if [ \$(if docker images -q -f reference=${env.DOCKER_IMAGE}) ]; then
+                if [ \$(if docker images -q -f reference=${env.DOCKER_IMAGE_NAME}) ]; then
                     echo "Docker Image Clean...  ${env.DOCKER_IMAGE_TAG}"
-                    docker rmi ${env.DOCKER_IMAGE}
+                    docker rmi ${env.DOCKER_IMAGE_NAME}
                 fi
                 """
             }
