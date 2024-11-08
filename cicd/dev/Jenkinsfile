@@ -2,18 +2,26 @@ pipeline {
     agent any
 
     environment {
+        APP_NAME = 'dms-client'
+
+        DEPLOY_CREDENTIALS_ID = 'github-user'
+        DEPLOY_REPO_URL = 'github.com/dnjsakf/argocd-apps.git'
+        DEPLOY_PATH = "${env.APP_NAME}/${env.APP_NAME}-deployment.yaml"
+
+        DOCKER_CREDENTIALS_ID = 'docker-user'
+
         BUILD_TARGET = 'dev'
-        DOCKER_CONTAINER_NAME = "dms-client"
-        DOCKER_IMAGE = "dnjsakf/${DOCKER_CONTAINER_NAME}"
-        DOCKER_IMAGE_TAG = "${env.BUILD_ID}-${BUILD_TARGET}"
-        DOCKER_CREDENTIALS_ID = 'docker-credentials'
-        BUILD_HOME = "${env.JENKINS_HOME}/build/${env.JOB_NAME}"
-        WORKSPACE_MAIN = "${env.WORKSPACE}"
-        CI = false
+        BUILD_NAME = "dnjsakf/${APP_NAME}"
+        BUILD_IMAGE = "${BUILD_NAME}:${BUILD_VERSION}"
+        BUILD_VERSION = "1.0.${env.BUILD_ID}-${env.BUILD_TARGET}"
+
+        ARGOCD_SERVER = 'https://host.docker.internal:38080'
+        ARGOCD_AUTH_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhcmdvY2QiLCJzdWIiOiJhcGl1c2VyOmFwaUtleSIsIm5iZiI6MTcyODAyMDM1OCwiaWF0IjoxNzI4MDIwMzU4LCJqdGkiOiI1NjIzODM5Yy0yY2VmLTQzMzktYjc5NS02OGM5OTJiOTJhNjcifQ.XLd48Zyd1bU14SpFDnGZrJlf5t4ua3rqKHBHJAo6n3k'
     }
 
     stages {
-        stage('Build') {
+
+        stage('Build to Jar') {
             agent {
                 docker {
                     image 'node:20.5.0-alpine'
@@ -26,32 +34,63 @@ pipeline {
             }
         }
 
-        stage('Push') {
-            steps {
+        stage('Docker Image Build & Push') {
+            steps {                
                 script {
-                    // 기존 컨테이너 중지 및 삭제
-                    sh """
-                    if [ \$(docker ps -q -f name=${DOCKER_CONTAINER_NAME}) ]; then
-                        docker stop ${DOCKER_CONTAINER_NAME}
-                        docker rm ${DOCKER_CONTAINER_NAME}
-                    fi
-                    """
-                    
-                    // 새로운 컨테이너 실행
-                    docker.withRegistry('https://index.docker.io/v1/', "${DOCKER_CREDENTIALS_ID}") {
-                        def nodeImage = docker.build("${DOCKER_IMAGE}:${DOCKER_IMAGE_TAG}", "-f ./cicd/${BUILD_TARGET}/Dockerfile .")
-                        nodeImage.push()
+                    docker.withRegistry('https://index.docker.io/v1/', "${env.DOCKER_CREDENTIALS_ID}") {
+                        def buildImage = docker.build("${env.BUILD_IMAGE}", "-f ./cicd/${env.BUILD_TARGET}/Dockerfile .")
+                        buildImage.push()
                     }
+                }
+            }
+            post {
+                failure {
+                    echo 'Docker Image Push failure !'
+                    sh "docker rmi ${env.BUILD_IMAGE}"
+                }
+                success {
+                    echo 'Docker image push success !'
+                    sh "docker rmi ${env.BUILD_IMAGE}"
                 }
             }
         }
 
-        stage('Deploy') {
+        stage('Checkout Deploy Repo') {
             steps {
-                echo 'Deploying....'
+                git credentialsId: "${env.DEPLOY_CREDENTIALS_ID}",
+                    branch: 'main',
+                    url: "https://${env.DEPLOY_REPO_URL}"
+            }
+        }
+
+        stage('Update Deployment YAML') {
+            steps {
+                withCredentials([usernamePassword(credentialsId: "${env.DEPLOY_CREDENTIALS_ID}", passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
+                    sh """
+                    sed -i 's|image:.*|image: ${env.BUILD_IMAGE}|' ${env.DEPLOY_PATH}
+                    git config user.email "${GIT_USERNAME}@example.com"
+                    git config user.name "${GIT_USERNAME}"
+                    git add ${env.DEPLOY_PATH}
+                    git commit -m "Update image to ${env.BUILD_IMAGE}"
+                    git push https://${GIT_USERNAME}:${GIT_PASSWORD}@${env.DEPLOY_REPO}
+                    """
+                }
+            }
+        }
+
+        stage('Trigger ArgoCD Sync') {
+            steps {
                 script {
-                    def container = docker.image("${DOCKER_IMAGE}:${DOCKER_IMAGE_TAG}")
-                    container.run("-d -p 4001:3000 --name ${DOCKER_CONTAINER_NAME}")
+                    sh """
+                    if [ \$(docker ps -q -f name=${APP_NAME}) ]; then
+                        docker stop ${APP_NAME}
+                        docker rm ${APP_NAME}
+                    fi
+                    """
+                    script {
+                        def container = docker.image("${DOCKER_IMAGE}:${DOCKER_IMAGE_TAG}")
+                        container.run("-d -p 4001:3000 --name ${DOCKER_CONTAINER_NAME}")
+                    }
                 }
             }
         }
@@ -60,12 +99,14 @@ pipeline {
     post {
         always {
             cleanWs()
+            echo "Docker Image Clean...  ${env.BUILD_IMAGE}"
+            sh "docker rmi ${env.BUILD_IMAGE}"
         }
         success {
-            sh 'echo "This will run only if all stages succeed"'
+            echo 'This will run only if all stages succeed'
         }
         failure {
-            sh 'echo "This will run only if any stage fails"'
+            echo 'This will run only if any stage fails'
         }
     }
 }
