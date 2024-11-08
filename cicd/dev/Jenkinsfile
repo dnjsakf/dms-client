@@ -14,6 +14,7 @@ pipeline {
         DOCKER_CREDENTIALS_ID = 'docker-user'
         DOCKER_IMAGE_NAME = "dnjsakf/${env.APP_NAME}"
         DOCKER_IMAGE_TAG = "${env.DOCKER_IMAGE_NAME}:${env.BUILD_VERSION}"
+        DOCKER_IMAGE_TAG_LATEST = "${env.DOCKER_IMAGE_NAME}:latest"
 
         ARGOCD_SERVER = 'https://host.docker.internal:38080'
         ARGOCD_AUTH_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhcmdvY2QiLCJzdWIiOiJhcGl1c2VyOmFwaUtleSIsIm5iZiI6MTcyODAyMDM1OCwiaWF0IjoxNzI4MDIwMzU4LCJqdGkiOiI1NjIzODM5Yy0yY2VmLTQzMzktYjc5NS02OGM5OTJiOTJhNjcifQ.XLd48Zyd1bU14SpFDnGZrJlf5t4ua3rqKHBHJAo6n3k'
@@ -52,8 +53,8 @@ pipeline {
                         def buildImage = docker.build("${env.DOCKER_IMAGE_TAG}", "-f ./cicd/${env.BUILD_TARGET}/Dockerfile .")
                         buildImage.push()
 
-                        sh "docker tag ${env.DOCKER_IMAGE_TAG} ${env.DOCKER_IMAGE_NAME}:latest"
-                        sh "docker push ${env.DOCKER_IMAGE_NAME}:latest"
+                        sh "docker tag ${env.DOCKER_IMAGE_TAG} ${env.DOCKER_IMAGE_TAG_LATEST}"
+                        sh "docker push ${env.DOCKER_IMAGE_TAG_LATEST}"
                     }
                 }
             }
@@ -82,7 +83,8 @@ pipeline {
             }
         }
 
-        stage('Trigger ArgoCD Sync') {
+        // stage('Trigger ArgoCD Sync') {
+        stage('Running container') {
             steps {
                 script {
                     sh """
@@ -92,8 +94,8 @@ pipeline {
                     fi
                     """
 
-                    def container = docker.image("${env.DOCKER_IMAGE_TAG}")
-                    container.run("-d -p 3000:80 --name ${env.DOCKER_CONTAINER_NAME}")
+                    def container = docker.image("${env.DOCKER_IMAGE_TAG_LATEST}")
+                    container.run("-d -p 3000:80 --name ${env.APP_NAME}")
                 }
             }
         }
