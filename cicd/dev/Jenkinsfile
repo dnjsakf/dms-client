@@ -31,7 +31,7 @@ pipeline {
             steps {
                 sh 'npm install'
                 sh 'npm run build '
-                sh "tar -cvf build.tar ./dist"
+                sh "cd dist; tar -cvf ../build.tar *; cd .."
             
                 // 특정 파일 두 개를 stash에 저장
                 stash includes: """
