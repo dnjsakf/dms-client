@@ -41,6 +41,26 @@ pipeline {
             }
         }
 
+        stage('Stop Container & Remove Image') {
+            steps {
+                script {
+                    sh """
+                    if [ \$(docker ps -a -q -f name=\"${env.APP_NAME}\") ]; then
+                        docker stop ${env.APP_NAME}
+                        docker rm ${env.APP_NAME}
+                    fi
+                    """
+                    sh """
+                    IMAGE_ID=\$(docker images -q -f reference=${env.DOCKER_IMAGE_TAG_LATEST})
+                    if [ -n "\$IMAGE_ID" ]; then
+                        echo "Docker Image Clean...  ${env.DOCKER_IMAGE_TAG_LATEST}"
+                        docker rmi ${env.DOCKER_IMAGE_TAG_LATEST}
+                    fi
+                    """
+                }
+            }
+        }
+
         stage('Docker Image Build & Push') {
             steps {
                 unstash 'build-output'
@@ -87,13 +107,6 @@ pipeline {
         stage('Running container') {
             steps {
                 script {
-                    sh """
-                    if [ \$(docker ps -a -q -f name=\"${env.APP_NAME}\") ]; then
-                        docker stop ${env.APP_NAME}
-                        docker rm ${env.APP_NAME}
-                    fi
-                    """
-
                     def container = docker.image("${env.DOCKER_IMAGE_TAG_LATEST}")
                     container.run("-d -p 3000:80 --name ${env.APP_NAME}")
                 }
