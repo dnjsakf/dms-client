@@ -65,7 +65,6 @@ pipeline {
             steps {
                 unstash 'build-output'
 
-                sh "ls -al"
                 sh "cp cicd/${env.BUILD_TARGET}/server.conf ."
 
                 script {
@@ -108,7 +107,8 @@ pipeline {
             steps {
                 script {
                     def container = docker.image("${env.DOCKER_IMAGE_TAG_LATEST}")
-                    container.run("-d -p 3000:80 --name ${env.APP_NAME}")
+                    // container.run("-d -p 3000:80 --network bridge --name ${env.APP_NAME}")
+                    container.run("-d --network bridge --name ${env.APP_NAME}")
                 }
             }
         }
