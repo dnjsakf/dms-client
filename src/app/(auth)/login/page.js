@@ -61,7 +61,7 @@ const LoginPage = () => {
       if( result ){
         router.replace('/');
       } else {
-        router.replace('/login');
+        router.replace('/login@@@@@@@@@@');
       }
     });
   }, [router]);
