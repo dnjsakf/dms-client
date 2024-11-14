@@ -57,7 +57,9 @@ const LoginPage = () => {
   }
 
   useEffect(() => {
+    console.debug('router', router);
     AuthService.isAuthenticated().then((result)=>{
+      console.debug('AuthService.isAuthenticated', result);
       if( result ){
         router.push('/');
       }

@@ -61,7 +61,13 @@ export const token = async () => {
 export const isAuthenticated = async () => {
   let valid = false;
   try {
+    console.debug('isAuthenticated');
     const { authenticated, accessToken, refreshToken } = useAuthStore.getState();
+    console.debug({
+      authenticated
+      , accessToken
+      , refreshToken
+    });
     if( !authenticated ){
       if( accessToken ){
         await logout();
