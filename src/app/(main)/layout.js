@@ -111,7 +111,7 @@ const MainLayoutWrapper = ({ children }) => {
       if( result ){
         setLoading(false);
       } else {
-        router.push('/login');
+        router.replace('/login');
       }
     });
   }, [router]);

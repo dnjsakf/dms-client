@@ -6,9 +6,9 @@ const useAuth = () => {
 
   const redirect = async ( path ) => {
     if ( await AuthService.isAuthenticated() ) {
-      router.push(path);
+      router.replace(path);
     } else {
-      router.push('/login');
+      router.replace('/login');
     }
   };
 

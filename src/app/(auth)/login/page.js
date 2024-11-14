@@ -30,7 +30,7 @@ const LoginPage = () => {
       });
 
       if( response?.code === 200 ){
-        router.push('/');
+        router.replace('/');
       } else {
         console.error(response?.message);
         message.current.clear();
@@ -57,11 +57,9 @@ const LoginPage = () => {
   }
 
   useEffect(() => {
-    console.debug('router', router);
     AuthService.isAuthenticated().then((result)=>{
-      console.debug('AuthService.isAuthenticated', result);
       if( result ){
-        router.push('/');
+        router.replace('/');
       }
     });
   }, [router]);

@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(()=>{
     if( !authenticated ){
-      router.push('/login');
+      router.replace('/login');
     }
   }, [authenticated]);
 
