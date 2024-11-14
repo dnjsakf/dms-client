@@ -30,7 +30,7 @@ const LoginPage = () => {
       });
 
       if( response?.code === 200 ){
-        router.replace('/');
+        router.push('/');
       } else {
         console.error(response?.message);
         message.current.clear();
@@ -61,7 +61,7 @@ const LoginPage = () => {
       if( result ){
         router.replace('/');
       } else {
-        router.replace('/login@@@@@@@@@@');
+        router.refresh();
       }
     });
   }, [router]);
