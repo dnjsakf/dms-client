@@ -60,6 +60,8 @@ const LoginPage = () => {
     AuthService.isAuthenticated().then((result)=>{
       if( result ){
         router.replace('/');
+      } else {
+        router.replace('/login');
       }
     });
   }, [router]);
