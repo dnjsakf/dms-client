@@ -1,0 +1,56 @@
+.navWrapper {
+  height: 38px;
+
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  flex-direction: row;
+  white-space: nowrap;
+  user-select: none;
+  /* scroll-behavior: smooth; */
+  background: white;
+  
+  -ms-overflow-style: none; /* IE와 Edge에서 스크롤 바 숨기기 */
+  scrollbar-width: none; /* Firefox에서 스크롤 바 숨기기 */
+
+  &::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 엣지에서 스크롤 바 숨기기 */
+  }
+
+  &:active {
+    cursor: grabbing; /* 드래그 중 커서 스타일 */
+  }
+
+  &::before {
+    content: "";
+  }
+  
+  &::after {
+    content: "";
+  }
+}
+
+.navItem {
+  position: relative;
+  cursor: pointer;
+
+  padding: 0.5rem 0;
+
+  &.active {
+    font-weight: bold;
+  }
+}
+
+.navItemText {
+  position: relative;
+}
+
+.navItemUnderline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: red;
+  transition: left 0.3s ease, width 0.3s ease;
+  width: 100%;
+}

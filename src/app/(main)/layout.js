@@ -17,6 +17,7 @@ import useWindowSize from "@/hooks/useWindowSize";
 
 import useAuthStore from "@/store/authStore";
 import useLayoutStore from "@/store/layoutStore";
+import { AuthProvider } from '@/context/AuthContext';
 
 const MainLayoutWrapper = ({ children }) => {
   useWindowSize();
@@ -130,9 +131,11 @@ const MainLayoutWrapper = ({ children }) => {
   }
 
   return (
-    <MainLayout>
-      { children }
-    </MainLayout>
+    <AuthProvider>
+      <MainLayout>
+        { children }
+      </MainLayout>
+    </AuthProvider>
   );
 }
 

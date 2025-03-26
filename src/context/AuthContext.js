@@ -11,6 +11,7 @@ export const AuthProvider = ({ children }) => {
   const { authenticated } = useAuthStore();
 
   useEffect(()=>{
+    console.dir(router);
     if( !authenticated ){
       router.replace('/login');
     }

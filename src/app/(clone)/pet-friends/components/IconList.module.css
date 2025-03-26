@@ -1,0 +1,39 @@
+
+.wrapper {
+  position: relative;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 100%;
+  width: 100%;
+
+  margin: 0 auto;
+  
+  & .navWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* justify-content: center; */
+    flex-basis: content;
+
+    gap: 0.5rem;
+
+    padding: 0.5rem 0.5rem;
+
+    & .navButtonWrapper {
+      position: relative;
+      display: flex;
+  
+      & .navButton {
+        position: relative;
+        width: 64px;
+        height: 64px;
+      }
+    }
+
+  }
+}

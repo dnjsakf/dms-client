@@ -7,7 +7,7 @@ import '@/styles/global.css';
 import { Inter } from "next/font/google";
 import { PrimeReactProvider } from 'primereact/api';
 import { ThemeProvider } from '@/context/ThemeContext';
-import { AuthProvider } from '@/context/AuthContext';
+// import { AuthProvider } from '@/context/AuthContext';
 import ClientOnly from '@/components/ClientOnly';
 
 if (typeof window === 'undefined') {
@@ -28,9 +28,7 @@ export default function RootLayout({ children }) {
         <PrimeReactProvider>
           <ClientOnly>
             <ThemeProvider>
-              <AuthProvider>
-                { children }
-              </AuthProvider>
+              { children }
             </ThemeProvider>
           </ClientOnly>
         </PrimeReactProvider>

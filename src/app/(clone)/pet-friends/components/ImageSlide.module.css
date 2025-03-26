@@ -1,0 +1,33 @@
+.imageSlideWrapper {
+  /* height: 260px; */
+  /* min-height: 260px; */
+  /* max-height: 260px; */
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.imageSlideFooter {
+  & .wrapper {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 3px 0.5rem;
+    background-color: black;
+    color: lightgray;
+    text-align: center;
+    font-size: 10px;
+  }
+}
+
+.imageSlidePagination {
+  & * {
+    font-size: inherit;
+  }
+}
+
+.imageSlidePlayer {
+  margin-left: 5px;
+  & * {
+    font-size: inherit;
+  }
+}

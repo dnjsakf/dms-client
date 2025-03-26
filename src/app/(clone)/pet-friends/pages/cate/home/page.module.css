@@ -1,0 +1,74 @@
+.contentSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.eventBannerSection {
+  position: relative;
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  height: 260px;
+  min-height: 260px;
+  max-height: 260px;
+  box-shadow: inset darkgray 1px 1px 5px 3px;
+  max-width: 100%;
+}
+
+.noticeSesion {
+  position: relative;
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: start;
+  height: 38px;
+  min-height: 38px;
+  max-height: 38px;
+  box-shadow: inset darkgray 1px 1px 5px 3px;
+  max-width: 100%;
+
+  padding: 0 1rem;
+}
+
+.categorySection {
+  position: relative;
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  min-height: 240px;
+  max-height: 240px;
+  box-shadow: inset darkgray 1px 1px 5px 3px;
+  max-width: 100%;
+}
+
+.partnerSection {
+  position: relative;
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  min-height: 64px;
+  max-height: 64px;
+  box-shadow: inset darkgray 1px 1px 5px 3px;
+  max-width: 100%;
+}
+
+.bandBannerSection {
+  position: relative;
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  height: 96px;
+  min-height: 96px;
+  max-height: 96px;
+  box-shadow: inset darkgray 1px 1px 5px 3px;
+  max-width: 100%;
+}

@@ -1,0 +1,65 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  width: 100%;
+
+  font-size: 13px;
+}
+
+.labelWrapper {
+  position: relative;
+  display: flex;
+  max-width: 48px;
+  align-items: center;
+  justify-content: start;
+  white-space: nowrap;
+  overflow:hidden;
+}
+
+.titleWrapper {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+
+  & .textWrapper {
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    /* transition: top 0.3s ease; */
+
+    & .ellipsis {
+      max-width: 100%;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-height: 17px;
+    }
+
+    & .noticeTitle {
+      cursor: pointer;
+      font-weight: bold;
+      color: darkgray;
+    }
+  }
+}
+
+.iconWrapper {
+  position: relative;
+  display: flex;
+  max-width: 32px;
+  align-items: center;
+  justify-content: end;
+  white-space: nowrap;
+  overflow:hidden;
+
+  & span {
+    font-size: inherit;
+    color: darkgray;
+  }
+}

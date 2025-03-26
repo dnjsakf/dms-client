@@ -7,7 +7,7 @@ const nextConfig = {
   reactStrictMode: true,
   transpilePackages: ['primereact'],
 
-  output: 'export', // Static Build
+  // output: 'export', // Static Build // HTML로 생성
   distDir: 'dist',
 };
 
