@@ -45,13 +45,17 @@ export const customFetch = async (url, method, params, options) => {
   // 1. 인증토큰 확인, 토큰이 없으면 로그인 화면으로 이동
   //   - /api/auth/* 로 가는 요청은 제외
   const store = await useAuthStore.getState();
-  if( jwtUtil.verify(store.accessToken) ){
-    fullOptions.headers = {
-      ...fullOptions.headers,
-      'Authorization': `Bearer ${store.accessToken}`
+
+  const isAuth = (!fullURL.pathname?.startsWith('/api/mb')); // 특정 URL은 인증패스
+  if( isAuth ){
+    if( jwtUtil.verify(store.accessToken) ){
+      fullOptions.headers = {
+        ...fullOptions.headers,
+        'Authorization': `Bearer ${store.accessToken}`
+      }
+    } else if( !fullURL.pathname?.startsWith('/api/auth') ){
+      return store.setAuthenticated(false);
     }
-  } else if( !fullURL.pathname?.startsWith('/api/auth') ){
-    return store.setAuthenticated(false);
   }
 
   // 2. API 요청, 401 오류 발생하면 로그인 화면으로 이동

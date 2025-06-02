@@ -1,0 +1,3210 @@
+[
+    {
+        "title": "무기 레어 ~ 엘리트 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "불꽃",
+        "runeType": "레어",
+        "runeDesc": "공격 적중 시, 35% 확률로 (공격력×21%)의 지속 피해: 화상을 준다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "무기 레어 ~ 엘리트 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "전기",
+        "runeType": "레어",
+        "runeDesc": "공격 적중 시, 35% 확률로 (공격력×21%)의 지속 피해: 감전을 준다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "무기 레어 ~ 엘리트 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "독",
+        "runeType": "레어",
+        "runeDesc": "공격 적중 시, 35% 확률로 (공격력×21%)의 지속 피해: 중독을 준다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "무기 레어 ~ 엘리트 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "빙결",
+        "runeType": "레어",
+        "runeDesc": "공격 적중 시, 35% 확률로 (공격력×21%)의 지속 피해: 빙결을 준다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "무기 레어 ~ 엘리트 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "바위",
+        "runeType": "레어",
+        "runeDesc": "방어력이 10% 증가한다."
+    },
+    {
+        "title": "무기 레어 ~ 엘리트 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "확산",
+        "runeType": "엘리트",
+        "runeDesc": "공격 적중 시, 25% 확률로 최대 4명의 적에게 (공격력×n%)의 지속 피해: 감전을 준다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "무기 레어 ~ 엘리트 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "맹독",
+        "runeType": "엘리트",
+        "runeDesc": "공격 적중 시, 35% 확률로 (공격력×42%)의 지속 피해: 중독을 준다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "무기 레어 ~ 엘리트 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "선혈",
+        "runeType": "엘리트",
+        "runeDesc": "공격 적중 시, 35% 확률로 (공격력×42%)의 지속 피해: 출혈을 준다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "무기 레어 ~ 엘리트 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "의식",
+        "runeType": "엘리트",
+        "runeDesc": "공격 적중 시, 35% 확률로 (공격력×42%)의 지속 피해: 정신을 준다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "무기 레어 ~ 엘리트 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "철",
+        "runeType": "엘리트",
+        "runeDesc": "방어력이 15% 증가한다."
+    },
+    {
+        "title": "무기 레어 ~ 엘리트 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "삭풍",
+        "runeType": "엘리트",
+        "runeDesc": "타겟 한 명을 세 번 공격할 때마다 충격파가 발생하여 타겟 주변의 적에게 (공격력×n%)의 피해를 준다.(재사용 대기 시간: 1초)"
+    },
+    {
+        "title": "무기 레어 ~ 엘리트 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "대결",
+        "runeType": "엘리트",
+        "runeDesc": "공격력이 10%증가하고, 멀티 히트 피해는 3% 감소한다."
+    },
+    {
+        "title": "무기 레어 ~ 엘리트 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "전장",
+        "runeType": "엘리트",
+        "runeDesc": "자신의 주변 5m 범위 내에 있는 적의 수에 따라 적에게 주는 피해가 최대 10%까지 증가한다."
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "전율",
+        "runeType": "에픽",
+        "runeDesc": "공격 적중 시, 25% 확률로 최대 4명의 적에게 (공격력×n%)의 지속 피해: 감전을 준다.(재사용 대기 시간: 0.2초)"
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "극독",
+        "runeType": "에픽",
+        "runeDesc": "공격 적중 시, 35% 확률로 (공격력×63%)의 지속 피해: 중독을 준다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "강철",
+        "runeType": "에픽",
+        "runeDesc": "방어력이 20% 증가한다."
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "경이",
+        "runeType": "에픽",
+        "runeDesc": "기본 공격 적중 시, 모든 스킬의 재사용 대기 시간이 6% 감소한다."
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "질풍",
+        "runeType": "에픽",
+        "runeDesc": "타겟 한 명을 세 번 공격할 때마다 충격파가 발생하여 타겟 주변의 적에게 (공격력×n%)의 피해를 준다.(재사용 대기 시간: 1초)"
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "결투",
+        "runeType": "에픽",
+        "runeDesc": "공격력이 15%증가하고, 멀티 히트 피해는 5% 감소한다."
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "역병",
+        "runeType": "에픽",
+        "runeDesc": "공격 시, 타겟에게 5초 동안 약화 효과: 부패를 부여한다. 해당 효과를 보유한 적이 사망하면 타겟 주변 모든 적에게 (공격력×n%)의 지속 피해: 중독을 준다."
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "격전",
+        "runeType": "에픽",
+        "runeDesc": "자신의 주변 5m 범위 내에 있는 적의 수에 따라 적에게 주는 피해가 최대 15%까지 증가한다."
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "궁극",
+        "runeType": "에픽",
+        "runeDesc": "궁극기 사용 시, 15초간 적에게 주는 모든 피해가 30% 증가한다."
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "격노",
+        "runeType": "에픽",
+        "runeDesc": "10초마다 3초 동안 공격력이 30% 증가한다."
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "선고",
+        "runeType": "에픽",
+        "runeDesc": "퍼스트 어택 적중 시 타겟에게 (공격력×n%)의 지속 피해: 신성을 주고 20초 동안 공격력을 10% 감소시킨다."
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "연격",
+        "runeType": "에픽",
+        "runeDesc": "강타 적중 시 4초 동안 적에게 주는 피해가 10% 증가하며, 연타 적중 시 3초 동안 적에게 주는 피해가 8% 증가한다."
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "혹한",
+        "runeType": "에픽",
+        "runeDesc": "강타 적중 시, (공격력×n%)의 지속 피해: 빙결을 주고, 10초 동안 이동 속도를 50% 감소시킨다.(재사용 대기 시간: 3초)"
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "고통",
+        "runeType": "에픽",
+        "runeDesc": "지속 피해: 중독을 보유한 적 공격 시, (공격력×n%)의 지속 피해: 정신을 추가로 준다.(재사용 대기 시간: 5초)"
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "적혈",
+        "runeType": "에픽",
+        "runeDesc": "치명타 적중 시, (공격력×n%)의 지속 피해: 출혈을 준다.(재사용 대기 시간: 3초)"
+    },
+    {
+        "title": "무기 에픽 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "화염",
+        "runeType": "에픽",
+        "runeDesc": "공격 적중 시, 25% 확률로 최대 4명의 적에게 (공격력×n%)의 지속 피해: 화염을 준다.(재사용 대기 시간: 0.2초)"
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "냉혹한 겨울",
+        "runeType": "전설",
+        "runeDesc": "강타 적중 시, (공격력×n%)의 지속 피해: 빙결을 주고, 10초 동안 이동 속도를 50%, 공격력을 10% 감소시킨다.(재사용 대기 시간: 3초)"
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "무수한 담금질",
+        "runeType": "전설",
+        "runeDesc": "장비를 +10 강화시, 공격력이 12% 증가한다. +15 강화시에는 8% 더 증가한다."
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "살아있는 번갯불",
+        "runeType": "전설",
+        "runeDesc": "강타 스킬 사용 시, 6초 동안 기본 공격이 (공격력×n%)의 지속 피해: 감전을 추가로 준다.(재사용 대기시간: 10초)"
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "가시 덩굴",
+        "runeType": "전설",
+        "runeDesc": "받는 피해와 주는 피해가 모두 25% 증가한다."
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "타오르는 불씨",
+        "runeType": "전설",
+        "runeDesc": "연타 스킬 사용 시, 6초 동안 기본 공격이 타겟 주변 최대 4명의 적에게 (공격력×n%)의 지속 피해: 화상을 추가로 준다.(재사용 대기시간: 10초)"
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "차오르는 안개",
+        "runeType": "전설",
+        "runeDesc": "전투 중, 매 3초마다 적에게 주는 공격력이 6%씩 증가하며 해당 효과는 최대 4회까지 중첩된다. 피해를 받으면 효과가 초기화된다."
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "몰아치는 바람",
+        "runeType": "전설",
+        "runeDesc": "기본 공격 시, 6초 동안 공격력이 4%씩 증가하며 해당 효과는 최대 6회까지 중첩된다."
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "천 자루 검",
+        "runeType": "전설",
+        "runeDesc": "검을 사용하는 클래스[1]로 클래스 레벨 40을 달성할 때마다 공격력이 4%씩 증가하며 해당 효과는 최대 6회까지 중첩된다."
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "옛 검투사",
+        "runeType": "전설",
+        "runeDesc": "적에게 피해를 받으면 6초간 공격력이 4%씩 증가하며 해당 효과는 최대 6회까지 중첩된다."
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "조화",
+        "runeType": "전설",
+        "runeDesc": "공격 적중 시, 35% 확률로 (공격력×n%)의 지속 피해: 화상, 빙결 혹은 감전을 준다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "명암",
+        "runeType": "전설",
+        "runeDesc": "공격 적중 시, 35% 확률로 (공격력×n%)의 지속 피해: 신성 혹은 암흑을 준다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "고뇌",
+        "runeType": "전설",
+        "runeDesc": "공격 적중 시, 35% 확률로 (공격력×n%)의 지속 피해: 중독, 출혈 혹은 정신을 준다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "결투+",
+        "runeType": "전설",
+        "runeDesc": "공격력이 18%증가하고, 멀티 히트 피해는 6% 감소한다."
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "질풍+",
+        "runeType": "전설",
+        "runeDesc": "타겟 한 명을 세 번 공격할 때마다 충격파가 발생하여 타겟 주변의 적에게 (공격력×n%)의 피해를 준다.(재사용 대기 시간: 1초)"
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "경이+",
+        "runeType": "전설",
+        "runeDesc": "기본 공격 적중 시, 모든 스킬의 재사용 대기 시간이 8% 감소한다."
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "격전+",
+        "runeType": "전설",
+        "runeDesc": "자신의 주변 5m 범위 내에 있는 적의 수에 따라 적에게 주는 피해가 최대 20%까지 증가한다."
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "역병+",
+        "runeType": "전설",
+        "runeDesc": "공격 시, 타겟에게 5초 동안 약화 효과: 부패를 부여한다. 해당 효과를 보유한 적이 사망하면 타겟 주변 모든 적에게 (공격력×n%)의 지속 피해: 중독을 준다."
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "격노+",
+        "runeType": "전설",
+        "runeDesc": "10초마다 3초 동안 공격력이 36% 증가한다."
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "파열",
+        "runeType": "전설",
+        "runeDesc": "치명타 적중 시, 타겟에게 (공격력×n%)의 지속 피해: 출혈을 주고 6초 동안 타겟이 받는 피해를 10% 증가시킨다.(재사용 대기 시간: 3초)"
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "눈 먼 분노",
+        "runeType": "전설",
+        "runeDesc": "연타 적중 시, 주는 피해가 2% 증가하며 해당 효과는 최대 12회까지 중첩된다.연타가 아닌 공격 적중 시, 효과가 즉시 해제된다."
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "영혼 수확자",
+        "runeType": "전설",
+        "runeDesc": "지속 피해: 정신을 보유한 적 공격 시, 타겟의 방어력이 감소하여 10초 동안 받는 피해가 10% 증가한다. 또한, 공격력이 10초 동안 10% 증가하며 해당 효과는 최대 2회까지 중첩된다."
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "잊힌 시대",
+        "runeType": "전설",
+        "runeDesc": "적에게 주는 피해가 25% 증가하며, 모든 스킬의 재사용 대기시간이 6% 증가한다."
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "마법 탐구가",
+        "runeType": "전설",
+        "runeDesc": "보조, 생존스킬 사용시, 7초 동안 적에게 주는 피해가 7% 증가한다. 해당 효과는 최대 3회까지 중첩된다. 또한, 보조, 생존스킬의 피해량이 5% 증가한다."
+    },
+    {
+        "title": "무기 전설 룬",
+        "slotName": "무기",
+        "className": "공용",
+        "runeName": "뒤틀린 칼날",
+        "runeType": "전설",
+        "runeDesc": "스킬 사용 시, 다음 기본공격이 적 주변 3m 범위의 모든 적들에게 (공격력×n%)의 지속 피해: 암흑을 준다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "신비",
+        "runeType": "레어",
+        "runeDesc": "스킬 사용 또는 기본 공격 시, 25% 확률로 5초 동안 스킬 캐스팅 및 차지 속도가 10% 증가한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "안전",
+        "runeType": "레어",
+        "runeDesc": "체력이 75% 이상일 경우, 적에게 주는 피해가 5% 증가한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "결사",
+        "runeType": "레어",
+        "runeDesc": "체력이 50% 이하일 경우, 적에게 주는 피해가 8% 증가한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "선제",
+        "runeType": "레어",
+        "runeDesc": "전투 시작 시, 10초 동안 적에게 주는 피해가 8% 증가한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "방벽",
+        "runeType": "레어",
+        "runeDesc": "체력이 75% 이상일 경우, 적에게 받는 피해가 4% 감소한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "저항",
+        "runeType": "레어",
+        "runeDesc": "체력이 50% 이하일 경우, 적에게 받는 피해가 8% 감소한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "보호",
+        "runeType": "레어",
+        "runeDesc": "받는 지속 피해가 8% 감소한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "조준",
+        "runeType": "레어",
+        "runeDesc": "3초 동안 이동하지 않을 경우, 적에게 주는 피해가 6% 증가한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "반동",
+        "runeType": "레어",
+        "runeDesc": "이동 스킬 사용 시, 5초간 적에게 주는 피해가 5% 증가한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "허기",
+        "runeType": "레어",
+        "runeDesc": "보유한 자원이 33% 미만일 경우, 적에게 주는 피해가 5% 증가한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "불굴",
+        "runeType": "레어",
+        "runeDesc": "적에게 피해를 받아 체력이 50% 이하가 되면, 5초 동안 받는 피해가 12% 감소한다.(재사용 대기 시간:30초)"
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "격류",
+        "runeType": "엘리트",
+        "runeDesc": "무방비 공격 적중 시, 3초 동안 스킬 사용 속도 및 공격 속도가 24% 증가한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "기묘",
+        "runeType": "엘리트",
+        "runeDesc": "스킬 사용 또는 기본 공격 시, 35% 확률로 5초 동안 스킬 캐스팅 및 차지 속도가 15% 증가한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "안심",
+        "runeType": "엘리트",
+        "runeDesc": "체력이 75% 이상일 경우, 적에게 주는 피해가 7% 증가한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "사활",
+        "runeType": "엘리트",
+        "runeDesc": "체력이 50% 이하일 경우, 적에게 주는 피해가 12% 증가한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "시작",
+        "runeType": "엘리트",
+        "runeDesc": "전투 시작 시, 20초 동안 적에게 주는 피해가 12% 증가한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "장벽",
+        "runeType": "엘리트",
+        "runeDesc": "체력이 75% 이상일 경우, 적에게 받는 피해가 6% 감소한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "경계",
+        "runeType": "엘리트",
+        "runeDesc": "체력이 50% 이하일 경우, 적에게 받는 피해가 12% 감소한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "수비",
+        "runeType": "엘리트",
+        "runeDesc": "받는 지속 피해가 12% 감소한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "사격",
+        "runeType": "엘리트",
+        "runeDesc": "3초 동안 이동하지 않을 경우, 적에게 주는 피해가 9% 증가한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "폭주",
+        "runeType": "엘리트",
+        "runeDesc": "이동 스킬 사용 시, 6초간 적에게 주는 피해가 7% 증가한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "굶주림",
+        "runeType": "엘리트",
+        "runeDesc": "보유한 자원이 33% 미만일 경우, 적에게 주는 피해가 7% 증가한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "투쟁",
+        "runeType": "엘리트",
+        "runeDesc": "자신 주변 5m 범위 내에 있는 적의 수가 많을수록, 적에게 받는 피해가 최대 9%까지 감소한다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "재활",
+        "runeType": "엘리트",
+        "runeDesc": "적에게 피해를 받으면 10초 동안 방어력이 0.3% 증가하고, 체력을 총 0.2% 회복한다. 해당 효과는 최대 10회까지 중첩된다."
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "약화",
+        "runeType": "엘리트",
+        "runeDesc": "지속 피해: 중독을 보유한 적 공격시, 657의 추가 피해를 준다.(재사용 대기 시간: 5초)"
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "흡수",
+        "runeType": "엘리트",
+        "runeDesc": "지속 피해: 출혈을 보유한 적 공격시, 8초 동안 공격력이 9% 증가한다.(재사용 대기 시간: 12초)"
+    },
+    {
+        "title": "방어구 레어 ~ 엘리트 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "극복",
+        "runeType": "엘리트",
+        "runeDesc": "적에게 피해를 받아 체력이 50% 이하가 되면, 8초 동안 받는 피해가 18% 감소한다.(재사용 대기 시간: 30초)"
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "폭풍",
+        "runeType": "에픽",
+        "runeDesc": "무방비 공격 적중 시 5초 동안 스킬 사용 속도 및 공격 속도가 32% 증가한다."
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "초자연",
+        "runeType": "에픽",
+        "runeDesc": "스킬 사용 또는 기본 공격 시, 55% 확률로 5초 동안 스킬 캐스팅 및 차지 속도가 20% 증가한다."
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "안정",
+        "runeType": "에픽",
+        "runeDesc": "체력이 75% 이상일 경우, 공격력이 9% 증가한다."
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "초기",
+        "runeType": "에픽",
+        "runeDesc": "전투 시작 시, 30초 동안 공격력이 16% 증가한다."
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "성채",
+        "runeType": "에픽",
+        "runeDesc": "체력이 75% 이상일 경우, 적에게 받는 피해가 8% 감소한다."
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "방호",
+        "runeType": "에픽",
+        "runeDesc": "받는 지속 피해가 16% 감소한다."
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "저격",
+        "runeType": "에픽",
+        "runeDesc": "3초 동안 이동하지 않을 경우, 공격력이 12% 증가한다."
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "발진",
+        "runeType": "에픽",
+        "runeDesc": "이동 스킬 사용 시, 7초간 공격력이 9% 증가한다."
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "결핍",
+        "runeType": "에픽",
+        "runeDesc": "보유한 자원이 50% 미만일 경우, 공격력이 9% 증가한다."
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "난투",
+        "runeType": "에픽",
+        "runeDesc": "자신 주변 5m 범위 내에 있는 적의 수가 많을수록, 적에게 받는 피해가 최대 12%까지 감소한다."
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "생명",
+        "runeType": "에픽",
+        "runeDesc": "적에게 피해를 받으면 10초 동안 방어력이 0.4% 증가하고, 체력을 총 0.3% 회복한다. 해당 효과는 최대 10회까지 중첩된다."
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "쇠약",
+        "runeType": "에픽",
+        "runeDesc": "지속 피해: 중독을 보유한 적 공격시, 859의 추가 피해를 준다.(재사용 대기 시간: 5초)"
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "얼어붙음",
+        "runeType": "에픽",
+        "runeDesc": "지속 피해: 빙결을 보유한 적 공격시, 5초 뒤에 859의 추가 피해를 준다.(재사용 대기 시간: 5초)"
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "흡혈",
+        "runeType": "에픽",
+        "runeDesc": "지속 피해: 출혈을 보유한 적 공격시, 8초 동안 공격력이 12% 증가한다.(재사용 대기 시간: 12초)"
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "격통",
+        "runeType": "에픽",
+        "runeDesc": "지속 피해: 정신을 보유한 적 공격 시, 적 주변 6m 내의 적들에게 303의 지속 피해: 정신을 준다.(재사용 대기 시간: 5초)"
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "제물",
+        "runeType": "에픽",
+        "runeDesc": "지속 피해: 신성을 보유한 적 공격시, 체력을 136 회복한다.(재사용 대기 시간: 5초)"
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "침식",
+        "runeType": "에픽",
+        "runeDesc": "지속 피해: 암흑을 보유한 공격시, 자신이 부여한 약화 효과의 수에 따라 682/859/1289의 피해를 준다.(재사용 대기 시간: 5초)"
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "끈기",
+        "runeType": "에픽",
+        "runeDesc": "적에게 피해를 받아 체력이 50% 이하가 되면, 10초 동안 받는 피해가 24% 감소한다.(재사용 대기 시간: 30초)"
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "압도",
+        "runeType": "에픽",
+        "runeDesc": "무방비 공격 적중시, 타겟에게 859의 지속 피해: 감전을 추가로 준다.(재사용 대기 시간: 1초)"
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "절망",
+        "runeType": "에픽",
+        "runeDesc": "카운터 공격 적중시, 타겟 주변 3m 범위 내의 적들에게 1011의 지속 피해: 암흑을 준다.(재사용 대기 시간: 3초)"
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "위협",
+        "runeType": "에픽",
+        "runeDesc": "피니시 어택 적중시, 주변 3m 반경 내의 모든 적들에게 454의 피해와 1263의 지속 피해: 암흑을 주고 공포에 질려 달아나게 만든다."
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "전술가",
+        "runeType": "에픽",
+        "runeDesc": "강타, 연타, 무방비, 카운터 공격시, 10초 동안 공격력이 2.5% 증가한다.(재사용 대기 시간: 5초)[2]"
+    },
+    {
+        "title": "방어구 에픽 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "기습",
+        "runeType": "에픽",
+        "runeDesc": "카운터 공격 적중시, 3초 동안 공격력이 16% 증가한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "얼어붙은 불꽃",
+        "runeType": "전설",
+        "runeDesc": "상의에 각인 시, 기본 공격이 일정 확률로 타겟에게 2527의 지속 피해: 화상을 준다.\n하의에 각인 시, 스킬 공격이 일정 확률로 타겟에게 2527의 지속 피해: 빙결을 준다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "칼날 보루",
+        "runeType": "전설",
+        "runeDesc": "강타 적중 시, 해당 스킬 위력의 20%만큼 지속 피해: 출혈을 준다.(전사 계열 클래스 전용)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "응축된 마력",
+        "runeType": "전설",
+        "runeDesc": "보유 자원이 50% 미만일 경우, 공격력이 15% 증가한다.(마법사 계열 클래스 전용)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "고요한 바람",
+        "runeType": "전설",
+        "runeDesc": "주변 3m 범위 내에 적이 없을 경우, 적에게 주는 피해가 13% 증가한다.(궁수 계열 클래스 전용)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "신성한 수양",
+        "runeType": "전설",
+        "runeDesc": "보조 스킬 사용 시, 10초 동안 공격력과 아군에게 주는 회복력이 4%씩 증가하며 해당 효과는 최대 3회까지 중첩된다.(힐러 계열 클래스 전용)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "전율하는 악상",
+        "runeType": "전설",
+        "runeDesc": "파티 플레이 시 공격력이 12% 증가한다.(음유시인 계열 클래스 전용)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "비정한 승부사",
+        "runeType": "전설",
+        "runeDesc": "지속피해:중독,출혈을 보유한 적에게 주는 피해가 12% 증가하고, 적에게 주는 무방비 피해가 5% 증가한다. (도적 계열 클래스 전용)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "거센 소나기",
+        "runeType": "전설",
+        "runeDesc": "궁극기 사용 시, 적에게 주는 피해가 15초 동안 30% 증가한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "붉은 맹약",
+        "runeType": "전설",
+        "runeDesc": "공격 적중 시, 자신의 위치에 10초 동안 유지되는 마력의 룬을 만든다. 룬 위에 있으면 공격력이 18% 증가한다.(재사용 대기 시간: 15초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "검은 서약",
+        "runeType": "전설",
+        "runeDesc": "공격 적중 시, 자신의 위치에 10초 동안 유지되는 보호의 룬을 만든다. 룬 위에 있으면 받는 피해가 18% 감소한다.(재사용 대기 시간: 15초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "생존 본능",
+        "runeType": "전설",
+        "runeDesc": "적의 공격에 브레이크 당할 경우, 6초 동안 받는 피해가 30% 감소한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "끝없는 활력",
+        "runeType": "전설",
+        "runeDesc": "추가타 적중 시, 자신의 체력을 1.3% 회복한다.(재사용 대기 시간: 0.5초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "원소술사",
+        "runeType": "전설",
+        "runeDesc": "지속 피해: 화상, 빙결, 감전을 보유한 적 공격 시, 9초동안 공격력이 3.5% 증가한다.(재사용 대기 시간: 각 10초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "극야",
+        "runeType": "전설",
+        "runeDesc": "지속 피해: 신성을 보유한 적 공격 시, 추가로 657의 지속 피해: 암흑을 준다.(재사용 대기 시간: 3초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "깨달음",
+        "runeType": "전설",
+        "runeDesc": "클래스 레벨이 40 이상일 때 공격력이 6% 증가하며, 클래스 레벨이 65 이상이면 4% 추가로 증가한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "횃불",
+        "runeType": "전설",
+        "runeDesc": "지속 피해: 화상을 보유한 적 공격 시, 5초 동안 치명타 확률이 10% 증가한다.(재사용 대기 시간: 3초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "쇄빙",
+        "runeType": "전설",
+        "runeDesc": "지속 피해: 빙결을 보유한 적 공격 시, 5초 동안 추가타 확률이 10% 증가한다.(재사용 대기 시간: 3초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "반작용",
+        "runeType": "전설",
+        "runeDesc": "피해를 받으면 50% 확률로 주변 4m 반경 내, 모든 적에게 202의 피해를 주는 충격파를 발산한다.(재사용 대기 시간: 0.5초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "폭풍+",
+        "runeType": "전설",
+        "runeDesc": "무방비 공격 적중 시, 5초 동안 스킬 사용 속도 및 공격 속도가 40% 증가한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "흡혈+",
+        "runeType": "전설",
+        "runeDesc": "지속 피해: 출혈을 보유한 적 공격 시, 8초 동안 공격력이 15% 증가한다.(재사용 대기 시간: 12초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "제물+",
+        "runeType": "전설",
+        "runeDesc": "지속 피해: 신성을 보유한 적 공격 시, 체력을 245 회복한다.(재사용 대기 시간: 5초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "침식+",
+        "runeType": "전설",
+        "runeDesc": "지속 피해: 암흑을 보유한 공격 시, 자신이 부여한 약화 효과의 수에 따라 859/1061/1592의 피해를 준다.(재사용 대기시간: 5초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "얼어붙음+",
+        "runeType": "전설",
+        "runeDesc": "지속 피해: 빙결을 보유한 적 공격 시, 5초 뒤에 1061의 추가 피해를 준다.(재사용 대기 시간: 5초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "격통+",
+        "runeType": "전설",
+        "runeDesc": "지속 피해: 정신을 보유한 적 공격 시, 적 주변 6m 내의 적들에게 353의 지속 피해: 정신을 준다.(재사용 대기시간: 5초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "쇠약+",
+        "runeType": "전설",
+        "runeDesc": "지속 피해: 중독을 보유한 적 공격 시, 1061의 추가 피해를 준다.(재사용 대기시간: 5초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "안정+",
+        "runeType": "전설",
+        "runeDesc": "체력이 75% 이상일 경우, 공격력이 11% 증가한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "저격+",
+        "runeType": "전설",
+        "runeDesc": "3초 동안 이동하지 않을 경우, 공격력이 15% 증가한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "방호+",
+        "runeType": "전설",
+        "runeDesc": "받는 지속 피해가 20% 감소한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "초기+",
+        "runeType": "전설",
+        "runeDesc": "전투 시작 시, 30초 동안 공격력이 20% 증가한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "초자연+",
+        "runeType": "전설",
+        "runeDesc": "스킬 사용 또는 기본 공격시, 55% 확률로 5초 동안 스킬 캐스팅 및 차지속도가 25% 증가한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "생명+",
+        "runeType": "전설",
+        "runeDesc": "적에게 피해를 받으면 9.9초 동안 방어력이 0.5% 증가하고, 체력을 총 0.4% 회복한다.\n해당 효과는 최대 10회까지 중첩된다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "성채+",
+        "runeType": "전설",
+        "runeDesc": "체력이 75% 이상일 경우, 적에게 받는 피해가 10% 감소한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "난투+",
+        "runeType": "전설",
+        "runeDesc": "자신 주변 5m 범위 내에 있는 적의 수가 많을수록, 적에게 받는 피해가 최대 15%까지 감소한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "검은 불길",
+        "runeType": "전설",
+        "runeDesc": "크로스 공격 적중 시, 3m 범위 내의 적에게 909의 지속 피해: 화상을 준다.\n카운터 공격 시, 타겟에게 1769의 지속 피해: 정신을 준다.(재사용 대기 시간: 각 3초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "마나 격류",
+        "runeType": "전설",
+        "runeDesc": "스킬을 사용할 때마다 5초 동안 공격력이 3.5% 증가하며, 해당 효과는 최대 4회까지 중첩된다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "연승",
+        "runeType": "전설",
+        "runeDesc": "피니시 어택 적중 시, 다음 공격이 타겟 주변 3m 범위 내의 적들에게 피해량의 30%만큼 지속 피해: 출혈을 준다(재사용 대기 시간: 1초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "과충전",
+        "runeType": "전설",
+        "runeDesc": "궁극기 사용 시, 10초 동안 1초마다 주변 적들에게 657의 지속 피해: 감전을 준다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "독 안개",
+        "runeType": "전설",
+        "runeDesc": "공격 적중 시, 타겟의 위치에 4초 동안 지속되는 독 안개를 만든다.\n독 안개는 3m 범위 내의 적에게 1초마다 151의 지속 피해: 중독을 준다.(재사용 대기 시간: 4초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "바위 거인",
+        "runeType": "전설",
+        "runeDesc": "강타 적중 시, 공격력이 3% 증가하며 해당 효과는 최대 3회까지 중첩된다.\n3중첩 도달 시, 중첩을 모두 소모하여 5초 동안 공격력이 20% 증가한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "비열한 일격",
+        "runeType": "전설",
+        "runeDesc": "카운터 공격 적중 시, 4초 동안 공격력이 24% 증가한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "엄습하는 그림자",
+        "runeType": "전설",
+        "runeDesc": "연타 적중시, 타겟에게 n의 지속피해: 암흑을 주고 10초 동안 적에게 주는 피해가 3% 증가한다. 해당 효과는 최대 3회까지 중첩된다. (재사용 대기시간 0.5초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "영구 동토",
+        "runeType": "전설",
+        "runeDesc": "전투 중, 1초마다 주변 4m 반경 내의 적들에게 n 의 지속피해: 냉기를 준다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "평원 방랑자",
+        "runeType": "전설",
+        "runeDesc": "이동 스킬 사용시, 10초 동안 적에게 주는 피해가 12% 증가하고 이동속도가 30% 증가한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "메마른 땅",
+        "runeType": "전설",
+        "runeDesc": "보유한 자원이 50% 미만일 경우, 적에게 주는 피해가 9%, 추가타 확률이 6% 증가한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "은빛 첨탑",
+        "runeType": "전설",
+        "runeDesc": "아군의 체력을 회복시키면 15초 동안 적에게 주는 피해가 5% 증가한다. 해당 효과는 최대 3회까지 중첩된다. (재사용 대기시간 5초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "흉포한 의지",
+        "runeType": "전설",
+        "runeDesc": "적에게 피해를 받으면 35% 확률로 궁극기 게이지를 9 획득한다. (재사용 대기시간 3초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "폭풍 구름",
+        "runeType": "전설",
+        "runeDesc": "전투 중, 15초 마다 주변 반경 8m 범위 내의 적 최대 6명에게 벼락을 떨어뜨려 n 의 피해를 주고. 각각 주변 좁은 범위의 적들에게도 n 의 피해를 준다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "용병 왕",
+        "runeType": "전설",
+        "runeDesc": "자신 주변에 5m 범위 내에 있는 적의 수가 많을수록, 적에게 주는 피해가 최대 12%까지 증가하고 받는 피해가 최대 6%까지 감소한다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "방랑 기사",
+        "runeType": "전설",
+        "runeDesc": "적을 도발하면 체력의 5% 만큼 피해를 흡수하는 보호막을 만들고, 도발한 적들에게 n의 지속 피해: 정신 과 n의 지속 피해: 출혈을 준다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "빗발치는 화염",
+        "runeType": "전설",
+        "runeDesc": "공격 적중 시, 타겟에게 불덩이를 발사해 (공격력×n%)의 피해를 주고, 5초 동안 지속되는 화염 지대를 만든다.\n화염지대는 1초마다 (공격력×n%)의 피해를 준다.\n타오르는 심장의 각인을 보유한 경우, 불덩이를 총 3개 발사한다. (재사용 대기시간: 10초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "타오르는 심장",
+        "runeType": "전설",
+        "runeDesc": "전투 중, 5초 마다 적에게 주는 피해가 1.2% 증가하고, 받는 피해가 0.4% 증가한다.\n해당 효과는 최대 10회까지 중첩되며, 빗발치는 화염의 각인을 보유한 경우 받는 피해 증가 효과가 받는 피해 감소 효과로 전환된다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "거인의 팔",
+        "runeType": "전설",
+        "runeDesc": "공격 적중 시, 대상과 주위 2.5m내의 적들에게 10초 동안 받는 피해가 10% 증가하는 약화 효과: 파괴된 갑옷을 부여하고 (공격력×n%)의 피해를 준다.\n파괴된 갑옷 효과 만료 시 , 적에게 약화 효과: 구속된 칼날이 부여되어 있다면 (공격력×n%)의 피해를 추가로 준다. (재사용 대기시간: 10초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "굶주린 칼날",
+        "runeType": "전설",
+        "runeDesc": "공격 시 전방의 적들에게 (공격력×n%)의 피해와 (공격력×n%)의 지속 피해: 출혈을 주고, 이동속도가 30% 감소하는 약화 효과: 구속된 칼날을 부여한다.\n약화 효과: 파괴된 갑옷을 보유한 대상에게는 두 배의 직접 피해를 준다. (재사용 대기시간: 8초)"
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "파멸의 낙인",
+        "runeType": "전설",
+        "runeDesc": "공격 적중 시, 타겟에게 약화 효과: 파멸의 낙인을 부여해 1초마다 (공격력×n%)의 암흑 피해를 8초 동안 준다.\n파멸의 낙인은 하나의 대상에게만 부여된다.\n파멸의 낙인이 만료 될 때마다 다음 파멸의 낙인의 피해량이 10% 증가하며, 해당 효과는 최대 10회까지 증첩된다.\n공명의 수정의 각인을 보유한 경우, 초기 중첩 5회가 부여된다."
+    },
+    {
+        "title": "방어구 전설 룬",
+        "slotName": "방어구",
+        "className": "공용",
+        "runeName": "공명하는 수정",
+        "runeType": "전설",
+        "runeDesc": "전투 중 1초마다 강화 효과: 공명을 얻어 적에게 주는 피해가 2% 증가한다.\n해당 효과는 최대 12회 까지 중첩되며, 12회 중첩될 경우 중첩을 모두 잃을 때까지 중첩 수가 점점 감소한다.\n약화 효과: 파멸의 낙인을 보유한 적이 있을 경우 중첩 당 피해가 0.6% 추가 증가한다."
+    },
+    {
+        "title": "엠블럼 레어 ~ 엘리트 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "친절함",
+        "runeType": "레어",
+        "runeDesc": "어시스트 모드일 시, 궁극기를 자동으로 사용한다."
+    },
+    {
+        "title": "엠블럼 레어 ~ 엘리트 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "민첩함",
+        "runeType": "레어",
+        "runeDesc": "강타 적중 시, 5초 동안 적에게 주는 연타 피해가 5% 증가한다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "엠블럼 레어 ~ 엘리트 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "강함",
+        "runeType": "레어",
+        "runeDesc": "연타 적중 시, 5초 동안 적에게 주는 강타 피해가 5% 증가한다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "엠블럼 레어 ~ 엘리트 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "잔인함",
+        "runeType": "레어",
+        "runeDesc": "적에게 주는 브레이크 피해가 10% 증가한다."
+    },
+    {
+        "title": "엠블럼 레어 ~ 엘리트 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "단단함",
+        "runeType": "레어",
+        "runeDesc": "공격 적중 시, 전투 종료 시까지 15초마다 공격력과 방어력이 0.4%씩 증가하며, 해당 효과는 최대 10회까지 중첩된다."
+    },
+    {
+        "title": "엠블럼 레어 ~ 엘리트 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "기민함",
+        "runeType": "엘리트",
+        "runeDesc": "강타 적중 시, 5초 동안 적에게 주는 연타 피해가 10% 증가한다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "엠블럼 레어 ~ 엘리트 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "강력함",
+        "runeType": "엘리트",
+        "runeDesc": "연타 적중 시, 5초 동안 적에게 주는 강타 피해가 10% 증가한다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "엠블럼 레어 ~ 엘리트 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "난폭함",
+        "runeType": "엘리트",
+        "runeDesc": "적에게 주는 브레이크 피해가 20% 증가한다."
+    },
+    {
+        "title": "엠블럼 레어 ~ 엘리트 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "강인함+",
+        "runeType": "엘리트",
+        "runeDesc": "공격 적중 시, 전투 종료 시까지 15초마다 공격력과 방어력이 0.6%씩 증가하며, 해당 효과는 최대 10회까지 중첩된다."
+    },
+    {
+        "title": "엠블럼 에픽 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "날쌤",
+        "runeType": "에픽",
+        "runeDesc": "강타 적중 시, 5초 동안 적에게 주는 연타 피해가 15% 증가한다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "엠블럼 에픽 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "강렬함",
+        "runeType": "에픽",
+        "runeDesc": "연타 적중 시, 5초 동안 적에게 주는 강타 피해가 15% 증가한다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "엠블럼 에픽 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "광폭함",
+        "runeType": "에픽",
+        "runeDesc": "적에게 주는 브레이크 피해가 30% 증가한다."
+    },
+    {
+        "title": "엠블럼 에픽 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "굳건함",
+        "runeType": "에픽",
+        "runeDesc": "공격 적중 시, 전투 종료 시까지 15초마다 공격력과 방어력이 0.8%씩 증가하며, 해당 효과는 최대 10회까지 중첩된다."
+    },
+    {
+        "title": "엠블럼 전설 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "날쌤+",
+        "runeType": "전설",
+        "runeDesc": "강타 적중 시, 5초 동안 적에게 주는 연타 피해가 18% 증가한다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "엠블럼 전설 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "강렬함+",
+        "runeType": "전설",
+        "runeDesc": "연타 적중 시, 5초 동안 적에게 주는 강타 피해가 18% 증가한다.(재사용 대기 시간: 10초)"
+    },
+    {
+        "title": "엠블럼 전설 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "광폭함+",
+        "runeType": "전설",
+        "runeDesc": "적에게 주는 브레이크 피해가 30% 증가하며, 무방비 피해가 18% 증가한다."
+    },
+    {
+        "title": "엠블럼 전설 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "굳건함+",
+        "runeType": "전설",
+        "runeDesc": "공격 적중 시, 전투 종료 시까지 15초마다 공격력과 방어력이 1%씩 증가하며, 해당 효과는 최대 10회까지 중첩된다."
+    },
+    {
+        "title": "엠블럼 전설 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "현란함",
+        "runeType": "전설",
+        "runeDesc": "치명타 확률이 10% 증가하며, 적에게 주는 치명타 피해가 30% 증가한다."
+    },
+    {
+        "title": "엠블럼 전설 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "지혜로움",
+        "runeType": "전설",
+        "runeDesc": "모든 스킬의 재사용 대기 시간이 18% 감소한다."
+    },
+    {
+        "title": "엠블럼 전설 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "냉혹함",
+        "runeType": "전설",
+        "runeDesc": "공격이 치명타로 적중하지 않을 때마다 치명타 확률이 12% 증가한다. 증가한 치명타 확률은 치명타 적중시 초기화된다."
+    },
+    {
+        "title": "엠블럼 전설 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "여신의 권능",
+        "runeType": "전설",
+        "runeDesc": "아군의 체력을 회복시키면 대상과 자신의 공격력이 12초 동안 13% 증가한다. (재사용 대기 시간: 9초)"
+    },
+    {
+        "title": "엠블럼 전설 룬",
+        "slotName": "엠블럼",
+        "className": "공용",
+        "runeName": "여신의 가호",
+        "runeType": "전설",
+        "runeDesc": "전투 시작시 및 궁극기 사용 시, 30초 동안 적에게 주는 피해가 25% 증가한다.[3]"
+    },
+    {
+        "title": "공용 장신구 룬",
+        "slotName": "장신구",
+        "className": "공용",
+        "runeName": "암습",
+        "runeType": "레어",
+        "runeDesc": "적 처치 시, 5초 동안 다음 공격의 치명타 확률이 50% 증가한다."
+    },
+    {
+        "title": "공용 장신구 룬",
+        "slotName": "장신구",
+        "className": "공용",
+        "runeName": "점괘",
+        "runeType": "레어",
+        "runeDesc": "공격 적중 시, 75% 확률로 15초 동안 공격력이 15% 증가하거나, 또는 25% 확률로 15초 동안 공격력이 25% 감소한다.(재사용 대기 시간: 15초)[4]"
+    },
+    {
+        "title": "공용 장신구 룬",
+        "slotName": "장신구",
+        "className": "공용",
+        "runeName": "격분",
+        "runeType": "레어",
+        "runeDesc": "적 처치 시, 15초 동안 공격력이 2.5% 증가한다."
+    },
+    {
+        "title": "공용 장신구 룬",
+        "slotName": "장신구",
+        "className": "공용",
+        "runeName": "안도",
+        "runeType": "레어",
+        "runeDesc": "전투 중 체력이 50% 이하가 되면, 회복 물약을 자동으로 사용한다."
+    },
+    {
+        "title": "공용 장신구 룬",
+        "slotName": "장신구",
+        "className": "공용",
+        "runeName": "경감",
+        "runeType": "레어",
+        "runeDesc": "전투 중 지속 피해를 받으면, 붕대를 자동으로 사용한다.(재사용 대기 시간: 20초)"
+    },
+    {
+        "title": "전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "전사",
+        "runeName": "참격",
+        "runeType": "엘리트",
+        "runeDesc": "전사 액티브 스킬: 2\n전사의 블레이드 스매시 스킬에 변화를 준다.\n항상 주변 원형 범위의 적을 빠르게 공격하며, 추가로 지속 피해: 화상 상태로 만든다."
+    },
+    {
+        "title": "전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "전사",
+        "runeName": "참격",
+        "runeType": "전설",
+        "runeDesc": "전사 액티브 스킬: 2\n전사의 블레이드 스매시 스킬에 변화를 준다.\n항상 주변 원형 범위의 적을 빠르게 공격하며, 추가로 지속 피해: 화상 상태로 만든다."
+    },
+    {
+        "title": "전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "전사",
+        "runeName": "돌진",
+        "runeType": "엘리트",
+        "runeDesc": "전사 액티브 스킬: 3\n전사의 방패 치기​ 스킬에 변화를 준다.\n짧은 거리를 돌진해 적을 공격한다. 브레이크된 상태일 때도 사용할 수 있다."
+    },
+    {
+        "title": "전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "전사",
+        "runeName": "돌진",
+        "runeType": "전설",
+        "runeDesc": "전사 액티브 스킬: 3\n전사의 방패 치기​ 스킬에 변화를 준다.\n짧은 거리를 돌진해 적을 공격한다. 브레이크된 상태일 때도 사용할 수 있다."
+    },
+    {
+        "title": "전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "전사",
+        "runeName": "포효",
+        "runeType": "엘리트",
+        "runeDesc": "전사 액티브 스킬: 5\n전사의 전장의 함성​ 스킬에 변화를 준다.\n투지가 최고조에 이르면, 주변의 모든 적을 넘어뜨리는 매우 강력한 충격파를 일으킨다."
+    },
+    {
+        "title": "전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "전사",
+        "runeName": "포효",
+        "runeType": "전설",
+        "runeDesc": "전사 액티브 스킬: 5\n전사의 전장의 함성​ 스킬에 변화를 준다.\n투지가 최고조에 이르면, 주변의 모든 적을 넘어뜨리는 매우 강력한 충격파를 일으킨다."
+    },
+    {
+        "title": "전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "전사",
+        "runeName": "패기",
+        "runeType": "엘리트",
+        "runeDesc": "전사 액티브 스킬: 5\n전사의 전장의 함성 스킬에 변화를 준다.\n투지가 상승하는 대신, 함성 피해가 대폭 증가한다."
+    },
+    {
+        "title": "전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "전사",
+        "runeName": "패기",
+        "runeType": "전설",
+        "runeDesc": "전사 액티브 스킬: 5\n전사의 전장의 함성 스킬에 변화를 준다.\n투지가 상승하는 대신, 함성 피해가 대폭 증가한다."
+    },
+    {
+        "title": "전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "전사",
+        "runeName": "맹공",
+        "runeType": "에픽",
+        "runeDesc": "전사 액티브 스킬: 1\n전사의 연속 베기 스킬에 변화를 준다.\n가드 상태일 경우, 가드를 해제하며 적에게 맹렬한 연속 공격을 가하고 잠시 동안 공격력을 증가시키는 제압 스킬로 변화한다."
+    },
+    {
+        "title": "전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "전사",
+        "runeName": "맹공",
+        "runeType": "전설",
+        "runeDesc": "전사 액티브 스킬: 1\n전사의 연속 베기 스킬에 변화를 준다.\n가드 상태일 경우, 가드를 해제하며 적에게 맹렬한 연속 공격을 가하고 잠시 동안 공격력을 증가시키는 제압 스킬로 변화한다."
+    },
+    {
+        "title": "전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "전사",
+        "runeName": "돌격",
+        "runeType": "에픽",
+        "runeDesc": "전사 액티브 스킬: 4\n전사의 찌르기 스킬을 꿰뚫기로 교체한다.\n온 힘을 검 끝에 모아, 타겟에게 위력적인 돌진 공격을 가한다."
+    },
+    {
+        "title": "전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "전사",
+        "runeName": "돌격",
+        "runeType": "전설",
+        "runeDesc": "전사 액티브 스킬: 4\n전사의 찌르기 스킬을 꿰뚫기로 교체한다.\n온 힘을 검 끝에 모아, 타겟에게 위력적인 돌진 공격을 가한다."
+    },
+    {
+        "title": "대검전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "대검전사",
+        "runeName": "회전",
+        "runeType": "엘리트",
+        "runeDesc": "대검전사 액티브 스킬: 1\n대검전사의 회전 베기 스킬에 변화를 준다.\n회전 횟수를 대폭 줄여 빠르게 적을 벤다. 사용 시간과 재사용 대기 시간이 크게 감소한다."
+    },
+    {
+        "title": "대검전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "대검전사",
+        "runeName": "회전",
+        "runeType": "전설",
+        "runeDesc": "대검전사 액티브 스킬: 1\n대검전사의 회전 베기 스킬에 변화를 준다.\n회전 횟수를 대폭 줄여 빠르게 적을 벤다. 사용 시간과 재사용 대기 시간이 크게 감소한다."
+    },
+    {
+        "title": "대검전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "대검전사",
+        "runeName": "분노",
+        "runeType": "엘리트",
+        "runeDesc": "대검전사 액티브 스킬: 3\n대검전사의 발구르기와 어깨 치기 스킬에 변화를 준다.\n어깨 치기 사용 시, 전투 템포가 상승한다.\n발구르기의 경우, 브레이크 피해가 추가된다."
+    },
+    {
+        "title": "대검전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "대검전사",
+        "runeName": "분노",
+        "runeType": "전설",
+        "runeDesc": "대검전사 액티브 스킬: 3\n대검전사의 발구르기와 어깨 치기 스킬에 변화를 준다.\n어깨 치기 사용 시, 전투 템포가 상승한다.\n발구르기의 경우, 브레이크 피해가 추가된다."
+    },
+    {
+        "title": "대검전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "대검전사",
+        "runeName": "회심",
+        "runeType": "엘리트",
+        "runeDesc": "대검전사 액티브 스킬: 5\n대검전사의 대검술 스킬에 변화를 준다.\n대검술 사용 시, 차징 단계에 따라 증가된 치명타 확률을 얻고, 적이 일정 체력 이하일 경우에는 치명타 확률이 두 배로 증가한다."
+    },
+    {
+        "title": "대검전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "대검전사",
+        "runeName": "회심",
+        "runeType": "전설",
+        "runeDesc": "대검전사 액티브 스킬: 5\n대검전사의 대검술 스킬에 변화를 준다.\n대검술 사용 시, 차징 단계에 따라 증가된 치명타 확률을 얻고, 적이 일정 체력 이하일 경우에는 치명타 확률이 두 배로 증가한다."
+    },
+    {
+        "title": "대검전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "대검전사",
+        "runeName": "절단",
+        "runeType": "엘리트",
+        "runeDesc": "대검전사 액티브 스킬: 1\n대검전사의 회전 베기 스킬에 변화를 준다.\n스킬 사용 시, 마지막으로 벤 적들에게 지속 피해: 출혈을 준다."
+    },
+    {
+        "title": "대검전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "대검전사",
+        "runeName": "절단",
+        "runeType": "전설",
+        "runeDesc": "대검전사 액티브 스킬: 1\n대검전사의 회전 베기 스킬에 변화를 준다.\n스킬 사용 시, 마지막으로 벤 적들에게 지속 피해: 출혈을 준다."
+    },
+    {
+        "title": "대검전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "대검전사",
+        "runeName": "반격",
+        "runeType": "에픽",
+        "runeDesc": "대검전사 액티브 스킬: 2\n대검전사의 라이징 스매시 스킬에 변화를 준다.\n스킬 차징이 가능해져 더욱 큰 피해를 준다.\n차징 중, 피해를 받으면 차징 단계가 최대로 오르고, 브레이크 피해를 받았을 경우에는 더 강한 브레이크 피해로 반격한다.\n또한 두 배 증가된 강화 효과: 불굴을 얻는다."
+    },
+    {
+        "title": "대검전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "대검전사",
+        "runeName": "반격",
+        "runeType": "전설",
+        "runeDesc": "대검전사 액티브 스킬: 2\n대검전사의 라이징 스매시 스킬에 변화를 준다.\n스킬 차징이 가능해져 더욱 큰 피해를 준다.\n차징 중, 피해를 받으면 차징 단계가 최대로 오르고, 브레이크 피해를 받았을 경우에는 더 강한 브레이크 피해로 반격한다.\n또한 두 배 증가된 강화 효과: 불굴을 얻는다."
+    },
+    {
+        "title": "대검전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "대검전사",
+        "runeName": "탄력",
+        "runeType": "에픽",
+        "runeDesc": "대검전사 액티브 스킬: 4\n대검전사의 가르기 스킬에 변화를 준다.\n스킬 차징이 가능해져 더욱 큰 피해를 준다. 가르기 사용 시, 차징 단계에 따라 탄력 효과를 얻는다.\n가르기를 제외한 차징스킬을 사용 시, 탄력 효과를 소모해 차징 단계가 증가한다."
+    },
+    {
+        "title": "대검전사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "대검전사",
+        "runeName": "탄력",
+        "runeType": "전설",
+        "runeDesc": "대검전사 액티브 스킬: 4\n대검전사의 가르기 스킬에 변화를 준다.\n스킬 차징이 가능해져 더욱 큰 피해를 준다. 가르기 사용 시, 차징 단계에 따라 탄력 효과를 얻는다.\n가르기를 제외한 차징스킬을 사용 시, 탄력 효과를 소모해 차징 단계가 증가한다."
+    },
+    {
+        "title": "검술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "검술사",
+        "runeName": "압박",
+        "runeType": "엘리트",
+        "runeDesc": "검술사 액티브 스킬: 2\n검술사의 칼집 치기 스킬에 변화를 준다.\n칼집 치기 혹은 비검: 칼집 치기 스킬의 공격이 적 주변에 영향을 주는 범위 피해로 강화된다."
+    },
+    {
+        "title": "검술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "검술사",
+        "runeName": "압박",
+        "runeType": "전설",
+        "runeDesc": "검술사 액티브 스킬: 2\n검술사의 칼집 치기 스킬에 변화를 준다.\n칼집 치기 혹은 비검: 칼집 치기 스킬의 공격이 적 주변에 영향을 주는 범위 피해로 강화된다."
+    },
+    {
+        "title": "검술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "검술사",
+        "runeName": "무희",
+        "runeType": "엘리트",
+        "runeDesc": "검술사 액티브 스킬: 3\n검술사의 질풍 베기 스킬에 변화를 준다.\n질풍 베기와 비검: 질풍 베기를 사용할 때마다 집중 상태 여부에 따라 스킬 사용 속도가 더욱 빨라진다."
+    },
+    {
+        "title": "검술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "검술사",
+        "runeName": "무희",
+        "runeType": "전설",
+        "runeDesc": "검술사 액티브 스킬: 3\n검술사의 질풍 베기 스킬에 변화를 준다.\n질풍 베기와 비검: 질풍 베기를 사용할 때마다 집중 상태 여부에 따라 스킬 사용 속도가 더욱 빨라진다."
+    },
+    {
+        "title": "검술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "검술사",
+        "runeName": "맹렬",
+        "runeType": "엘리트",
+        "runeDesc": "검술사 액티브 스킬: 5\n검술사의 간파 스킬에 변화를 준다.\n간파에 성공할 경우, 일정 시간 동안 검술사가 적에게 추가 피해를 준다."
+    },
+    {
+        "title": "검술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "검술사",
+        "runeName": "맹렬",
+        "runeType": "전설",
+        "runeDesc": "검술사 액티브 스킬: 5\n검술사의 간파 스킬에 변화를 준다.\n간파에 성공할 경우, 일정 시간 동안 검술사가 적에게 추가 피해를 준다."
+    },
+    {
+        "title": "검술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "검술사",
+        "runeName": "피바람",
+        "runeType": "엘리트",
+        "runeDesc": "검술사 액티브 스킬: 3\n검술사의 질풍 베기 스킬에 변화를 준다.\n스킬 사용 시, 지속 피해: 출혈을 추가로 준다."
+    },
+    {
+        "title": "검술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "검술사",
+        "runeName": "피바람",
+        "runeType": "전설",
+        "runeDesc": "검술사 액티브 스킬: 3\n검술사의 질풍 베기 스킬에 변화를 준다.\n스킬 사용 시, 지속 피해: 출혈을 추가로 준다."
+    },
+    {
+        "title": "검술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "검술사",
+        "runeName": "관통",
+        "runeType": "에픽",
+        "runeDesc": "검술사 액티브 스킬: 1\n검술사의 강철 쐐기 스킬에 변화를 준다.\n강철 쐐기 혹은 비검: 강철 쐐기를 1회 사용 시, 범위 피해를 주는 쾌검을 사용할 수 있다."
+    },
+    {
+        "title": "검술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "검술사",
+        "runeName": "관통",
+        "runeType": "전설",
+        "runeDesc": "검술사 액티브 스킬: 1\n검술사의 강철 쐐기 스킬에 변화를 준다.\n강철 쐐기 혹은 비검: 강철 쐐기를 1회 사용 시, 범위 피해를 주는 쾌검을 사용할 수 있다."
+    },
+    {
+        "title": "검술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "검술사",
+        "runeName": "낙화",
+        "runeType": "에픽",
+        "runeDesc": "검술사 액티브 스킬: 4\n검술사의 비검 스킬에 변화를 준다.\n각기 다른 비검 스킬을 모두 사용하였을 경우, 피해량이 높은 비검: 낙화를 사용할 수 있다."
+    },
+    {
+        "title": "검술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "검술사",
+        "runeName": "낙화",
+        "runeType": "전설",
+        "runeDesc": "검술사 액티브 스킬: 4\n검술사의 비검 스킬에 변화를 준다.\n각기 다른 비검 스킬을 모두 사용하였을 경우, 피해량이 높은 비검: 낙화를 사용할 수 있다."
+    },
+    {
+        "title": "궁수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "궁수",
+        "runeName": "몰아침",
+        "runeType": "엘리트",
+        "runeDesc": "궁수 액티브 스킬: 2\n궁수의 매그넘 샷 스킬에 변화를 준다.\n모든 바람을 소모하여 매그넘 샷 스킬의 피해량을 증가시킨다."
+    },
+    {
+        "title": "궁수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "궁수",
+        "runeName": "몰아침",
+        "runeType": "전설",
+        "runeDesc": "궁수 액티브 스킬: 2\n궁수의 매그넘 샷 스킬에 변화를 준다.\n모든 바람을 소모하여 매그넘 샷 스킬의 피해량을 증가시킨다."
+    },
+    {
+        "title": "궁수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "궁수",
+        "runeName": "날렵함",
+        "runeType": "엘리트",
+        "runeDesc": "궁수 액티브 스킬: 3\n궁수의 사이드 스텝 스킬에 변화를 준다.\n사이드 스텝 스킬 사용 시, 급소 회피 및 이동 속도 증가 효과를 얻는다."
+    },
+    {
+        "title": "궁수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "궁수",
+        "runeName": "날렵함",
+        "runeType": "전설",
+        "runeDesc": "궁수 액티브 스킬: 3\n궁수의 사이드 스텝 스킬에 변화를 준다.\n사이드 스텝 스킬 사용 시, 급소 회피 및 이동 속도 증가 효과를 얻는다."
+    },
+    {
+        "title": "궁수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "궁수",
+        "runeName": "탈출",
+        "runeType": "엘리트",
+        "runeDesc": "궁수 액티브 스킬: 5\n궁수의 이스케이프 스텝 스킬에 변화를 준다.\n브레이크 된 상태에서도 이스케이프 스텝을 사용 가능하며, 자신에게 걸린 브레이크 상태를 해제한다."
+    },
+    {
+        "title": "궁수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "궁수",
+        "runeName": "탈출",
+        "runeType": "전설",
+        "runeDesc": "궁수 액티브 스킬: 5\n궁수의 이스케이프 스텝 스킬에 변화를 준다.\n브레이크 된 상태에서도 이스케이프 스텝을 사용 가능하며, 자신에게 걸린 브레이크 상태를 해제한다."
+    },
+    {
+        "title": "궁수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "궁수",
+        "runeName": "재빠름",
+        "runeType": "엘리트",
+        "runeDesc": "궁수 액티브 스킬: 2\n궁수의 매그넘 샷 스킬에 변화를 준다.\n질주하는 바람 발동 유무와 상관없이, 캐스팅 시간이 줄어든다.또한 사용 가능 횟수가 1회 추가되고, 재사용 대기 시간이 감소한다."
+    },
+    {
+        "title": "궁수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "궁수",
+        "runeName": "재빠름",
+        "runeType": "전설",
+        "runeDesc": "궁수 액티브 스킬: 2\n궁수의 매그넘 샷 스킬에 변화를 준다.\n질주하는 바람 발동 유무와 상관없이, 캐스팅 시간이 줄어든다.또한 사용 가능 횟수가 1회 추가되고, 재사용 대기 시간이 감소한다."
+    },
+    {
+        "title": "궁수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "궁수",
+        "runeName": "치명적",
+        "runeType": "에픽",
+        "runeDesc": "궁수 액티브 스킬: 1\n궁수의 애로우 리볼버 스킬에 변화를 준다.\n질주하는 바람 상태에서 운용 시, 치명적인 사격 스킬을 사용할 수 있다."
+    },
+    {
+        "title": "궁수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "궁수",
+        "runeName": "치명적",
+        "runeType": "전설",
+        "runeDesc": "궁수 액티브 스킬: 1\n궁수의 애로우 리볼버 스킬에 변화를 준다.\n질주하는 바람 상태에서 운용 시, 치명적인 사격 스킬을 사용할 수 있다."
+    },
+    {
+        "title": "궁수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "궁수",
+        "runeName": "매",
+        "runeType": "에픽",
+        "runeDesc": "궁수 액티브 스킬: 4\n궁수의 호크 샷 스킬에 변화를 준다.\n호크 샷의 약화 효과가 부여된 타겟에게 바람결의 도탄 효과가 발생하였으나 주변에 다른 적이 없는 경우, 도탄된 화살이 되돌아와 타겟을 재차 공격한다."
+    },
+    {
+        "title": "궁수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "궁수",
+        "runeName": "매",
+        "runeType": "전설",
+        "runeDesc": "궁수 액티브 스킬: 4\n궁수의 호크 샷 스킬에 변화를 준다.\n호크 샷의 약화 효과가 부여된 타겟에게 바람결의 도탄 효과가 발생하였으나 주변에 다른 적이 없는 경우, 도탄된 화살이 되돌아와 타겟을 재차 공격한다."
+    },
+    {
+        "title": "석궁사수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "석궁사수",
+        "runeName": "감전",
+        "runeType": "엘리트",
+        "runeDesc": "석궁사수 액티브 스킬: 2\n석궁사수의 쇼크 익스플로전 스킬에 변화를 준다.\n번개 속성이 주입된 볼트로 적에게 지속 피해: 감전을 주고, 일정 시간 치명타 확률이 증가한다."
+    },
+    {
+        "title": "석궁사수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "석궁사수",
+        "runeName": "감전",
+        "runeType": "전설",
+        "runeDesc": "석궁사수 액티브 스킬: 2\n석궁사수의 쇼크 익스플로전 스킬에 변화를 준다.\n번개 속성이 주입된 볼트로 적에게 지속 피해: 감전을 주고, 일정 시간 치명타 확률이 증가한다."
+    },
+    {
+        "title": "석궁사수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "석궁사수",
+        "runeName": "방해",
+        "runeType": "엘리트",
+        "runeDesc": "석궁사수 액티브 스킬: 3\n석궁사수의 슬라이딩 스텝 스킬에 변화를 준다.\n전방의 넓은 범위로 볼트를 퍼트리듯 발사하여 다수의 적에게 더 큰 피해를 준다."
+    },
+    {
+        "title": "석궁사수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "석궁사수",
+        "runeName": "방해",
+        "runeType": "전설",
+        "runeDesc": "석궁사수 액티브 스킬: 3\n석궁사수의 슬라이딩 스텝 스킬에 변화를 준다.\n전방의 넓은 범위로 볼트를 퍼트리듯 발사하여 다수의 적에게 더 큰 피해를 준다."
+    },
+    {
+        "title": "석궁사수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "석궁사수",
+        "runeName": "전류",
+        "runeType": "엘리트",
+        "runeDesc": "석궁사수 액티브 스킬: 5\n석궁사수의 스프레딩 볼트 스킬에 변화를 준다.\n일정 확률로 과충전되어 강화 볼트 탄창의 소모 없이 주변의 적들에게 지속 피해: 감전을 주는 썬더 스프레딩 볼트​​를 사용할 수 있다."
+    },
+    {
+        "title": "석궁사수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "석궁사수",
+        "runeName": "전류",
+        "runeType": "전설",
+        "runeDesc": "석궁사수 액티브 스킬: 5\n석궁사수의 스프레딩 볼트 스킬에 변화를 준다.\n일정 확률로 과충전되어 강화 볼트 탄창의 소모 없이 주변의 적들에게 지속 피해: 감전을 주는 썬더 스프레딩 볼트​​를 사용할 수 있다."
+    },
+    {
+        "title": "석궁사수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "석궁사수",
+        "runeName": "반전",
+        "runeType": "엘리트",
+        "runeDesc": "석궁사수 액티브 스킬: 3\n석궁사수의 슬라이딩 스텝 스킬에 변화를 준다.\n앞으로 미끄러지며 강화 볼트 탄창을 한 번에 2개 장전한다."
+    },
+    {
+        "title": "석궁사수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "석궁사수",
+        "runeName": "반전",
+        "runeType": "전설",
+        "runeDesc": "석궁사수 액티브 스킬: 3\n석궁사수의 슬라이딩 스텝 스킬에 변화를 준다.\n앞으로 미끄러지며 강화 볼트 탄창을 한 번에 2개 장전한다."
+    },
+    {
+        "title": "석궁사수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "석궁사수",
+        "runeName": "화약",
+        "runeType": "에픽",
+        "runeDesc": "석궁사수 액티브 스킬: 1\n석궁사수의 버스터 샷 스킬에 변화를 준다.\n마운팅 쇼크가 공격이 적중한 최대 5명의 적에게 약화 효과: 분진을 부여한다.\n약화 효과: 분진을 가진 적이 화염 속성 공격을 받으면 폭발을 일으켜 주변에 범위 피해를 준다."
+    },
+    {
+        "title": "석궁사수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "석궁사수",
+        "runeName": "화약",
+        "runeType": "전설",
+        "runeDesc": "석궁사수 액티브 스킬: 1\n석궁사수의 버스터 샷 스킬에 변화를 준다.\n마운팅 쇼크가 공격이 적중한 최대 5명의 적에게 약화 효과: 분진을 부여한다.\n약화 효과: 분진을 가진 적이 화염 속성 공격을 받으면 폭발을 일으켜 주변에 범위 피해를 준다."
+    },
+    {
+        "title": "석궁사수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "석궁사수",
+        "runeName": "연쇄",
+        "runeType": "에픽",
+        "runeDesc": "석궁사수 액티브 스킬: 4\n석궁사수의 거스팅 볼트 스킬에 변화를 준다.\n거스팅 볼트에 번개 속성이 적용되며, 치명타 적중 시 연쇄적인 번개 줄기를 방출하여 타겟과 근접한 적들에게도 피해를 준다."
+    },
+    {
+        "title": "석궁사수의 장신구 룬",
+        "slotName": "장신구",
+        "className": "석궁사수",
+        "runeName": "연쇄",
+        "runeType": "전설",
+        "runeDesc": "석궁사수 액티브 스킬: 4\n석궁사수의 거스팅 볼트 스킬에 변화를 준다.\n거스팅 볼트에 번개 속성이 적용되며, 치명타 적중 시 연쇄적인 번개 줄기를 방출하여 타겟과 근접한 적들에게도 피해를 준다."
+    },
+    {
+        "title": "장궁병의 장신구 룬",
+        "slotName": "장신구",
+        "className": "장궁병",
+        "runeName": "파쇄",
+        "runeType": "엘리트",
+        "runeDesc": "장궁병 액티브 스킬: 1\n장궁병의 쉘 브레이커 스킬에 변화를 준다.\n쉘 브레이커에 맞은 타겟 주변으로 충격파가 발생하여 범위 피해를 준다.\n범위 피해에 맞은 적의 받는 피해가 증가한다."
+    },
+    {
+        "title": "장궁병의 장신구 룬",
+        "slotName": "장신구",
+        "className": "장궁병",
+        "runeName": "파쇄",
+        "runeType": "전설",
+        "runeDesc": "장궁병 액티브 스킬: 1\n장궁병의 쉘 브레이커 스킬에 변화를 준다.\n쉘 브레이커에 맞은 타겟 주변으로 충격파가 발생하여 범위 피해를 준다.\n범위 피해에 맞은 적의 받는 피해가 증가한다."
+    },
+    {
+        "title": "장궁병의 장신구 룬",
+        "slotName": "장신구",
+        "className": "장궁병",
+        "runeName": "끈질김",
+        "runeType": "엘리트",
+        "runeDesc": "장궁병 액티브 스킬: 2\n장궁병의 윙 스큐어 스킬에 변화를 준다.\n투창 지원 공격이 타겟을 중심으로 3번에 걸쳐 떨어진다.\n윙 스큐어 스킬의 피해와 재사용 대기 시간이 증가한다."
+    },
+    {
+        "title": "장궁병의 장신구 룬",
+        "slotName": "장신구",
+        "className": "장궁병",
+        "runeName": "끈질김",
+        "runeType": "전설",
+        "runeDesc": "장궁병 액티브 스킬: 2\n장궁병의 윙 스큐어 스킬에 변화를 준다.\n투창 지원 공격이 타겟을 중심으로 3번에 걸쳐 떨어진다.\n윙 스큐어 스킬의 피해와 재사용 대기 시간이 증가한다."
+    },
+    {
+        "title": "장궁병의 장신구 룬",
+        "slotName": "장신구",
+        "className": "장궁병",
+        "runeName": "무너짐",
+        "runeType": "엘리트",
+        "runeDesc": "장궁병 액티브 스킬: 4\n장궁병의 크래시 샷 스킬에 변화를 준다.\n스킬 피해량과 약화 효과: 쇠약의 지속 시간이 증가하며, 카운터로 적중 시 대상을 브레이크시킨다."
+    },
+    {
+        "title": "장궁병의 장신구 룬",
+        "slotName": "장신구",
+        "className": "장궁병",
+        "runeName": "무너짐",
+        "runeType": "전설",
+        "runeDesc": "장궁병 액티브 스킬: 4\n장궁병의 크래시 샷 스킬에 변화를 준다.\n스킬 피해량과 약화 효과: 쇠약의 지속 시간이 증가하며, 카운터로 적중 시 대상을 브레이크시킨다."
+    },
+    {
+        "title": "장궁병의 장신구 룬",
+        "slotName": "장신구",
+        "className": "장궁병",
+        "runeName": "내상",
+        "runeType": "엘리트",
+        "runeDesc": "장궁병 액티브 스킬: 1\n장궁병의 쉘 브레이커 스킬에 변화를 준다.\n스킬 공격 시 지속 피해: 출혈을 주는 약화 효과: 내상 효과가 추가된다."
+    },
+    {
+        "title": "장궁병의 장신구 룬",
+        "slotName": "장신구",
+        "className": "장궁병",
+        "runeName": "내상",
+        "runeType": "전설",
+        "runeDesc": "장궁병 액티브 스킬: 1\n장궁병의 쉘 브레이커 스킬에 변화를 준다.\n스킬 공격 시 지속 피해: 출혈을 주는 약화 효과: 내상 효과가 추가된다."
+    },
+    {
+        "title": "장궁병의 장신구 룬",
+        "slotName": "장신구",
+        "className": "장궁병",
+        "runeName": "초음파",
+        "runeType": "에픽",
+        "runeDesc": "장궁병 액티브 스킬: 3\n장궁병의 하트 시커 스킬에 변화를 준다.\n차지 단계마다 타겟 방향으로 반달형 충격파를 발사한다.\n반달형 충격파는 피해를 주며 뒤로 밀쳐낸다."
+    },
+    {
+        "title": "장궁병의 장신구 룬",
+        "slotName": "장신구",
+        "className": "장궁병",
+        "runeName": "초음파",
+        "runeType": "전설",
+        "runeDesc": "장궁병 액티브 스킬: 3\n장궁병의 하트 시커 스킬에 변화를 준다.\n차지 단계마다 타겟 방향으로 반달형 충격파를 발사한다.\n반달형 충격파는 피해를 주며 뒤로 밀쳐낸다."
+    },
+    {
+        "title": "장궁병의 장신구 룬",
+        "slotName": "장신구",
+        "className": "장궁병",
+        "runeName": "집중",
+        "runeType": "에픽",
+        "runeDesc": "장궁병 액티브 스킬: 5\n장궁병의 플레임 애로우 스킬에 변화를 준다.\n스킬이 차징 스킬로 변경되며, 차징하는 동안 타겟을 중심으로 범위 타격이 포커싱된다."
+    },
+    {
+        "title": "장궁병의 장신구 룬",
+        "slotName": "장신구",
+        "className": "장궁병",
+        "runeName": "집중",
+        "runeType": "전설",
+        "runeDesc": "장궁병 액티브 스킬: 5\n장궁병의 플레임 애로우 스킬에 변화를 준다.\n스킬이 차징 스킬로 변경되며, 차징하는 동안 타겟을 중심으로 범위 타격이 포커싱된다."
+    },
+    {
+        "title": "마법사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "마법사",
+        "runeName": "낙뢰",
+        "runeType": "엘리트",
+        "runeDesc": "마법사 액티브 스킬: 1\n마법사의 라이트닝 스킬에 변화를 준다.\n연쇄적인 번개 줄기에 피격된 적들의 머리 위로 벼락을 떨어뜨려 주변의 적들에게 범위 피해와 함께 지속 피해: 감전을 준다.\n벼락은 동일한 적에게 중복으로 피해를 줄 수 있다."
+    },
+    {
+        "title": "마법사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "마법사",
+        "runeName": "낙뢰",
+        "runeType": "전설",
+        "runeDesc": "마법사 액티브 스킬: 1\n마법사의 라이트닝 스킬에 변화를 준다.\n연쇄적인 번개 줄기에 피격된 적들의 머리 위로 벼락을 떨어뜨려 주변의 적들에게 범위 피해와 함께 지속 피해: 감전을 준다.\n벼락은 동일한 적에게 중복으로 피해를 줄 수 있다."
+    },
+    {
+        "title": "마법사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "마법사",
+        "runeName": "산사태",
+        "runeType": "엘리트",
+        "runeDesc": "마법사 액티브 스킬: 4\n마법사의 텔레키네시스 스킬에 변화를 준다.\n바위 파편 무더기를 몰아치듯 타겟에게 발사하여 피해를 주며, 일정 시간 동안 적에게 주는 원소 피해가 증가한다."
+    },
+    {
+        "title": "마법사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "마법사",
+        "runeName": "산사태",
+        "runeType": "전설",
+        "runeDesc": "마법사 액티브 스킬: 4\n마법사의 텔레키네시스 스킬에 변화를 준다.\n바위 파편 무더기를 몰아치듯 타겟에게 발사하여 피해를 주며, 일정 시간 동안 적에게 주는 원소 피해가 증가한다."
+    },
+    {
+        "title": "마법사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "마법사",
+        "runeName": "깜빡임",
+        "runeType": "엘리트",
+        "runeDesc": "마법사 액티브 스킬: 5\n마법사의 마나 스톰 스킬에 변화를 준다.\n타겟의 위치로 순간 이동해 거센 마나 폭풍으로 주변 적들에게 범위 피해를 주는 동시에 일정량의 마나를 즉시 회복하고, 마나 실드를 얻는다.\n스킬 재사용 시, 마나 실드의 폭발을 일으켜 주변 적들에게 범위 피해를 주고 후방으로 즉시 이동한다."
+    },
+    {
+        "title": "마법사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "마법사",
+        "runeName": "깜빡임",
+        "runeType": "전설",
+        "runeDesc": "마법사 액티브 스킬: 5\n마법사의 마나 스톰 스킬에 변화를 준다.\n타겟의 위치로 순간 이동해 거센 마나 폭풍으로 주변 적들에게 범위 피해를 주는 동시에 일정량의 마나를 즉시 회복하고, 마나 실드를 얻는다.\n스킬 재사용 시, 마나 실드의 폭발을 일으켜 주변 적들에게 범위 피해를 주고 후방으로 즉시 이동한다."
+    },
+    {
+        "title": "마법사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "마법사",
+        "runeName": "증폭",
+        "runeType": "엘리트",
+        "runeDesc": "마법사 액티브 스킬: 5\n마법사의 마나 스톰 스킬에 변화를 준다.\n엘리멘탈 하모니가 일정시간 발동하며 엘리멘탈 지속 피해량이 증가한다."
+    },
+    {
+        "title": "마법사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "마법사",
+        "runeName": "증폭",
+        "runeType": "전설",
+        "runeDesc": "마법사 액티브 스킬: 5\n마법사의 마나 스톰 스킬에 변화를 준다.\n엘리멘탈 하모니가 일정시간 발동하며 엘리멘탈 지속 피해량이 증가한다."
+    },
+    {
+        "title": "마법사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "마법사",
+        "runeName": "운석",
+        "runeType": "에픽",
+        "runeDesc": "마법사 액티브 스킬: 2\n마법사의 파이어 볼 스킬을 메테오 스트라이크로 교체한다."
+    },
+    {
+        "title": "마법사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "마법사",
+        "runeName": "운석",
+        "runeType": "전설",
+        "runeDesc": "마법사 액티브 스킬: 2\n마법사의 파이어 볼 스킬을 메테오 스트라이크로 교체한다."
+    },
+    {
+        "title": "마법사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "마법사",
+        "runeName": "서리가시",
+        "runeType": "에픽",
+        "runeDesc": "마법사 액티브 스킬: 3\n마법사의 아이스 대거 스킬에 변화를 준다.\n회전하는 열두 개의 얼음 파편을 소환하여 주변의 적들을 날카로운 얼음날로 휩쓸고, 타겟에게 여섯 개의 파편을 잇달아 발사하여 피해를 준다.\n발사 후, 재발동되어 남은 여섯 개의 얼음 파편이 주변 적의 공격과 파편 발사를 한 차례 반복한다."
+    },
+    {
+        "title": "마법사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "마법사",
+        "runeName": "서리가시",
+        "runeType": "전설",
+        "runeDesc": "마법사 액티브 스킬: 3\n마법사의 아이스 대거 스킬에 변화를 준다.\n회전하는 열두 개의 얼음 파편을 소환하여 주변의 적들을 날카로운 얼음날로 휩쓸고, 타겟에게 여섯 개의 파편을 잇달아 발사하여 피해를 준다.\n발사 후, 재발동되어 남은 여섯 개의 얼음 파편이 주변 적의 공격과 파편 발사를 한 차례 반복한다."
+    },
+    {
+        "title": "화염술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "화염술사",
+        "runeName": "불기둥",
+        "runeType": "엘리트",
+        "runeDesc": "화염술사 액티브 스킬: 2\n화염술사의 파이어 스톰 스킬에 변화를 준다.\n스킬이 활성화되는 즉시, 폭발 피해를 주며 스킬을 준비 중인 적은 공중으로 높이 떠오른다.\n위력이 감소하는 대신, 스킬 연속 사용 횟수가 증가하고 재사용 대기 시간이 감소한다."
+    },
+    {
+        "title": "화염술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "화염술사",
+        "runeName": "불기둥",
+        "runeType": "전설",
+        "runeDesc": "화염술사 액티브 스킬: 2\n화염술사의 파이어 스톰 스킬에 변화를 준다.\n스킬이 활성화되는 즉시, 폭발 피해를 주며 스킬을 준비 중인 적은 공중으로 높이 떠오른다.\n위력이 감소하는 대신, 스킬 연속 사용 횟수가 증가하고 재사용 대기 시간이 감소한다."
+    },
+    {
+        "title": "화염술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "화염술사",
+        "runeName": "화력",
+        "runeType": "엘리트",
+        "runeDesc": "화염술사 액티브 스킬: 3\n화염술사의 플레임 캐논 스킬에 변화를 준다.\n열기가 50 이상일 경우, 5의 열기를 소모해 강화된 형태로 사용한다."
+    },
+    {
+        "title": "화염술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "화염술사",
+        "runeName": "화력",
+        "runeType": "전설",
+        "runeDesc": "화염술사 액티브 스킬: 3\n화염술사의 플레임 캐논 스킬에 변화를 준다.\n열기가 50 이상일 경우, 5의 열기를 소모해 강화된 형태로 사용한다."
+    },
+    {
+        "title": "화염술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "화염술사",
+        "runeName": "분출",
+        "runeType": "엘리트",
+        "runeDesc": "화염술사 액티브 스킬: 4\n화염술사의 플래시오버 스킬에 변화를 준다.\n스킬이 활성화된 동안, 30의 열기를 소모할 때마다 스킬의 지속 시간이 1초씩 증가하며 화염 파동이 발생한다."
+    },
+    {
+        "title": "화염술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "화염술사",
+        "runeName": "분출",
+        "runeType": "전설",
+        "runeDesc": "화염술사 액티브 스킬: 4\n화염술사의 플래시오버 스킬에 변화를 준다.\n스킬이 활성화된 동안, 30의 열기를 소모할 때마다 스킬의 지속 시간이 1초씩 증가하며 화염 파동이 발생한다."
+    },
+    {
+        "title": "화염술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "화염술사",
+        "runeName": "열풍",
+        "runeType": "엘리트",
+        "runeDesc": "화염술사 액티브 스킬: 2\n화염술사의 파이어 스톰 스킬에 변화를 준다.\n불의 소용돌이 지속 시간과 피해가 대폭 증가한다."
+    },
+    {
+        "title": "화염술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "화염술사",
+        "runeName": "열풍",
+        "runeType": "전설",
+        "runeDesc": "화염술사 액티브 스킬: 2\n화염술사의 파이어 스톰 스킬에 변화를 준다.\n불의 소용돌이 지속 시간과 피해가 대폭 증가한다."
+    },
+    {
+        "title": "화염술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "화염술사",
+        "runeName": "불씨",
+        "runeType": "에픽",
+        "runeDesc": "화염술사 액티브 스킬: 1\n화염술사의 래피드 파이어 스킬에 변화를 준다.\n다수의 화염구를 동시에 발사하여 전방의 모든 적에게 피해를 준다.\n재사용 대기시간이 늘어나지만, 공격 범위와 열기 생성량이 증가한다."
+    },
+    {
+        "title": "화염술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "화염술사",
+        "runeName": "불씨",
+        "runeType": "전설",
+        "runeDesc": "화염술사 액티브 스킬: 1\n화염술사의 래피드 파이어 스킬에 변화를 준다.\n다수의 화염구를 동시에 발사하여 전방의 모든 적에게 피해를 준다.\n재사용 대기시간이 늘어나지만, 공격 범위와 열기 생성량이 증가한다."
+    },
+    {
+        "title": "화염술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "화염술사",
+        "runeName": "잿더미",
+        "runeType": "에픽",
+        "runeDesc": "화염술사 액티브 스킬: 5\n화염술사의 익스플로전 스킬을 크로스 파이어로 교체한다.\n주변의 불길을 곧장 폭발시키지 않고, 끌어모아 화염구의 형태로 적에게 집중 난사한다."
+    },
+    {
+        "title": "화염술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "화염술사",
+        "runeName": "잿더미",
+        "runeType": "전설",
+        "runeDesc": "화염술사 액티브 스킬: 5\n화염술사의 익스플로전 스킬을 크로스 파이어로 교체한다.\n주변의 불길을 곧장 폭발시키지 않고, 끌어모아 화염구의 형태로 적에게 집중 난사한다."
+    },
+    {
+        "title": "빙결술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "빙결술사",
+        "runeName": "북풍",
+        "runeType": "엘리트",
+        "runeDesc": "빙결술사 액티브 스킬: 2\n빙결술사의 글래시어 커터 스킬에 변화를 준다.\n글래시어 커터의 스킬 사용 속도와 사용 가능 횟수가 증가하고 재사용 대기 시간이 감소한다."
+    },
+    {
+        "title": "빙결술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "빙결술사",
+        "runeName": "북풍",
+        "runeType": "전설",
+        "runeDesc": "빙결술사 액티브 스킬: 2\n빙결술사의 글래시어 커터 스킬에 변화를 준다.\n글래시어 커터의 스킬 사용 속도와 사용 가능 횟수가 증가하고 재사용 대기 시간이 감소한다."
+    },
+    {
+        "title": "빙결술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "빙결술사",
+        "runeName": "고드름",
+        "runeType": "엘리트",
+        "runeDesc": "빙결술사 액티브 스킬: 3\n빙결술사의 아이스 스파이크 스킬에 변화를 준다.\n체력이 일정 이하가 되면 자원 소모와 재사용 대기 시간 없이 아이스 스파이크를 자동 발동시킨다."
+    },
+    {
+        "title": "빙결술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "빙결술사",
+        "runeName": "고드름",
+        "runeType": "전설",
+        "runeDesc": "빙결술사 액티브 스킬: 3\n빙결술사의 아이스 스파이크 스킬에 변화를 준다.\n체력이 일정 이하가 되면 자원 소모와 재사용 대기 시간 없이 아이스 스파이크를 자동 발동시킨다."
+    },
+    {
+        "title": "빙결술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "빙결술사",
+        "runeName": "겨울",
+        "runeType": "엘리트",
+        "runeDesc": "빙결술사 액티브 스킬: 4\n빙결술사의 프리징 필드 스킬에 변화를 준다.\n일정시간 동안 매초마다 피해량이 증가한다."
+    },
+    {
+        "title": "빙결술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "빙결술사",
+        "runeName": "겨울",
+        "runeType": "전설",
+        "runeDesc": "빙결술사 액티브 스킬: 4\n빙결술사의 프리징 필드 스킬에 변화를 준다.\n일정시간 동안 매초마다 피해량이 증가한다."
+    },
+    {
+        "title": "빙결술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "빙결술사",
+        "runeName": "파편",
+        "runeType": "엘리트",
+        "runeDesc": "빙결술사 액티브 스킬: 3\n빙결술사의 아이스 스파이크 스킬에 변화를 준다.\n아이스 스파이크가 활성화된 상태에서 피격될 때마다 반격 피해와 효과 종료 시의 폭발 피해가 증가한다."
+    },
+    {
+        "title": "빙결술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "빙결술사",
+        "runeName": "파편",
+        "runeType": "전설",
+        "runeDesc": "빙결술사 액티브 스킬: 3\n빙결술사의 아이스 스파이크 스킬에 변화를 준다.\n아이스 스파이크가 활성화된 상태에서 피격될 때마다 반격 피해와 효과 종료 시의 폭발 피해가 증가한다."
+    },
+    {
+        "title": "빙결술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "빙결술사",
+        "runeName": "빙검",
+        "runeType": "에픽",
+        "runeDesc": "빙결술사 액티브 스킬: 1\n빙결술사의 크리스탈 엣지 스킬에 변화를 준다.\n서리를 일정량 생성할 때마다 서리검을 획득하며 서리검을 일정 이상 모을 시 크리스탈 소드로 강화된다."
+    },
+    {
+        "title": "빙결술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "빙결술사",
+        "runeName": "빙검",
+        "runeType": "전설",
+        "runeDesc": "빙결술사 액티브 스킬: 1\n빙결술사의 크리스탈 엣지 스킬에 변화를 준다.\n서리를 일정량 생성할 때마다 서리검을 획득하며 서리검을 일정 이상 모을 시 크리스탈 소드로 강화된다."
+    },
+    {
+        "title": "빙결술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "빙결술사",
+        "runeName": "오로라",
+        "runeType": "에픽",
+        "runeDesc": "빙결술사 액티브 스킬: 5\n빙결술사의 프로즌 오브 스킬을 프로즌 글로브로 교체한다.\n얼어붙은 구체를 폭발시켜 범위 피해를 주고, 얼음 장막을 만들어 아군을 보호한다."
+    },
+    {
+        "title": "빙결술사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "빙결술사",
+        "runeName": "오로라",
+        "runeType": "전설",
+        "runeDesc": "빙결술사 액티브 스킬: 5\n빙결술사의 프로즌 오브 스킬을 프로즌 글로브로 교체한다.\n얼어붙은 구체를 폭발시켜 범위 피해를 주고, 얼음 장막을 만들어 아군을 보호한다."
+    },
+    {
+        "title": "힐러의 장신구 룬",
+        "slotName": "장신구",
+        "className": "힐러",
+        "runeName": "서약",
+        "runeType": "엘리트",
+        "runeDesc": "힐러 액티브 스킬: 1\n힐러의 라이프 링크 스킬에 변화를 준다.\n연결된 대상의 적, 아군 여부에 따라 지속 회복 효과를 주고 이동 속도를 증가시키거나, 지속 피해를 주고 이동 속도를 감소시킨다.\n추가로, 아군과 연결 시 발생하는 빛의 파동의 위력이 증가한다."
+    },
+    {
+        "title": "힐러의 장신구 룬",
+        "slotName": "장신구",
+        "className": "힐러",
+        "runeName": "서약",
+        "runeType": "전설",
+        "runeDesc": "힐러 액티브 스킬: 1\n힐러의 라이프 링크 스킬에 변화를 준다.\n연결된 대상의 적, 아군 여부에 따라 지속 회복 효과를 주고 이동 속도를 증가시키거나, 지속 피해를 주고 이동 속도를 감소시킨다.\n추가로, 아군과 연결 시 발생하는 빛의 파동의 위력이 증가한다."
+    },
+    {
+        "title": "힐러의 장신구 룬",
+        "slotName": "장신구",
+        "className": "힐러",
+        "runeName": "고동침",
+        "runeType": "엘리트",
+        "runeDesc": "힐러 액티브 스킬: 3\n힐러의 생명의 고동 스킬에 변화를 준다.\n정신 집중 시간과 공격 주기가 감소한다."
+    },
+    {
+        "title": "힐러의 장신구 룬",
+        "slotName": "장신구",
+        "className": "힐러",
+        "runeName": "고동침",
+        "runeType": "전설",
+        "runeDesc": "힐러 액티브 스킬: 3\n힐러의 생명의 고동 스킬에 변화를 준다.\n정신 집중 시간과 공격 주기가 감소한다."
+    },
+    {
+        "title": "힐러의 장신구 룬",
+        "slotName": "장신구",
+        "className": "힐러",
+        "runeName": "감쌈",
+        "runeType": "엘리트",
+        "runeDesc": "힐러 액티브 스킬: 4\n힐러의 프로텍션 스킬에 변화를 준다.\n잠시 동안 받는 피해가 추가로 감소한다."
+    },
+    {
+        "title": "힐러의 장신구 룬",
+        "slotName": "장신구",
+        "className": "힐러",
+        "runeName": "감쌈",
+        "runeType": "전설",
+        "runeDesc": "힐러 액티브 스킬: 4\n힐러의 프로텍션 스킬에 변화를 준다.\n잠시 동안 받는 피해가 추가로 감소한다."
+    },
+    {
+        "title": "힐러의 장신구 룬",
+        "slotName": "장신구",
+        "className": "힐러",
+        "runeName": "물결",
+        "runeType": "엘리트",
+        "runeDesc": "힐러 액티브 스킬: 3\n힐러의 생명의 고동 스킬에 변화를 준다.\n최대 스택 수가 증가하며, 더 많은 아군과 적 타겟에게 각기 치유나 피해를 준다.\n또한 생명의 고동을 통해 라이프 링크의 효과를 전이 시, 주변 아군에게 부여하는 강화 효과의 위력이 상승한다."
+    },
+    {
+        "title": "힐러의 장신구 룬",
+        "slotName": "장신구",
+        "className": "힐러",
+        "runeName": "물결",
+        "runeType": "전설",
+        "runeDesc": "힐러 액티브 스킬: 3\n힐러의 생명의 고동 스킬에 변화를 준다.\n최대 스택 수가 증가하며, 더 많은 아군과 적 타겟에게 각기 치유나 피해를 준다.\n또한 생명의 고동을 통해 라이프 링크의 효과를 전이 시, 주변 아군에게 부여하는 강화 효과의 위력이 상승한다."
+    },
+    {
+        "title": "힐러의 장신구 룬",
+        "slotName": "장신구",
+        "className": "힐러",
+        "runeName": "억압",
+        "runeType": "에픽",
+        "runeDesc": "힐러 액티브 스킬: 2\n힐러의 팬텀 페인 스킬에 변화를 준다.\n생명력을 응축한 마력 구체가 적과 아군 사이를 이동하며 여러 번에 걸쳐 폭발을 일으킨다."
+    },
+    {
+        "title": "힐러의 장신구 룬",
+        "slotName": "장신구",
+        "className": "힐러",
+        "runeName": "억압",
+        "runeType": "전설",
+        "runeDesc": "힐러 액티브 스킬: 2\n힐러의 팬텀 페인 스킬에 변화를 준다.\n생명력을 응축한 마력 구체가 적과 아군 사이를 이동하며 여러 번에 걸쳐 폭발을 일으킨다."
+    },
+    {
+        "title": "힐러의 장신구 룬",
+        "slotName": "장신구",
+        "className": "힐러",
+        "runeName": "빛무리",
+        "runeType": "에픽",
+        "runeDesc": "힐러 액티브 스킬: 5\n힐러의 서먼 루미너스 스킬에 변화를 준다.\n힐러와 라이프 링크로 연결된 타겟의 위치에 일정 시간 동안 전투를 지원하는 빛의 결정체를 소환한다."
+    },
+    {
+        "title": "힐러의 장신구 룬",
+        "slotName": "장신구",
+        "className": "힐러",
+        "runeName": "빛무리",
+        "runeType": "전설",
+        "runeDesc": "힐러 액티브 스킬: 5\n힐러의 서먼 루미너스 스킬에 변화를 준다.\n힐러와 라이프 링크로 연결된 타겟의 위치에 일정 시간 동안 전투를 지원하는 빛의 결정체를 소환한다."
+    },
+    {
+        "title": "사제의 장신구 룬",
+        "slotName": "장신구",
+        "className": "사제",
+        "runeName": "결속",
+        "runeType": "엘리트",
+        "runeDesc": "사제 액티브 스킬: 1\n사제의 서먼 링커 스킬에 변화를 준다.\n링커가 연결대상에 따른 회복과 피해를 주면 신성력을 일부 회복한다.\n서먼 링커가 아닌 다른 스킬을 사용할 경우, 일정 확률로 링커가 재발동된다."
+    },
+    {
+        "title": "사제의 장신구 룬",
+        "slotName": "장신구",
+        "className": "사제",
+        "runeName": "결속",
+        "runeType": "전설",
+        "runeDesc": "사제 액티브 스킬: 1\n사제의 서먼 링커 스킬에 변화를 준다.\n링커가 연결대상에 따른 회복과 피해를 주면 신성력을 일부 회복한다.\n서먼 링커가 아닌 다른 스킬을 사용할 경우, 일정 확률로 링커가 재발동된다."
+    },
+    {
+        "title": "사제의 장신구 룬",
+        "slotName": "장신구",
+        "className": "사제",
+        "runeName": "수레바퀴",
+        "runeType": "엘리트",
+        "runeDesc": "사제 액티브 스킬: 3\n사제의 켈틱 크로스 스킬에 변화를 준다.\n켈틱 크로스의 공격 성공 시, 심볼의 이동 속도가 느려지며 지속 시간이 증가한다."
+    },
+    {
+        "title": "사제의 장신구 룬",
+        "slotName": "장신구",
+        "className": "사제",
+        "runeName": "수레바퀴",
+        "runeType": "전설",
+        "runeDesc": "사제 액티브 스킬: 3\n사제의 켈틱 크로스 스킬에 변화를 준다.\n켈틱 크로스의 공격 성공 시, 심볼의 이동 속도가 느려지며 지속 시간이 증가한다."
+    },
+    {
+        "title": "사제의 장신구 룬",
+        "slotName": "장신구",
+        "className": "사제",
+        "runeName": "희생",
+        "runeType": "엘리트",
+        "runeDesc": "사제 액티브 스킬: 4\n사제의 생츄어리 스킬에 변화를 준다.\n두 배의 체력을 소모하여, 두 배로 강화된 성역을 생성한다."
+    },
+    {
+        "title": "사제의 장신구 룬",
+        "slotName": "장신구",
+        "className": "사제",
+        "runeName": "희생",
+        "runeType": "전설",
+        "runeDesc": "사제 액티브 스킬: 4\n사제의 생츄어리 스킬에 변화를 준다.\n두 배의 체력을 소모하여, 두 배로 강화된 성역을 생성한다."
+    },
+    {
+        "title": "사제의 장신구 룬",
+        "slotName": "장신구",
+        "className": "사제",
+        "runeName": "성전",
+        "runeType": "엘리트",
+        "runeDesc": "사제 액티브 스킬: 4\n사제의 생츄어리 스킬에 변화를 준다.\n성역 안에 있는 동안 사제의 모든 스킬 위력이 증가한다."
+    },
+    {
+        "title": "사제의 장신구 룬",
+        "slotName": "장신구",
+        "className": "사제",
+        "runeName": "성전",
+        "runeType": "전설",
+        "runeDesc": "사제 액티브 스킬: 4\n사제의 생츄어리 스킬에 변화를 준다.\n성역 안에 있는 동안 사제의 모든 스킬 위력이 증가한다."
+    },
+    {
+        "title": "사제의 장신구 룬",
+        "slotName": "장신구",
+        "className": "사제",
+        "runeName": "날개",
+        "runeType": "에픽",
+        "runeDesc": "사제 액티브 스킬: 2\n사제의 디바인 윙 스킬을 헤븐즈 도어로 교체한다.\n새 형상의 빛무리를 주기적으로 퍼트리는 마법진을 소환한다.\n대상에 따라 회복과 피해를 주고, 신성력을 소모하면 회복량이 증가한다."
+    },
+    {
+        "title": "사제의 장신구 룬",
+        "slotName": "장신구",
+        "className": "사제",
+        "runeName": "날개",
+        "runeType": "전설",
+        "runeDesc": "사제 액티브 스킬: 2\n사제의 디바인 윙 스킬을 헤븐즈 도어로 교체한다.\n새 형상의 빛무리를 주기적으로 퍼트리는 마법진을 소환한다.\n대상에 따라 회복과 피해를 주고, 신성력을 소모하면 회복량이 증가한다."
+    },
+    {
+        "title": "사제의 장신구 룬",
+        "slotName": "장신구",
+        "className": "사제",
+        "runeName": "빛줄기",
+        "runeType": "에픽",
+        "runeDesc": "사제 액티브 스킬: 5\n사제의 홀리 스피어 스킬을 피어싱 라이트로 교체한다.\n작은 빛의 창을 쏘아 직선상의 모든 적을 꿰뚫는다."
+    },
+    {
+        "title": "사제의 장신구 룬",
+        "slotName": "장신구",
+        "className": "사제",
+        "runeName": "빛줄기",
+        "runeType": "전설",
+        "runeDesc": "사제 액티브 스킬: 5\n사제의 홀리 스피어 스킬을 피어싱 라이트로 교체한다.\n작은 빛의 창을 쏘아 직선상의 모든 적을 꿰뚫는다."
+    },
+    {
+        "title": "수도사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "수도사",
+        "runeName": "인과",
+        "runeType": "엘리트",
+        "runeDesc": "수도사 액티브 스킬: 1\n수도사의 쇄도 스킬에 변화를 준다.\n활성화된 진언이 많을수록 연타횟수가 증가한다."
+    },
+    {
+        "title": "수도사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "수도사",
+        "runeName": "인과",
+        "runeType": "전설",
+        "runeDesc": "수도사 액티브 스킬: 1\n수도사의 쇄도 스킬에 변화를 준다.\n활성화된 진언이 많을수록 연타횟수가 증가한다."
+    },
+    {
+        "title": "수도사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "수도사",
+        "runeName": "정화",
+        "runeType": "엘리트",
+        "runeDesc": "수도사 액티브 스킬: 3\n수도사의 수호진 스킬에 변화를 준다.\n보호막을 만들 때, 아군의 속성 지속 피해를 모두 해제한다."
+    },
+    {
+        "title": "수도사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "수도사",
+        "runeName": "정화",
+        "runeType": "전설",
+        "runeDesc": "수도사 액티브 스킬: 3\n수도사의 수호진 스킬에 변화를 준다.\n보호막을 만들 때, 아군의 속성 지속 피해를 모두 해제한다."
+    },
+    {
+        "title": "수도사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "수도사",
+        "runeName": "광휘",
+        "runeType": "엘리트",
+        "runeDesc": "수도사 액티브 스킬: 5\n수도사의 화신 에 변화를 준다.\n재사용 대기 시간과 지속 시간이 대폭 감소하고, 화신이 활성화될 때 수도사로부터 강렬한 빛이 뿜어져 나와 주변의 모든 적에게 피해를 준다."
+    },
+    {
+        "title": "수도사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "수도사",
+        "runeName": "광휘",
+        "runeType": "전설",
+        "runeDesc": "수도사 액티브 스킬: 5\n수도사의 화신 에 변화를 준다.\n재사용 대기 시간과 지속 시간이 대폭 감소하고, 화신이 활성화될 때 수도사로부터 강렬한 빛이 뿜어져 나와 주변의 모든 적에게 피해를 준다."
+    },
+    {
+        "title": "수도사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "수도사",
+        "runeName": "축성",
+        "runeType": "엘리트",
+        "runeDesc": "수도사 액티브 스킬: 5\n수도사의 화신 스킬에 변화를 준다.\n화신의 효과가 지속되는 동안 회복력이 증가한다."
+    },
+    {
+        "title": "수도사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "수도사",
+        "runeName": "축성",
+        "runeType": "전설",
+        "runeDesc": "수도사 액티브 스킬: 5\n수도사의 화신 스킬에 변화를 준다.\n화신의 효과가 지속되는 동안 회복력이 증가한다."
+    },
+    {
+        "title": "수도사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "수도사",
+        "runeName": "응보",
+        "runeType": "에픽",
+        "runeDesc": "수도사 액티브 스킬: 2\n수도사의 벽력타 스킬에 변화를 준다.\n힘, 빛, 정화의 진언을 모두 활성화하면 10초간 벽력장을 1회 사용할 수 있다."
+    },
+    {
+        "title": "수도사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "수도사",
+        "runeName": "응보",
+        "runeType": "전설",
+        "runeDesc": "수도사 액티브 스킬: 2\n수도사의 벽력타 스킬에 변화를 준다.\n힘, 빛, 정화의 진언을 모두 활성화하면 10초간 벽력장을 1회 사용할 수 있다."
+    },
+    {
+        "title": "수도사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "수도사",
+        "runeName": "업화",
+        "runeType": "에픽",
+        "runeDesc": "수도사 액티브 스킬: 4\n수도사의 치유 스킬을 업화로 교체한다."
+    },
+    {
+        "title": "수도사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "수도사",
+        "runeName": "업화",
+        "runeType": "전설",
+        "runeDesc": "수도사 액티브 스킬: 4\n수도사의 치유 스킬을 업화로 교체한다."
+    },
+    {
+        "title": "음유시인의 장신구 룬",
+        "slotName": "장신구",
+        "className": "음유시인",
+        "runeName": "급습",
+        "runeType": "엘리트",
+        "runeDesc": "음유시인 액티브 스킬: 1\n음유시인의 스트링 샷 스킬에 변화를 준다.\n연주 스킬에 이어서 사용 시, 더 신속히 발사한다."
+    },
+    {
+        "title": "음유시인의 장신구 룬",
+        "slotName": "장신구",
+        "className": "음유시인",
+        "runeName": "급습",
+        "runeType": "전설",
+        "runeDesc": "음유시인 액티브 스킬: 1\n음유시인의 스트링 샷 스킬에 변화를 준다.\n연주 스킬에 이어서 사용 시, 더 신속히 발사한다."
+    },
+    {
+        "title": "음유시인의 장신구 룬",
+        "slotName": "장신구",
+        "className": "음유시인",
+        "runeName": "즉흥",
+        "runeType": "엘리트",
+        "runeDesc": "음유시인 액티브 스킬: 4\n음유시인의 바즈 테일 스킬에 변화를 준다.\n떠오르는 악상이 없으면, 불협화음을 내는 변칙적인 연주로 주변 모든 적에게 강력한 피해를 준다."
+    },
+    {
+        "title": "음유시인의 장신구 룬",
+        "slotName": "장신구",
+        "className": "음유시인",
+        "runeName": "즉흥",
+        "runeType": "전설",
+        "runeDesc": "음유시인 액티브 스킬: 4\n음유시인의 바즈 테일 스킬에 변화를 준다.\n떠오르는 악상이 없으면, 불협화음을 내는 변칙적인 연주로 주변 모든 적에게 강력한 피해를 준다."
+    },
+    {
+        "title": "음유시인의 장신구 룬",
+        "slotName": "장신구",
+        "className": "음유시인",
+        "runeName": "기만",
+        "runeType": "엘리트",
+        "runeDesc": "음유시인 액티브 스킬: 5\n음유시인의 라이징 윈드밀 스킬을 서프라이즈 샷으로 교체한다.\n다운된 상태일 때, 즉시 기상하며 주변 적들에게 특수탄을 발사해 공격하고 약화시킨다."
+    },
+    {
+        "title": "음유시인의 장신구 룬",
+        "slotName": "장신구",
+        "className": "음유시인",
+        "runeName": "기만",
+        "runeType": "전설",
+        "runeDesc": "음유시인 액티브 스킬: 5\n음유시인의 라이징 윈드밀 스킬을 서프라이즈 샷으로 교체한다.\n다운된 상태일 때, 즉시 기상하며 주변 적들에게 특수탄을 발사해 공격하고 약화시킨다."
+    },
+    {
+        "title": "음유시인의 장신구 룬",
+        "slotName": "장신구",
+        "className": "음유시인",
+        "runeName": "재치",
+        "runeType": "엘리트",
+        "runeDesc": "음유시인 액티브 스킬: 5\n음유시인의 죽은 척 하기 스킬을 맞은 척 하기로 교체한다.\n뒤로 물러나며 적을 기습 공격하고, 악상: 반격을 떠올린다."
+    },
+    {
+        "title": "음유시인의 장신구 룬",
+        "slotName": "장신구",
+        "className": "음유시인",
+        "runeName": "재치",
+        "runeType": "전설",
+        "runeDesc": "음유시인 액티브 스킬: 5\n음유시인의 죽은 척 하기 스킬을 맞은 척 하기로 교체한다.\n뒤로 물러나며 적을 기습 공격하고, 악상: 반격을 떠올린다."
+    },
+    {
+        "title": "음유시인의 장신구 룬",
+        "slotName": "장신구",
+        "className": "음유시인",
+        "runeName": "조롱",
+        "runeType": "에픽",
+        "runeDesc": "음유시인 액티브 스킬: 2\n음유시인의 멜로디 쇼크 스킬에 변화를 준다.\n적을 브레이크 시키면 승전의 연주를 하는 승리의 세레모니를 1회에 한해 사용할 수 있다."
+    },
+    {
+        "title": "음유시인의 장신구 룬",
+        "slotName": "장신구",
+        "className": "음유시인",
+        "runeName": "조롱",
+        "runeType": "전설",
+        "runeDesc": "음유시인 액티브 스킬: 2\n음유시인의 멜로디 쇼크 스킬에 변화를 준다.\n적을 브레이크 시키면 승전의 연주를 하는 승리의 세레모니를 1회에 한해 사용할 수 있다."
+    },
+    {
+        "title": "음유시인의 장신구 룬",
+        "slotName": "장신구",
+        "className": "음유시인",
+        "runeName": "화음",
+        "runeType": "에픽",
+        "runeDesc": "음유시인 액티브 스킬: 3\n음유시인의 트리플 스트로크 스킬에 변화를 준다.\n떠올린 악상에 따라 셋 중 한 곡을 연주해 추가 효과를 얻는다."
+    },
+    {
+        "title": "음유시인의 장신구 룬",
+        "slotName": "장신구",
+        "className": "음유시인",
+        "runeName": "화음",
+        "runeType": "전설",
+        "runeDesc": "음유시인 액티브 스킬: 3\n음유시인의 트리플 스트로크 스킬에 변화를 준다.\n떠올린 악상에 따라 셋 중 한 곡을 연주해 추가 효과를 얻는다."
+    },
+    {
+        "title": "댄서의 장신구 룬",
+        "slotName": "장신구",
+        "className": "댄서",
+        "runeName": "정열",
+        "runeType": "엘리트",
+        "runeDesc": "댄서 액티브 스킬: 2\n댄서의 윈드밀 스킬에 변화를 준다.\n윈드밀 사용 시 적에게 지속 피해를 주며 해당 효과는 정열 타입의 스킬로 지속 시간이 연장된다."
+    },
+    {
+        "title": "댄서의 장신구 룬",
+        "slotName": "장신구",
+        "className": "댄서",
+        "runeName": "정열",
+        "runeType": "전설",
+        "runeDesc": "댄서 액티브 스킬: 2\n댄서의 윈드밀 스킬에 변화를 준다.\n윈드밀 사용 시 적에게 지속 피해를 주며 해당 효과는 정열 타입의 스킬로 지속 시간이 연장된다."
+    },
+    {
+        "title": "댄서의 장신구 룬",
+        "slotName": "장신구",
+        "className": "댄서",
+        "runeName": "다가옴",
+        "runeType": "엘리트",
+        "runeDesc": "댄서 액티브 스킬: 3\n댄서의 프론트 스텝 스킬에 변화를 준다.\n프론트 스텝으로 이동한 거리에 비례하여 재사용 대기 시간이 감소한다."
+    },
+    {
+        "title": "댄서의 장신구 룬",
+        "slotName": "장신구",
+        "className": "댄서",
+        "runeName": "다가옴",
+        "runeType": "전설",
+        "runeDesc": "댄서 액티브 스킬: 3\n댄서의 프론트 스텝 스킬에 변화를 준다.\n프론트 스텝으로 이동한 거리에 비례하여 재사용 대기 시간이 감소한다."
+    },
+    {
+        "title": "댄서의 장신구 룬",
+        "slotName": "장신구",
+        "className": "댄서",
+        "runeName": "산뜻함",
+        "runeType": "엘리트",
+        "runeDesc": "댄서 액티브 스킬: 4\n댄서의 피루엣 스킬에 변화를 준다.\n피루엣으로 강화된 원거리 공격 피해량이 일정 횟수 동안 증가하며 해당 효과를 보유하는 동안 공격 속도가 빨라진다."
+    },
+    {
+        "title": "댄서의 장신구 룬",
+        "slotName": "장신구",
+        "className": "댄서",
+        "runeName": "산뜻함",
+        "runeType": "전설",
+        "runeDesc": "댄서 액티브 스킬: 4\n댄서의 피루엣 스킬에 변화를 준다.\n피루엣으로 강화된 원거리 공격 피해량이 일정 횟수 동안 증가하며 해당 효과를 보유하는 동안 공격 속도가 빨라진다."
+    },
+    {
+        "title": "댄서의 장신구 룬",
+        "slotName": "장신구",
+        "className": "댄서",
+        "runeName": "간결함",
+        "runeType": "엘리트",
+        "runeDesc": "댄서 액티브 스킬: 4\n댄서의 피루엣 스킬에 변화를 준다.\n피루엣 사용 이후, 다음 스킬이 주는 피해가 증가한다."
+    },
+    {
+        "title": "댄서의 장신구 룬",
+        "slotName": "장신구",
+        "className": "댄서",
+        "runeName": "간결함",
+        "runeType": "전설",
+        "runeDesc": "댄서 액티브 스킬: 4\n댄서의 피루엣 스킬에 변화를 준다.\n피루엣 사용 이후, 다음 스킬이 주는 피해가 증가한다."
+    },
+    {
+        "title": "댄서의 장신구 룬",
+        "slotName": "장신구",
+        "className": "댄서",
+        "runeName": "나비",
+        "runeType": "에픽",
+        "runeDesc": "댄서 액티브 스킬: 1\n댄서의 내추럴 턴 스킬에 변화를 준다.\n내추럴 턴 사용 시, 적을 추적하는 3마리의 나비가 나타나 날아간다."
+    },
+    {
+        "title": "댄서의 장신구 룬",
+        "slotName": "장신구",
+        "className": "댄서",
+        "runeName": "나비",
+        "runeType": "전설",
+        "runeDesc": "댄서 액티브 스킬: 1\n댄서의 내추럴 턴 스킬에 변화를 준다.\n내추럴 턴 사용 시, 적을 추적하는 3마리의 나비가 나타나 날아간다."
+    },
+    {
+        "title": "댄서의 장신구 룬",
+        "slotName": "장신구",
+        "className": "댄서",
+        "runeName": "갈채",
+        "runeType": "에픽",
+        "runeDesc": "댄서 액티브 스킬: 5\n댄서의 애드리브 스킬에 변화를 준다.\n애드리브 범위 내의 아군에게 추가타 효과를 부여한다."
+    },
+    {
+        "title": "댄서의 장신구 룬",
+        "slotName": "장신구",
+        "className": "댄서",
+        "runeName": "갈채",
+        "runeType": "전설",
+        "runeDesc": "댄서 액티브 스킬: 5\n댄서의 애드리브 스킬에 변화를 준다.\n애드리브 범위 내의 아군에게 추가타 효과를 부여한다."
+    },
+    {
+        "title": "악사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "악사",
+        "runeName": "공명",
+        "runeType": "엘리트",
+        "runeDesc": "악사 액티브 스킬: 1\n악사의 연주: 아르페지오 스킬에 변화를 준다.\n약화 효과: 현혹의 지속 피해가 최대 8번까지 중첩된다."
+    },
+    {
+        "title": "악사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "악사",
+        "runeName": "공명",
+        "runeType": "전설",
+        "runeDesc": "악사 액티브 스킬: 1\n악사의 연주: 아르페지오 스킬에 변화를 준다.\n약화 효과: 현혹의 지속 피해가 최대 8번까지 중첩된다."
+    },
+    {
+        "title": "악사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "악사",
+        "runeName": "박애",
+        "runeType": "엘리트",
+        "runeDesc": "악사 액티브 스킬: 2\n악사의 연주: 세레나데 스킬에 변화를 준다.\n전방의 모든 적들을 매혹한다. 크레센도로 강화 시, 위력이 대폭 증가한다."
+    },
+    {
+        "title": "악사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "악사",
+        "runeName": "박애",
+        "runeType": "전설",
+        "runeDesc": "악사 액티브 스킬: 2\n악사의 연주: 세레나데 스킬에 변화를 준다.\n전방의 모든 적들을 매혹한다. 크레센도로 강화 시, 위력이 대폭 증가한다."
+    },
+    {
+        "title": "악사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "악사",
+        "runeName": "이중주",
+        "runeType": "엘리트",
+        "runeDesc": "악사 액티브 스킬: 4\n악사의 기교: 크레센도 스킬에 변화를 준다.\n재사용 대기 시간이 소폭 증가하는 대신, 최대 스택 수가 1 증가한다."
+    },
+    {
+        "title": "악사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "악사",
+        "runeName": "이중주",
+        "runeType": "전설",
+        "runeDesc": "악사 액티브 스킬: 4\n악사의 기교: 크레센도 스킬에 변화를 준다.\n재사용 대기 시간이 소폭 증가하는 대신, 최대 스택 수가 1 증가한다."
+    },
+    {
+        "title": "악사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "악사",
+        "runeName": "속주",
+        "runeType": "엘리트",
+        "runeDesc": "악사 액티브 스킬: 4\n악사의 기교: 크레센도 스킬에 변화를 준다.\n기교: 크레센도 사용 시, 연주 스킬들의 재사용 대기시간이 감소한다."
+    },
+    {
+        "title": "악사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "악사",
+        "runeName": "속주",
+        "runeType": "전설",
+        "runeDesc": "악사 액티브 스킬: 4\n악사의 기교: 크레센도 스킬에 변화를 준다.\n기교: 크레센도 사용 시, 연주 스킬들의 재사용 대기시간이 감소한다."
+    },
+    {
+        "title": "악사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "악사",
+        "runeName": "흉성",
+        "runeType": "에픽",
+        "runeDesc": "악사 액티브 스킬: 3\n악사의 연주: 별의 소나타 스킬을 연주: 혼돈의 야상곡으로 교체한다."
+    },
+    {
+        "title": "악사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "악사",
+        "runeName": "흉성",
+        "runeType": "전설",
+        "runeDesc": "악사 액티브 스킬: 3\n악사의 연주: 별의 소나타 스킬을 연주: 혼돈의 야상곡으로 교체한다."
+    },
+    {
+        "title": "악사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "악사",
+        "runeName": "종장",
+        "runeType": "에픽",
+        "runeDesc": "악사 액티브 스킬: 5\n악사의 기교: 클라이맥스 스킬에 변화를 준다.\n단일 타겟 스킬로 변경되며, 타겟에게 걸린 약화 효과가 많을수록 피해량이 증가한다."
+    },
+    {
+        "title": "악사의 장신구 룬",
+        "slotName": "장신구",
+        "className": "악사",
+        "runeName": "종장",
+        "runeType": "전설",
+        "runeDesc": "악사 액티브 스킬: 5\n악사의 기교: 클라이맥스 스킬에 변화를 준다.\n단일 타겟 스킬로 변경되며, 타겟에게 걸린 약화 효과가 많을수록 피해량이 증가한다."
+    },
+    {
+        "title": "도적의 장신구 룬",
+        "slotName": "장신구",
+        "className": "도적",
+        "runeName": "투척",
+        "runeType": "엘리트",
+        "runeDesc": "도적의 쓰로잉 봄 스킬에 변화를 준다.\n도적 스킬이 치명타로 적용될 경우 쓰로잉 봄의 재사용 대기 시간이 감소한다."
+    },
+    {
+        "title": "도적의 장신구 룬",
+        "slotName": "장신구",
+        "className": "도적",
+        "runeName": "투척",
+        "runeType": "전설",
+        "runeDesc": "도적의 쓰로잉 봄 스킬에 변화를 준다.\n도적 스킬이 치명타로 적용될 경우 쓰로잉 봄의 재사용 대기 시간이 감소한다."
+    },
+    {
+        "title": "도적의 장신구 룬",
+        "slotName": "장신구",
+        "className": "도적",
+        "runeName": "교활함",
+        "runeType": "엘리트",
+        "runeDesc": "도적의 스크류 대거 스킬에 변화를 준다.\n스크류 대거 사용 시, 타겟의 체력이 일정 비율 이상일 경우 추가 피해가 적용된다."
+    },
+    {
+        "title": "도적의 장신구 룬",
+        "slotName": "장신구",
+        "className": "도적",
+        "runeName": "교활함",
+        "runeType": "전설",
+        "runeDesc": "도적의 스크류 대거 스킬에 변화를 준다.\n스크류 대거 사용 시, 타겟의 체력이 일정 비율 이상일 경우 추가 피해가 적용된다."
+    },
+    {
+        "title": "도적의 장신구 룬",
+        "slotName": "장신구",
+        "className": "도적",
+        "runeName": "치밀함",
+        "runeType": "엘리트",
+        "runeDesc": "도적의 기습 스킬에 변화를 준다.\n오버 차지 단계에 따라 기습 스킬에 적용되는 치명타 확률이 증가한다."
+    },
+    {
+        "title": "도적의 장신구 룬",
+        "slotName": "장신구",
+        "className": "도적",
+        "runeName": "치밀함",
+        "runeType": "전설",
+        "runeDesc": "도적의 기습 스킬에 변화를 준다.\n오버 차지 단계에 따라 기습 스킬에 적용되는 치명타 확률이 증가한다."
+    },
+    {
+        "title": "도적의 장신구 룬",
+        "slotName": "장신구",
+        "className": "도적",
+        "runeName": "독성",
+        "runeType": "엘리트",
+        "runeDesc": "도적의 쓰로잉 봄 스킬에 변화를 준다.\n폭발 속성이 독 속성으로 변경되고, 지속 피해: 중독 피해를 준다."
+    },
+    {
+        "title": "도적의 장신구 룬",
+        "slotName": "장신구",
+        "className": "도적",
+        "runeName": "독성",
+        "runeType": "전설",
+        "runeDesc": "도적의 쓰로잉 봄 스킬에 변화를 준다.\n폭발 속성이 독 속성으로 변경되고, 지속 피해: 중독 피해를 준다."
+    },
+    {
+        "title": "도적의 장신구 룬",
+        "slotName": "장신구",
+        "className": "도적",
+        "runeName": "독무",
+        "runeType": "에픽",
+        "runeDesc": "도적의 포이즌 트랩 스킬에 변화를 준다.\n독 안개는 일정 시간 동안 나를 따라다니며, 범위 내의 적에게 지속 피해: 중독을 준다.\n독 지대 내에서는 자신의 급소 회피가 증가한다."
+    },
+    {
+        "title": "도적의 장신구 룬",
+        "slotName": "장신구",
+        "className": "도적",
+        "runeName": "독무",
+        "runeType": "전설",
+        "runeDesc": "도적의 포이즌 트랩 스킬에 변화를 준다.\n독 안개는 일정 시간 동안 나를 따라다니며, 범위 내의 적에게 지속 피해: 중독을 준다.\n독 지대 내에서는 자신의 급소 회피가 증가한다."
+    },
+    {
+        "title": "도적의 장신구 룬",
+        "slotName": "장신구",
+        "className": "도적",
+        "runeName": "땅거미",
+        "runeType": "에픽",
+        "runeDesc": "도적의 은신 스킬에 변화를 준다.\n은신 스킬 사용 시, 은신 스킬을 제외한 스킬들의 재사용 대기 시간이 감소한다."
+    },
+    {
+        "title": "도적의 장신구 룬",
+        "slotName": "장신구",
+        "className": "도적",
+        "runeName": "땅거미",
+        "runeType": "전설",
+        "runeDesc": "도적의 은신 스킬에 변화를 준다.\n은신 스킬 사용 시, 은신 스킬을 제외한 스킬들의 재사용 대기 시간이 감소한다."
+    },
+    {
+        "title": "격투가의 장신구 룬",
+        "slotName": "장신구",
+        "className": "격투가",
+        "runeName": "도약",
+        "runeType": "엘리트",
+        "runeDesc": "격투가의 스톰프 킥 스킬에 변화를 준다.\n착지 시, 공격 범위가 커지며 스킬의 이동 거리에 비례해 거리가 멀수록 적에게 더 큰 피해를 준다."
+    },
+    {
+        "title": "격투가의 장신구 룬",
+        "slotName": "장신구",
+        "className": "격투가",
+        "runeName": "도약",
+        "runeType": "전설",
+        "runeDesc": "격투가의 스톰프 킥 스킬에 변화를 준다.\n착지 시, 공격 범위가 커지며 스킬의 이동 거리에 비례해 거리가 멀수록 적에게 더 큰 피해를 준다."
+    },
+    {
+        "title": "격투가의 장신구 룬",
+        "slotName": "장신구",
+        "className": "격투가",
+        "runeName": "순발력",
+        "runeType": "엘리트",
+        "runeDesc": "격투가의 백 스탭 스킬에 변화를 준다.\n백 스텝으로 적에게 피해를 주면, 적의 이동 속도가 느려진다."
+    },
+    {
+        "title": "격투가의 장신구 룬",
+        "slotName": "장신구",
+        "className": "격투가",
+        "runeName": "순발력",
+        "runeType": "전설",
+        "runeDesc": "격투가의 백 스탭 스킬에 변화를 준다.\n백 스텝으로 적에게 피해를 주면, 적의 이동 속도가 느려진다."
+    },
+    {
+        "title": "격투가의 장신구 룬",
+        "slotName": "장신구",
+        "className": "격투가",
+        "runeName": "열혈",
+        "runeType": "엘리트",
+        "runeDesc": "격투가의 섬머솔트 스킬에 변화를 준다.\n발에 실은 화염의 기운을 검날의 형태로 발산해 전방의 적에게 범위 피해를 준다."
+    },
+    {
+        "title": "격투가의 장신구 룬",
+        "slotName": "장신구",
+        "className": "격투가",
+        "runeName": "열혈",
+        "runeType": "전설",
+        "runeDesc": "격투가의 섬머솔트 스킬에 변화를 준다.\n발에 실은 화염의 기운을 검날의 형태로 발산해 전방의 적에게 범위 피해를 준다."
+    },
+    {
+        "title": "격투가의 장신구 룬",
+        "slotName": "장신구",
+        "className": "격투가",
+        "runeName": "전진",
+        "runeType": "엘리트",
+        "runeDesc": "격투가의 스러스트 킥 스킬에 변화를 준다.\n돌진 스킬로 변경되며 마지막 연속기 스킬, 콤보 스킬 피해량이 증가한다."
+    },
+    {
+        "title": "격투가의 장신구 룬",
+        "slotName": "장신구",
+        "className": "격투가",
+        "runeName": "전진",
+        "runeType": "전설",
+        "runeDesc": "격투가의 스러스트 킥 스킬에 변화를 준다.\n돌진 스킬로 변경되며 마지막 연속기 스킬, 콤보 스킬 피해량이 증가한다."
+    },
+    {
+        "title": "격투가의 장신구 룬",
+        "slotName": "장신구",
+        "className": "격투가",
+        "runeName": "충돌",
+        "runeType": "에픽",
+        "runeDesc": "격투가의 차징 피스트 스킬에 변화를 준다.\n타격한 적을 멀리 날리고, 날아간 적이 충돌한 지점 주변의 적들에게 범위 피해를 주고 밀쳐낸다."
+    },
+    {
+        "title": "격투가의 장신구 룬",
+        "slotName": "장신구",
+        "className": "격투가",
+        "runeName": "충돌",
+        "runeType": "전설",
+        "runeDesc": "격투가의 차징 피스트 스킬에 변화를 준다.\n타격한 적을 멀리 날리고, 날아간 적이 충돌한 지점 주변의 적들에게 범위 피해를 주고 밀쳐낸다."
+    },
+    {
+        "title": "격투가의 장신구 룬",
+        "slotName": "장신구",
+        "className": "격투가",
+        "runeName": "격파",
+        "runeType": "에픽",
+        "runeDesc": "격투가의 버스트 펀치 스킬에 변화를 준다.\n버스트 펀치 적중 시, 주변에 또 다른 적이 없다면 추가타를 준다."
+    },
+    {
+        "title": "격투가의 장신구 룬",
+        "slotName": "장신구",
+        "className": "격투가",
+        "runeName": "격파",
+        "runeType": "전설",
+        "runeDesc": "격투가의 버스트 펀치 스킬에 변화를 준다.\n버스트 펀치 적중 시, 주변에 또 다른 적이 없다면 추가타를 준다."
+    },
+    {
+        "title": "듀얼블레이드의 장신구 룬",
+        "slotName": "장신구",
+        "className": "듀얼블레이드",
+        "runeName": "열상",
+        "runeType": "엘리트",
+        "runeDesc": "듀얼블레이드의 스플릿 슬래시, 스플릿 다운 스킬에 변화를 준다.\n공격할 때 검기를 날려 전방에 범위 피해를 준다.\n스킬 재사용 대기 시간이 감소한다."
+    },
+    {
+        "title": "듀얼블레이드의 장신구 룬",
+        "slotName": "장신구",
+        "className": "듀얼블레이드",
+        "runeName": "열상",
+        "runeType": "전설",
+        "runeDesc": "듀얼블레이드의 스플릿 슬래시, 스플릿 다운 스킬에 변화를 준다.\n공격할 때 검기를 날려 전방에 범위 피해를 준다.\n스킬 재사용 대기 시간이 감소한다."
+    },
+    {
+        "title": "듀얼블레이드의 장신구 룬",
+        "slotName": "장신구",
+        "className": "듀얼블레이드",
+        "runeName": "보름달",
+        "runeType": "엘리트",
+        "runeDesc": "듀얼블레이드의 더블 크레센트, 라이징 크레센트 스킬에 변화를 준다.\n브레이크된 적에게 사용 시 더블 크레센트 재사용 대기 시간이 완전히 감소한다.\n재사용 대기 시간 감소 효과는 일정 시간마다 한 번만 발동한다."
+    },
+    {
+        "title": "듀얼블레이드의 장신구 룬",
+        "slotName": "장신구",
+        "className": "듀얼블레이드",
+        "runeName": "보름달",
+        "runeType": "전설",
+        "runeDesc": "듀얼블레이드의 더블 크레센트, 라이징 크레센트 스킬에 변화를 준다.\n브레이크된 적에게 사용 시 더블 크레센트 재사용 대기 시간이 완전히 감소한다.\n재사용 대기 시간 감소 효과는 일정 시간마다 한 번만 발동한다."
+    },
+    {
+        "title": "듀얼블레이드의 장신구 룬",
+        "slotName": "장신구",
+        "className": "듀얼블레이드",
+        "runeName": "속행",
+        "runeType": "엘리트",
+        "runeDesc": "듀얼블레이드의 하울링 게일, 하울링 템페스트 스킬에 변화를 준다.\n스킬 사용 중에 궁극기를 제외한 액티브 스킬들의 재사용 대기 시간 회복 속도가 빨라진다."
+    },
+    {
+        "title": "듀얼블레이드의 장신구 룬",
+        "slotName": "장신구",
+        "className": "듀얼블레이드",
+        "runeName": "속행",
+        "runeType": "전설",
+        "runeDesc": "듀얼블레이드의 하울링 게일, 하울링 템페스트 스킬에 변화를 준다.\n스킬 사용 중에 궁극기를 제외한 액티브 스킬들의 재사용 대기 시간 회복 속도가 빨라진다."
+    },
+    {
+        "title": "듀얼블레이드의 장신구 룬",
+        "slotName": "장신구",
+        "className": "듀얼블레이드",
+        "runeName": "강화",
+        "runeType": "엘리트",
+        "runeDesc": "듀얼블레이드의 하울링 게일 스킬에 변화를 준다.\n강화 스킬 사용 시 하울링 게일, 하울링 템페스트 스킬 피해량이 증가한다."
+    },
+    {
+        "title": "듀얼블레이드의 장신구 룬",
+        "slotName": "장신구",
+        "className": "듀얼블레이드",
+        "runeName": "강화",
+        "runeType": "전설",
+        "runeDesc": "듀얼블레이드의 하울링 게일 스킬에 변화를 준다.\n강화 스킬 사용 시 하울링 게일, 하울링 템페스트 스킬 피해량이 증가한다."
+    },
+    {
+        "title": "듀얼블레이드의 장신구 룬",
+        "slotName": "장신구",
+        "className": "듀얼블레이드",
+        "runeName": "회오리",
+        "runeType": "에픽",
+        "runeDesc": "듀얼블레이드의 스크류 러시 스킬을 3960 허리케인으로 교체한다."
+    },
+    {
+        "title": "듀얼블레이드의 장신구 룬",
+        "slotName": "장신구",
+        "className": "듀얼블레이드",
+        "runeName": "회오리",
+        "runeType": "전설",
+        "runeDesc": "듀얼블레이드의 스크류 러시 스킬을 3960 허리케인으로 교체한다."
+    },
+    {
+        "title": "듀얼블레이드의 장신구 룬",
+        "slotName": "장신구",
+        "className": "듀얼블레이드",
+        "runeName": "질주",
+        "runeType": "에픽",
+        "runeDesc": "듀얼블레이드의 글라이딩 퓨리, 라이트닝 퓨리 스킬에 변화를 준다.\n라이트닝 퓨리 사용 시 글라이딩 퓨리의 재사용 대기 시간을 초기화하며, 일정 확률로 질풍 자원을 1개 추가로 획득한다."
+    },
+    {
+        "title": "듀얼블레이드의 장신구 룬",
+        "slotName": "장신구",
+        "className": "듀얼블레이드",
+        "runeName": "질주",
+        "runeType": "전설",
+        "runeDesc": "듀얼블레이드의 글라이딩 퓨리, 라이트닝 퓨리 스킬에 변화를 준다.\n라이트닝 퓨리 사용 시 글라이딩 퓨리의 재사용 대기 시간을 초기화하며, 일정 확률로 질풍 자원을 1개 추가로 획득한다."
+    }
+]
