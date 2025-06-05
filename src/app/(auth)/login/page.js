@@ -48,12 +48,24 @@ const LoginPage = () => {
     }
   }
 
+  const callGuest = async () => {
+    try {
+      router.push('/');
+    } catch ( error ){
+      console.error(error);
+    }
+  }
+
   const handleClickLogin = ( e ) => {
     callLogin();
   }
 
   const handleClickSignIn = ( e ) => {
     setVisible(true);
+  }
+
+  const handleClickGuest = ( e ) => {
+    callGuest();
   }
 
   useEffect(() => {
@@ -103,6 +115,7 @@ const LoginPage = () => {
             />
           </div>
           <Button label="Login" icon="pi pi-user" className="w-10rem mx-auto" onClick={ handleClickLogin }></Button>
+          <Button label="Guest" icon="pi pi-user" className="w-10rem mx-auto" onClick={ handleClickGuest }></Button>
         </div>
         <div className="w-full md:w-2">
           <Divider layout="vertical" className="hidden md:flex">

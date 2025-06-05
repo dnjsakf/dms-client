@@ -15,17 +15,17 @@ const useWindowEvent = () => {
     setDragging,
   } = useWindowEventStore();
 
+  const unbindEvent = () => {
+    window.removeEventListener('mousemove', handleMouseMove);
+    window.removeEventListener('mouseleave', handleMouseLeave);
+    window.removeEventListener('mouseup', handleMouseUp);
+  }
+
   const bindEvent = () => {
     unbindEvent();
     window.addEventListener('mousemove', handleMouseMove);
     window.addEventListener('mouseleave', handleMouseLeave);
     window.addEventListener('mouseup', handleMouseUp);
-  }
-
-  const unbindEvent = () => {
-    window.removeEventListener('mousemove', handleMouseMove);
-    window.removeEventListener('mouseleave', handleMouseLeave);
-    window.removeEventListener('mouseup', handleMouseUp);
   }
 
   const handleMouseDown = (e, mode, scrollRef) => {

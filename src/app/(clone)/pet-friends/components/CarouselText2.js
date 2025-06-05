@@ -187,12 +187,8 @@ const CarouselText = forwardRef(( props, ref ) => {
   useEffect(()=>{
     // debounce(handleStart);
     ref.current = {
-      start: () => {
-        handleStart();
-      },
-      stop: () => {
-        handleStop();
-      }
+      start: handleStart,
+      stop: handleStop,
     }
     return () => {
       handleStop();
@@ -237,5 +233,7 @@ const CarouselText = forwardRef(( props, ref ) => {
     </div>
   );
 });
+
+CarouselText.displayName = 'CarouselText';
 
 export default CarouselText;

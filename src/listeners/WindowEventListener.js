@@ -1,4 +1,7 @@
+'use client';
+
 import { useEffect } from "react";
+import throttle from 'lodash/throttle';
 import useWindowStore from "../store/windowStore";
 
 const WindowEventListener = () => {
@@ -9,6 +12,9 @@ const WindowEventListener = () => {
   const setMousePosition = useWindowStore((state) => state.setMousePosition);
 
   useEffect(() => {
+
+    let animationFrameId;
+
     const handleResize = () => {
       setWidth(window.innerWidth);
       setHeight(window.innerHeight);
@@ -22,10 +28,12 @@ const WindowEventListener = () => {
       }
     };
 
-    const handleMouseMove = (event) => {
+    const handleMouseMove = throttle((event) => {
       // setVisibility(event.clientX > window.innerWidth / 2 ? 'visible' : 'hidden');
-      setMousePosition({ mouseX: event.clientX, mouseY: event.clientY }); // 마우스 위치 업데이트
-    };
+      animationFrameId = requestAnimationFrame(() => {
+        setMousePosition({ mouseX: event.clientX, mouseY: event.clientY }); // 마우스 위치 업데이트
+      });
+    }, 300);
 
     const handleVisibilityChange = (event) => {
       setVisibility(document.visibilityState === "visible");
@@ -46,8 +54,9 @@ const WindowEventListener = () => {
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener("visibilitychange", handleVisibilityChange);
+      cancelAnimationFrame(animationFrameId);
     };
-  }, [setWidth, setHeight, setVisibility, setMousePosition]);
+  });
 
   return null;
 };

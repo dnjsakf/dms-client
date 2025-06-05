@@ -8,7 +8,7 @@ import useWindowEvent from '../../hooks/useWindowEvent';
 
 export default function Navigator(props){
   const {
-    maxWidth,
+    maxWidth: maxWidth = 0,
     ...rest
   } = props;
 
@@ -56,7 +56,7 @@ export default function Navigator(props){
       left: (offsetLeft - ((maxWidth - offsetWidth) / 2)), // 약간의 여유 공간을 위해 offset을 조정
       // behavior: 'smooth'
     });
-  }, [activeIndex, navItems]);
+  }, [activeIndex, navItems, maxWidth]);
 
   return (
     <nav

@@ -3,11 +3,14 @@ import { useDrag } from 'react-dnd';
 
 import { Image } from 'primereact/image';
 import { Button } from 'primereact/button';
+import { Dialog } from 'primereact/dialog';
 
 import styles from './DraggableCard.module.css';
 import { classNames } from 'primereact/utils';
 
 const DraggableCard = ( props ) => {
+
+  const [showDialog, setShowDialog] = useState(false);
 
   const {
     dndType: dndType = 'DraggableCard',
@@ -29,6 +32,7 @@ const DraggableCard = ( props ) => {
   });
 
   const handleClick = ( e ) => {
+    setShowDialog(true);
     if( typeof onClick == 'function' ){
       onClick({
         value: item,
@@ -44,9 +48,9 @@ const DraggableCard = ( props ) => {
           opacity: isDragging ? 0.5 : 1, // 드래그 중이면 반투명하게 표시
           // cursor: 'move', // 커서를 이동 아이콘으로 변경
         }}
-        className={ classNames(styles.wrapper) }
+        className={ classNames(styles.wrapper, 'w-full', 'h-full') }
       >
-        <Button className={ classNames("p-0", 'm-0') } onClick={ handleClick }>
+        <Button className={ classNames("p-0", 'm-0', 'w-full', 'h-full') } onClick={ handleClick }>
           <Image
             src={src}
             width={50}
@@ -54,6 +58,9 @@ const DraggableCard = ( props ) => {
             className={ classNames('p-0', 'm-0') }
           />
         </Button>
+        <Dialog visible={ showDialog } header={`${item?.runeSlot}룬: ${item?.runeNm}`} onHide={() => setShowDialog(false) } modal>
+          <p>{ item?.runeDesc }</p>
+        </Dialog>
       </div >
   );
 }

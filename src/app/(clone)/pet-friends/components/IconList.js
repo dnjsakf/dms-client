@@ -65,4 +65,6 @@ const IconList = forwardRef(( props, ref ) => {
   );
 });
 
+IconList.displayName = "IconList";
+
 export default IconList;

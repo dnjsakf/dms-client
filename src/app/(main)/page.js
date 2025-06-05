@@ -3,6 +3,10 @@
 import { Card } from 'primereact/card';
 import { Chart } from 'primereact/chart';
 
+/**
+ * 시작화면
+ * @returns 
+ */
 const HomePage = () => {
   const data = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],

@@ -27,4 +27,6 @@ const BandBanner = forwardRef(( props, ref ) => {
   );
 });
 
+BandBanner.displayName = 'BandBanner';
+
 export default BandBanner;

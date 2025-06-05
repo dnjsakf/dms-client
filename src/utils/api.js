@@ -1,6 +1,7 @@
 import useAuthStore from '@/store/authStore';
 import { jwtDecode } from 'jwt-decode';
 import jwtUtil from './jwtUtil';
+import commonUtil from './commonUtil';
 
 export const getApiUrl = () => {
   return process.env.NEXT_PUBLIC_API_BASE_URL;
@@ -13,6 +14,7 @@ export const customFetch = async (url, method, params, options) => {
     method: defaultMethod,    
     headers: {
       'Content-Type': 'application/json',
+      'platform': commonUtil.getPlatform(),
     },
     onResponse: ({ response }) => {
       console.log('onResponse', response);
@@ -57,6 +59,8 @@ export const customFetch = async (url, method, params, options) => {
       return store.setAuthenticated(false);
     }
   }
+
+  console.log(fullOptions);
 
   // 2. API 요청, 401 오류 발생하면 로그인 화면으로 이동
   const response = await fetch(fullURL, fullOptions);

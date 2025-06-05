@@ -14,4 +14,6 @@ const PartnerBanner = forwardRef(( props, ref ) => {
   );
 });
 
+PartnerBanner.displayName = "PartnerBanner";
+
 export default PartnerBanner;

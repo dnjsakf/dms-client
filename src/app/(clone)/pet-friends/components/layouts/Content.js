@@ -35,4 +35,6 @@ const Content = forwardRef((props, ref) => {
   )
 });
 
+Content.displayName = "Content";
+
 export default Content;

@@ -43,7 +43,7 @@ const DropArea = ( props ) => {
     >
       {
         items?.length > 0
-        ? items.map((item)=>(<DraggableCard { ...item } />))
+        ? items.map((item, idx)=>(<DraggableCard key={`draggable-card-item-${idx}`} { ...item } item={ item } />))
         : <span style={{ fontSize: '0.8rem' }}>{ desc }</span>
       }
     </div>

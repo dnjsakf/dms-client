@@ -10,6 +10,8 @@ import { ThemeProvider } from '@/context/ThemeContext';
 // import { AuthProvider } from '@/context/AuthContext';
 import ClientOnly from '@/components/ClientOnly';
 
+import WindowEventListener from '../listeners/WindowEventListener';
+
 if (typeof window === 'undefined') {
   require('localstorage-polyfill');
 }
@@ -25,6 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={ inter.className }>
+        <WindowEventListener />
         <PrimeReactProvider>
           <ClientOnly>
             <ThemeProvider>

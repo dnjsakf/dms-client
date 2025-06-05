@@ -2,16 +2,16 @@
 
 import { createContext, useContext, useEffect } from 'react';
 import useAuthStore from '@/store/authStore';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
+  const pathname = usePathname();
   const router = useRouter();
   const { authenticated } = useAuthStore();
 
   useEffect(()=>{
-    console.dir(router);
     if( !authenticated ){
       router.replace('/login');
     }

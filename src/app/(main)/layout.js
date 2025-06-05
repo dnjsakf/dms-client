@@ -75,7 +75,7 @@ const MainLayoutWrapper = ({ children }) => {
     /**
      * 화면 초기 설정값
      */
-    CommonService.initData().then((result)=>{
+    CommonService.getInitData().then((result)=>{
       if( !result ){
         return false;
       }
@@ -94,8 +94,6 @@ const MainLayoutWrapper = ({ children }) => {
         // 메뉴 트리 저장
         setMenus(treeMenu);
 
-        console.log(treeMenu);
-
         // 현재 경로의 메뉴 탐색
         const pathname = new URL(location.href).pathname;
         const currentMenu = MenuService.findTreeItem(treeMenu, pathname);
@@ -108,8 +106,8 @@ const MainLayoutWrapper = ({ children }) => {
     /**
      * 인중 확인
      */
-    AuthService.isAuthenticated().then((result)=>{
-      if( result ){
+    AuthService.isAuthenticated().then((verified)=>{
+      if( verified ){
         setLoading(false);
       } else {
         router.replace('/login');
