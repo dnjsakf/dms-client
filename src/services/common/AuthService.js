@@ -3,20 +3,42 @@ import jwtUtil from '@/utils/jwtUtil';
 import cryptoUtil from '@/utils/cryptoUtil';
 
 import useAuthStore from '@/store/authStore';
+import { getCookie } from '@/utils/commonUtil';
 
 const API_PREFIX = '/auth';
 
+/**
+ * 게스트로 방문 처리
+ * @param {*} params 
+ * @returns 
+ */
+export const guest = async ( params ) => {
+  const store = useAuthStore.getState();
+  store.setGuest(true);
+  return {
+    code: 200,
+    data: null,
+    message: "Guest login successful."
+  };
+}
+
+/**
+ * 로그인 요청
+ * @param {*} params 
+ * @returns 
+ */
 export const login = async ( params ) => {
   const store = useAuthStore.getState();
   const response = await postFetch(`${API_PREFIX}/login`, {
     loginId: params.loginId,
     loginPwd: cryptoUtil.encrypt(params.loginPwd),
   });
-  if( response?.code === 200 && response?.data ){
-    const { accessToken, refreshToken } = response.data;
-    store.setTokens(accessToken, refreshToken);
+  if( response?.code === 200  ){
+    const payloadToken = getCookie('payloadToken', null);
     store.setAuthenticated(true);
+    store.setPayloadToken(payloadToken);
   }
+  store.setGuest(false);
   return response;
 }
 
@@ -24,9 +46,11 @@ export const logout = async () => {
   const store = useAuthStore.getState();
   const response = await postFetch(`${API_PREFIX}/logout`);
   if( response?.code === 200 ){
-    store.clearTokens();
+    const payloadToken = getCookie('payloadToken', null);
     store.setAuthenticated(false);
+    store.setPayloadToken(payloadToken);
   }
+  store.setGuest(false);
   return response;
 }
 
@@ -46,65 +70,49 @@ export const checkDuplicate = async ( params ) => {
   return false;
 }
 
-export const token = async () => {
+export const refreshToken = async () => {
   const store = useAuthStore.getState();
-  const response = await postFetch(`${API_PREFIX}/token`, {
-    refreshToken: store.refreshToken,
-  }, {
-    credentials: "include"
-  });
-  if( response?.code === 200 && response?.data ){
-    const { accessToken } = response.data;
-    store.setTokens(accessToken, store.refreshToken);
+  const response = await postFetch(`${API_PREFIX}/token/refresh`);
+  if( response?.code === 200 ){
+    const payloadToken = getCookie('payloadToken');
+    store.setPayloadToken(payloadToken);
   }
   return response;
 }
 
+/**
+ * 인증 상태 체크
+ * @returns 
+ */
 export const isAuthenticated = async () => {
-  let valid = false;
   try {
-    const { authenticated, accessToken, refreshToken } = useAuthStore.getState();
+    const { isGuest, authenticated, payloadToken } = useAuthStore.getState();
+    console.log('isAuthenticated', { isGuest, authenticated, payloadToken });
+    if( isGuest ) {
+      return true; // 게스트 로그인 상태는 항상 인증된 것으로 간주
+    }
     // 1. 인증된 상태인가?
-    if( !authenticated ){
-      // 1-1. 인증되지 않은 경우인데, AccessToken을 가지고 있는가?
-      if( accessToken ){
-        // 1-1-1. AccessToken을 가지고 있으면, 로그아웃 시도
-        await logout();
-      }
-      // 1-2. 인증실패
-      return false;
-    }
-    // 2. AccessToken을 가지고 있는가?
-    // 2-1. AccessToken이 없으면, 인증실패
-    if( !accessToken ){ return false; }
+    if( !authenticated ){ return false; } // 인증 실패
 
-    // 2-2. AccessToken을 가지고 있으면, RefreshToken을 전달하여 유효성 검사
-    //   - 현재 접속한 IP와 Client Agent를 비교
-    //   - 토큰에 저장된 IP와 Client가 일치하는지 비교
-    const response = await postFetch(`${API_PREFIX}/verify-token`, {
-      accessToken,
-      refreshToken,
-    });
+    // 2. 데이터 토큰을 가지고 있는가?
+    if( !payloadToken ){ return false; } // 인증 실패
 
-    // 3. 토큰 정보가 유효한지 확인
-    if( response.code === 200 && response.data?.verify ){
-      // if( jwtUtil.checkRefreshTime(accessToken) ){
-      //   await token();
-      // }
-      valid = jwtUtil.verify(accessToken);
-    }
+    // 3. 현재 토큰이 유효한가?
+    const response = await postFetch(`${API_PREFIX}/token/verify`);
+    if( response.code != 200 ){ return false; } // 인증 실패
+
+    // 4. 인증 성공
+    return true;
   } catch ( error ){
+    // 오류 발생
     console.error(error);
-    // * 오류 발생 시, 인증 실패
-    valid = false;
-  } finally {
-    // 4. 토큰 인증 결과 반환
-    return valid;
+    return false; // 인증 실패
   }
 };
 
 const AuthService = {
-  token,
+  refreshToken,
+  guest,
   login,
   logout,
   register,

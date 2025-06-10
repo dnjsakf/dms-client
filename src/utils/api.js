@@ -1,5 +1,4 @@
 import useAuthStore from '@/store/authStore';
-import { jwtDecode } from 'jwt-decode';
 import jwtUtil from './jwtUtil';
 import commonUtil from './commonUtil';
 
@@ -50,23 +49,20 @@ export const customFetch = async (url, method, params, options) => {
 
   const isAuth = (!fullURL.pathname?.startsWith('/api/mb')); // 특정 URL은 인증패스
   if( isAuth ){
-    if( jwtUtil.verify(store.accessToken) ){
+    if( jwtUtil.verify(store.payloadToken) ){
       fullOptions.headers = {
         ...fullOptions.headers,
-        'Authorization': `Bearer ${store.accessToken}`
+        // 'Authorization': `Bearer ${store.payloadToken}`
       }
     } else if( !fullURL.pathname?.startsWith('/api/auth') ){
       return store.setAuthenticated(false);
     }
   }
 
-  console.log(fullOptions);
-
   // 2. API 요청, 401 오류 발생하면 로그인 화면으로 이동
   const response = await fetch(fullURL, fullOptions);
   const data = await response.json();
   if( response.status === 401 ){
-    // throw new Error(data.message);
     return store.setAuthenticated(false);
   } if( !response.ok ) {
     throw new Error(data.message);

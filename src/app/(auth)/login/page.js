@@ -28,7 +28,6 @@ const LoginPage = () => {
         loginId: username,
         loginPwd: password,
       });
-
       if( response?.code === 200 ){
         router.push('/');
       } else {
@@ -50,7 +49,22 @@ const LoginPage = () => {
 
   const callGuest = async () => {
     try {
-      router.push('/');
+      const response = await AuthService.guest();
+      console.log(response);
+      if( response?.code === 200 ){
+        router.push('/');
+      } else {
+        console.error(response?.message);
+        message.current.clear();
+        message.current.show({
+          id: '1',
+          sticky: true,
+          severity: 'error',
+          // summary: 'Info',
+          detail: `Login failed`,
+          closable: false
+        });
+      }
     } catch ( error ){
       console.error(error);
     }

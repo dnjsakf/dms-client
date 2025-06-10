@@ -19,12 +19,14 @@ import useAuthStore from "@/store/authStore";
 import useLayoutStore from "@/store/layoutStore";
 import { AuthProvider } from '@/context/AuthContext';
 
+import { getCookie } from '@/utils/commonUtil';
+
 const MainLayoutWrapper = ({ children }) => {
   useWindowSize();
 
   const router = useRouter();
   const [loading, setLoading] = useState(true);
-  const { setRoles } = useAuthStore();
+  const { setRoles, setPayloadToken, setAuthenticated } = useAuthStore();
   const { setMenu, setMenus, closeLeftMenu } = useLayoutStore();
 
   const generateCommand = (item) => {
@@ -70,8 +72,20 @@ const MainLayoutWrapper = ({ children }) => {
       </div>
     );
   };
-
+  
   useEffect(()=>{
+    // 로딩 시작
+    setLoading(true);
+
+    /**
+     * 쿠키 조회해서 인증 초기값 셋팅
+     */
+    const payloadToken = getCookie('payloadToken');
+    setPayloadToken(payloadToken);
+    if( payloadToken ){
+      setAuthenticated(true);
+    }
+
     /**
      * 화면 초기 설정값
      */
@@ -99,21 +113,15 @@ const MainLayoutWrapper = ({ children }) => {
         const currentMenu = MenuService.findTreeItem(treeMenu, pathname);
         setMenu(currentMenu);
       }
+    }).finally(()=>{
+      // 로딩 종료
+      setLoading(false);
     });
+    return () => {
+      // 로딩 종료
+      setLoading(false);
+    }
   }, []);
-
-  useEffect(() => {
-    /**
-     * 인중 확인
-     */
-    AuthService.isAuthenticated().then((verified)=>{
-      if( verified ){
-        setLoading(false);
-      } else {
-        router.replace('/login');
-      }
-    });
-  }, [router]);
 
   if( loading ){
     return (

@@ -7,6 +7,7 @@ import { Menu } from 'primereact/menu';
 import { Button } from 'primereact/button';
 import { Avatar } from 'primereact/avatar';
 import { InputText } from 'primereact/inputtext';
+import { useRouter } from 'next/navigation';
 
 import jwtUtil from '@/utils/jwtUtil';
 import AuthService from '@/services/common/AuthService';
@@ -21,16 +22,22 @@ const TopBar = ({ children }) => {
   const [expiredStatus, setExpiredStatus] = useState(false);
   
   const { openLeftMenu } = useLayoutStore();
-  const { logout } = useAuth();
+
+  const router = useRouter();
+  const { authenticated, logout, login } = useAuth();
   
   const menus = [
     {
       menuId: 'menu100100',
       menuPid: 'menu100000',
-      label: 'Logout',
+      label: authenticated ? 'Logout' : 'Login',
       icon: 'pi pi-sign-out',
       command: async ({ originalEvent, item }) => {
-        logout();
+        if( authenticated ){
+          logout();
+        } else {
+          login();
+        }
       },
       template: (item, props) => {
         return (
@@ -47,7 +54,7 @@ const TopBar = ({ children }) => {
   
   const callRefreshToken = async () => {
     try {
-      const response = await AuthService.token();
+      const response = await AuthService.refreshToken();
       console.log(response);
     } catch ( error ){
       console.error(error);
@@ -58,27 +65,36 @@ const TopBar = ({ children }) => {
     const { visibility } = useWindowStore.getState();
 
     const tokenRefreshTime = jwtUtil.getTokenRefreshTime();
-    const { accessToken } = useAuthStore.getState();
-    const time = jwtUtil.expiredLeftTime(accessToken);
+    const { authenticated, payloadToken } = useAuthStore.getState();
+    const time = jwtUtil.expiredLeftTime(payloadToken);
 
-    // const expiredStatus = (time < tokenRefreshTime);
-    let status = 'info';
-    if( time <= 60 ){
-      if( time <= 0 ){
-        useAuthStore.getState().setAuthenticated(false);
+    console.debug('getExpiredLeftTime', { authenticated, payloadToken, time, tokenRefreshTime });
+
+    if( authenticated ){
+      // const expiredStatus = (time < tokenRefreshTime);
+      let status = 'info';
+      if( time <= 60 ){
+        if( time <= 0 ){
+          useAuthStore.getState().setAuthenticated(false);
+        }
+        status = 'danger';
+      } else if ( time <= tokenRefreshTime ){
+        status = 'warning';
       }
-      status = 'danger';
-    } else if ( time <= tokenRefreshTime ){
-      status = 'warning';
+      
+      // 화면을 보고 있을 때, 토근 시간 만료가 다가오면 갱신
+      if( visibility && time <= tokenRefreshTime ){
+        // 여기서 오류가 발생하면, 인증 실패로?
+        try {
+          await AuthService.refreshToken();
+        } catch ( err ) {
+          return useAuthStore.getState().setAuthenticated(false);
+        }
+      }
+      
+      setExpiredLeftTime(time);
+      setExpiredStatus(status);
     }
-    
-    // 화면을 보고 있을 때, 토근 시간 만료가 다가오면 갱신
-    if( visibility && time <= tokenRefreshTime ){
-      await AuthService.token();
-    }
-    
-    setExpiredLeftTime(time);
-    setExpiredStatus(status);
   }
 
   const formattedTime = ( time ) => {
@@ -104,17 +120,21 @@ const TopBar = ({ children }) => {
       end={
         <div className="flex align-items-center gap-2">
           <InputText placeholder="Search" type="text" className="w-8rem sm:w-auto" />
-          <Button
-            className="p-button-text"
-            severity={ expiredStatus }
-            /* 'secondary' | 'success' | 'info' | 'warning' | 'danger' | 'help' | 'contrast' | undefined; */
-            label={ formattedTime(expiredLeftTime) }
-            onClick={ handleClickRefreshToken }
-          />
+          {
+            authenticated && (
+              <Button
+                className="p-button-text"
+                severity={ expiredStatus }
+                /* 'secondary' | 'success' | 'info' | 'warning' | 'danger' | 'help' | 'contrast' | undefined; */
+                label={ formattedTime(expiredLeftTime) }
+                onClick={ handleClickRefreshToken }
+              />
+            )
+          }
           <Menu
             id="popup_menu_right"
             model={ menus }
-            popup ref={menuRight}
+            popup ref={ menuRight }
             popupAlignment="right"
           />
           <Avatar

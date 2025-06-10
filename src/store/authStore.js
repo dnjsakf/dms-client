@@ -3,34 +3,18 @@ import { devtools } from 'zustand/middleware';
 
 const useAuthStore = create(devtools((set, get) => ({
   roles: [],
-  authenticated: (localStorage.getItem('authenticated') === 'true'),
-  accessToken: localStorage.getItem('accessToken'),
-  refreshToken: localStorage.getItem('refreshToken'),
+  payloadToken: null,
+  isGuest: false,
+  authenticated: false,
   setRoles: (roles) => set({ roles }),
-  setAuthenticated: (authenticated) => {
-    localStorage.setItem('authenticated', authenticated);
-    if( !authenticated ){
-      get().clearTokens();
-    }
-    set({
-      authenticated,
-    });
+  setAuthenticated: ( authenticated ) => {
+    set({ authenticated });
   },
-  setTokens: (accessToken, refreshToken) => {
-    localStorage.setItem('accessToken', accessToken);
-    localStorage.setItem('refreshToken', refreshToken);
-    set({
-      accessToken,
-      refreshToken
-    });
+  setPayloadToken: ( payloadToken ) => {
+    set({ payloadToken });
   },
-  clearTokens: () => {
-    localStorage.removeItem('accessToken');
-    localStorage.removeItem('refreshToken');
-    set({
-      accessToken: null,
-      refreshToken: null
-    });
+  setGuest: (isGuest) => {
+    set({ isGuest });
   },
 })));
 

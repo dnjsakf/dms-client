@@ -1,24 +1,32 @@
 'use client';
 
-import { createContext, useContext, useEffect } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 import useAuthStore from '@/store/authStore';
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
+import AuthService from "@/services/common/AuthService";
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
-  const pathname = usePathname();
+  // const pathname = usePathname();
   const router = useRouter();
-  const { authenticated } = useAuthStore();
+  const { isGuest, authenticated } = useAuthStore();
+  const [checking, setChecking] = useState(false);
 
-  useEffect(()=>{
-    if( !authenticated ){
-      router.replace('/login');
-    }
-  }, [authenticated]);
+  useEffect(() => {
+    setChecking(true);
+    AuthService.isAuthenticated().then((verified)=>{
+      console.log('AuthProvider', verified);
+      if( !verified ){
+        router.replace('/login');
+      }
+    }).finally(()=>{
+      setChecking(false);
+    });
+  }, [router]);
 
   return (
-    <AuthContext.Provider value={{ authenticated }}>
+    <AuthContext.Provider value={{ authenticated, isGuest, checking }}>
       { children }
     </AuthContext.Provider>
   );
