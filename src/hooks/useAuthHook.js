@@ -2,7 +2,8 @@ import { useRouter } from 'next/navigation';
 import AuthService from "@/services/common/AuthService";
 import useAuthStore from '@/store/authStore';
 
-const useAuth = () => {
+const useAuthHook = () => {
+
   const router = useRouter();
   const { isGuest, authenticated } = useAuthStore();
 
@@ -14,29 +15,40 @@ const useAuth = () => {
     }
   };
 
-  const logout = async () => {
+  const doLogout = async () => {
     const response = await AuthService.logout();
     if( response.code === 200 ){
-      redirect('/');
+      router.replace('/');
     }
     return response;
   }
 
-  const login = async () => {
-    const response = await AuthService.login();
-    if( response.code === 200 ){
-      redirect('/login');
+  const doTokenRefresh = async () => {
+    try {
+      const response = await AuthService.refreshToken();
+      console.log(response);
+      return response;
+    } catch ( error ){
+      console.error(error);
     }
-    return response;
+  }
+
+  const goHome = async () => {
+    router.replace('/');
+  }
+  const goLoginPage = async () => {
+    router.replace('/login');
   }
 
   return {
     redirect,
-    logout,
-    login,
+    doLogout,
+    doTokenRefresh,
+    goHome,
+    goLoginPage,
     isGuest,
     authenticated
   }
 }
 
-export default useAuth;
+export default useAuthHook;

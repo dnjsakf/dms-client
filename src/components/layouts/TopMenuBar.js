@@ -7,14 +7,13 @@ import { Menu } from 'primereact/menu';
 import { Button } from 'primereact/button';
 import { Avatar } from 'primereact/avatar';
 import { InputText } from 'primereact/inputtext';
-import { useRouter } from 'next/navigation';
 
 import jwtUtil from '@/utils/jwtUtil';
 import AuthService from '@/services/common/AuthService';
-import useAuth from '@/hooks/useAuth';
 import useAuthStore from '@/store/authStore';
 import useWindowStore from '@/store/windowStore';
 import useLayoutStore from '@/store/layoutStore';
+import useAuthHook from '@/hooks/useAuthHook';
 
 const TopBar = ({ children }) => {
   const menuRight = useRef(null);
@@ -23,20 +22,17 @@ const TopBar = ({ children }) => {
   
   const { openLeftMenu } = useLayoutStore();
 
-  const router = useRouter();
-  const { authenticated, logout, login } = useAuth();
+  const { authenticated, doLogout, goLoginPage, doTokenRefresh } = useAuthHook();
   
   const menus = [
     {
-      menuId: 'menu100100',
-      menuPid: 'menu100000',
       label: authenticated ? 'Logout' : 'Login',
       icon: 'pi pi-sign-out',
       command: async ({ originalEvent, item }) => {
         if( authenticated ){
-          logout();
+          await doLogout();
         } else {
-          login();
+          await goLoginPage();
         }
       },
       template: (item, props) => {
@@ -51,15 +47,6 @@ const TopBar = ({ children }) => {
       },
     },
   ];
-  
-  const callRefreshToken = async () => {
-    try {
-      const response = await AuthService.refreshToken();
-      console.log(response);
-    } catch ( error ){
-      console.error(error);
-    }
-  }
 
   const getExpiredLeftTime = async () => {
     const { visibility } = useWindowStore.getState();
@@ -68,14 +55,11 @@ const TopBar = ({ children }) => {
     const { authenticated, payloadToken } = useAuthStore.getState();
     const time = jwtUtil.expiredLeftTime(payloadToken);
 
-    console.debug('getExpiredLeftTime', { authenticated, payloadToken, time, tokenRefreshTime });
-
     if( authenticated ){
-      // const expiredStatus = (time < tokenRefreshTime);
       let status = 'info';
       if( time <= 60 ){
         if( time <= 0 ){
-          useAuthStore.getState().setAuthenticated(false);
+          await doLogout();
         }
         status = 'danger';
       } else if ( time <= tokenRefreshTime ){
@@ -85,11 +69,7 @@ const TopBar = ({ children }) => {
       // 화면을 보고 있을 때, 토근 시간 만료가 다가오면 갱신
       if( visibility && time <= tokenRefreshTime ){
         // 여기서 오류가 발생하면, 인증 실패로?
-        try {
-          await AuthService.refreshToken();
-        } catch ( err ) {
-          return useAuthStore.getState().setAuthenticated(false);
-        }
+        await AuthService.refreshToken();
       }
       
       setExpiredLeftTime(time);
@@ -103,8 +83,8 @@ const TopBar = ({ children }) => {
     return `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
   }
 
-  const handleClickRefreshToken = ( e ) => {
-    callRefreshToken();
+  const handleClickTokenRefresh = ( e ) => {
+    doTokenRefresh();
   }
 
   useEffect(()=>{
@@ -120,17 +100,13 @@ const TopBar = ({ children }) => {
       end={
         <div className="flex align-items-center gap-2">
           <InputText placeholder="Search" type="text" className="w-8rem sm:w-auto" />
-          {
-            authenticated && (
-              <Button
-                className="p-button-text"
-                severity={ expiredStatus }
-                /* 'secondary' | 'success' | 'info' | 'warning' | 'danger' | 'help' | 'contrast' | undefined; */
-                label={ formattedTime(expiredLeftTime) }
-                onClick={ handleClickRefreshToken }
-              />
-            )
-          }
+          <Button
+            className="p-button-text"
+            severity={ expiredStatus }
+            /* 'secondary' | 'success' | 'info' | 'warning' | 'danger' | 'help' | 'contrast' | undefined; */
+            label={ formattedTime(expiredLeftTime) }
+            onClick={ handleClickTokenRefresh }
+          />
           <Menu
             id="popup_menu_right"
             model={ menus }

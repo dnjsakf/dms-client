@@ -70,10 +70,16 @@ export const checkDuplicate = async ( params ) => {
   return false;
 }
 
+/**
+ * 토큰 재발급 요청
+ * @returns 
+ */
 export const refreshToken = async () => {
   const store = useAuthStore.getState();
   const response = await postFetch(`${API_PREFIX}/token/refresh`);
-  if( response?.code === 200 ){
+  if( response?.code ==- 401 ){
+    return await logout();
+  } else if( response?.code === 200 ){
     const payloadToken = getCookie('payloadToken');
     store.setPayloadToken(payloadToken);
   }
@@ -86,11 +92,11 @@ export const refreshToken = async () => {
  */
 export const isAuthenticated = async () => {
   try {
-    const { isGuest, authenticated, payloadToken } = useAuthStore.getState();
-    console.log('isAuthenticated', { isGuest, authenticated, payloadToken });
-    if( isGuest ) {
-      return true; // 게스트 로그인 상태는 항상 인증된 것으로 간주
-    }
+    const { isGuest, authenticated, payloadToken } = useAuthStore.getState();     
+
+    // 0. 게스트인가?
+    if( isGuest ) { return true; } // 게스트 로그인 상태는 항상 인증된 것으로 간주?
+
     // 1. 인증된 상태인가?
     if( !authenticated ){ return false; } // 인증 실패
 

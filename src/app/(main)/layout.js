@@ -22,7 +22,7 @@ import { AuthProvider } from '@/context/AuthContext';
 import { getCookie } from '@/utils/commonUtil';
 
 const MainLayoutWrapper = ({ children }) => {
-  useWindowSize();
+  // useWindowSize();
 
   const router = useRouter();
   const [loading, setLoading] = useState(true);

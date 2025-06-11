@@ -3,6 +3,7 @@ import { devtools } from 'zustand/middleware';
 
 const useAuthStore = create(devtools((set, get) => ({
   roles: [],
+  loading: false,
   payloadToken: null,
   isGuest: false,
   authenticated: false,
@@ -16,6 +17,9 @@ const useAuthStore = create(devtools((set, get) => ({
   setGuest: (isGuest) => {
     set({ isGuest });
   },
+  setLoading: ( loading ) => {
+    set({ loading });
+  }
 })));
 
 export default useAuthStore;
