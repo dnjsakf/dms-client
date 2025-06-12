@@ -6,7 +6,7 @@ import { Button } from "primereact/button";
 import { InputText } from 'primereact/inputtext';
 import { Message } from "primereact/message";
 
-import AuthService from "@/services/common/AuthService";
+import useAuthHook from "@/hooks/useAuthHook";
 import BaseDialog from "./BaseDialog";
 
 const defaultFormData = {
@@ -32,30 +32,50 @@ const AuthRegisterDialog = ( props ) => {
   const [passLoginId, setPassLoginId] = useState(false);
   const [passLoginPwd, setPassLoginPwd] = useState(false);
   const [errors, setErrors] = useState({ });
+  const authHook = useAuthHook();
 
   const validate = () => {
     const invalid = {}
     if( !formData.loginId ){
-      invalid.loginId = 'loginId is required.';  
+      invalid.loginId = {
+        invalid: true,
+        message: 'loginId is required.',
+      };
     }
     if( !passLoginId ){
       if( !invalid.loginId ){
-        invalid.loginId = 'Do check duplicated loginId.';
+        invalid.loginId = {
+          invalid: true,
+          message: 'Do check duplicated loginId.',
+        };
+
       }
     }
     if( !formData.loginPwd ){
-      invalid.loginPwd = 'loginPwd is required';
+      invalid.loginPwd = {
+        invalid: true,
+        message: 'loginPwd is required',
+      };
     }
     if( !formData.loginPwdChk ){
-      invalid.loginPwdChk = 'loginPwdChk is required';
+      invalid.loginPwdChk = {
+        invalid: true,
+        message: 'loginPwdChk is required',
+      };
     }
     if( !passLoginPwd ){
       if( !invalid.loginPwd && !invalid.loginPwdChk ){
-        invalid.loginPwd = 'Not matched password.';
+        invalid.loginPwd = {
+          invalid: true,
+          message: 'Not matched password.',
+        };
       }
     }
     if( !formData.name ){
-      invalid.name = 'name is required';
+      invalid.name = {
+        invalid: true,
+        message: 'name is required',
+      };
     }
     setErrors(invalid);
     return (Object.keys(invalid).length === 0);
@@ -63,7 +83,7 @@ const AuthRegisterDialog = ( props ) => {
 
   const callSave = async ( params ) => {
     try {
-      const response = await AuthService.register(params);
+      const response = await authHook.doRegister(params);
       if( typeof onSave === 'function' ){
         await onSave(response);
       }
@@ -75,21 +95,15 @@ const AuthRegisterDialog = ( props ) => {
 
   const callCheckDuplicate = async ( params ) => {
     try {
-      const response = await AuthService.checkDuplicate(params);
-      if( !response ){
-        setPassLoginId(true);
-        setErrors({
-          ...errors,
-          loginId: null,
-        });
-      } else {
-        setPassLoginId(false);
-        setErrors({
-          ...errors,
-          loginId: 'Duplicated.',
-        });
-      }
-      return ( response.code === 200 );
+      const passed = await authHook.doCheckDuplicate(params);
+      setPassLoginId(passed);
+      setErrors({
+        ...errors,
+        loginId: {
+          invalid: !passed,
+          message: passed ? '사용 가능한 ID 입니다.' : `이미 사용중인 ID 입니다.`
+        },
+      });
     } catch ( error ){
       console.error(error);
     }
@@ -145,6 +159,19 @@ const AuthRegisterDialog = ( props ) => {
     }
   }
 
+  const validMessage = ( valid ) => {
+    const invalid = !!(valid?.invalid);
+    const message = valid?.message;
+    if( !message ){ return null; }
+    return (
+      <Message
+        severity={ invalid ? "error" : "success" }
+        text={ message }
+        className="justify-content-start"
+      />
+    );
+  }
+
   return (
     <BaseDialog
       headerLabel="사용자 등록"
@@ -168,21 +195,17 @@ const AuthRegisterDialog = ( props ) => {
                 name="loginId"
                 placeholder="로그인 ID"
                 value={ formData.loginId }
-                invalid={ errors.loginId }
+                invalid={ errors.loginId?.invalid }
                 onChange={ handleChangeLoginId }
               />
               <Button
                 label="중복확인"
-                severity={ errors.loginId ? 'danger' : 'success' }
+                severity={ errors.loginId?.invalid ? 'danger' : 'success' }
                 disabled={ !formData.loginId }
                 onClick={ handleClickCheckDuplicate }
               />
             </div>
-            {
-              errors.loginId && (
-                <Message severity="error" text={ errors.loginId } className="justify-content-start" />
-              )
-            }
+            { validMessage(errors.loginId) }
           </div>
         </div>
         <div className="flex align-items-center">
@@ -194,15 +217,11 @@ const AuthRegisterDialog = ( props ) => {
                 name="loginPwd"
                 placeholder="비밀번호"
                 value={ formData.loginPwd }
-                invalid={ errors.loginPwd }
+                invalid={ errors.loginPwd?.invalid }
                 onChange={ handleChangeLoginPwd }
               />
             </div>
-            {
-              errors.loginPwd && (
-                <Message severity="error" text={ errors.loginPwd } className="justify-content-start" />
-              )
-            }
+            { validMessage(errors.loginPwd) }
           </div>
         </div>
         <div className="flex">
@@ -214,15 +233,11 @@ const AuthRegisterDialog = ( props ) => {
                 name="loginPwdChk"
                 placeholder="비밀번호 확인"
                 value={ formData.loginPwdChk }
-                invalid={ errors.loginPwdChk || errors.loginPwd }
+                invalid={ errors.loginPwdChk?.invalid || errors.loginPwd?.invalid }
                 onChange={ handleChangeLoginPwdChk }
               />
             </div>
-            {
-              errors.loginPwdChk && (
-                <Message severity="error" text={ errors.loginPwdChk } className="justify-content-start" />
-              )
-            }
+            { validMessage(errors.loginPwdChk) }
           </div>
         </div>
         <div className="flex align-items-center">
@@ -234,15 +249,11 @@ const AuthRegisterDialog = ( props ) => {
                 name="name"
                 placeholder="이름"
                 value={ formData.name }
-                invalid={ errors.name }
+                invalid={ errors.name?.invalid }
                 onChange={ handleChangeInput }
               />
             </div>
-            {
-              errors.name && (
-                <Message severity="error" text={ errors.name } className="justify-content-start" />
-              )
-            }
+            { validMessage(errors.name) }
           </div>
         </div>
       </div>

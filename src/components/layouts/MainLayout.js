@@ -10,6 +10,8 @@ import { PanelMenu } from 'primereact/panelmenu';
 import useLayoutStore from '@/store/layoutStore';
 import useAuthStore from '@/store/authStore';
 
+import useLayoutHook from '@/hooks/useLayoutHook';
+
 import TopMenuBar from './TopMenuBar';
 import { ProgressSpinner } from 'primereact/progressspinner';
 
@@ -19,7 +21,7 @@ const MainLayout = ({ children }) => {
   const topbarRef = useRef();
   const breadcrumbRef = useRef();
 
-  const { menuHome, menus, breadcrumb, leftMenu, closeLeftMenu } = useLayoutStore();  
+  const { menuHome, treeMenu, breadcrumb, leftMenu, closeLeftMenu } = useLayoutHook();  
   const [expandedKeys, setExpandedKeys] = useState({});
 
   const sideBarHeader = (
@@ -69,7 +71,7 @@ const MainLayout = ({ children }) => {
           <PanelMenu
             multiple
             className="col-12"
-            model={ menus }
+            model={ treeMenu }
             expandedKeys={ expandedKeys }
             onExpandedKeysChange={ setExpandedKeys } 
           />

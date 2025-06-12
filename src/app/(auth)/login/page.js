@@ -11,7 +11,7 @@ import { Messages } from 'primereact/messages';
 
 import AuthRegisterDialog from '@/components/dialogs/AuthRegisterDialog';
 
-import AuthService from '@/services/common/AuthService';
+import useAuthHook from '@/hooks/useAuthHook';
 
 const LoginPage = () => {
 
@@ -22,16 +22,16 @@ const LoginPage = () => {
   const [password, setPassword] = useState('');
   const [visible, setVisible] = useState(false);
 
+  const authHook = useAuthHook();
+
   const callLogin = async () => {
     try {
-      const response = await AuthService.login({
+      const response = await authHook.doLogin({
         loginId: username,
         loginPwd: password,
       });
-      if( response?.code === 200 ){
-        router.push('/');
-      } else {
-        console.error(response?.message);
+      if( response.code !== 200 ){
+        console.error(response.message);
         message.current.clear();
         message.current.show({
           id: '1',
@@ -49,11 +49,8 @@ const LoginPage = () => {
 
   const callGuest = async () => {
     try {
-      const response = await AuthService.guest();
-      console.log(response);
-      if( response?.code === 200 ){
-        router.push('/');
-      } else {
+      const response = await authHook.doGuestLogin();
+      if( response.code !== 200 ){
         console.error(response?.message);
         message.current.clear();
         message.current.show({
@@ -83,7 +80,7 @@ const LoginPage = () => {
   }
 
   useEffect(() => {
-    AuthService.isAuthenticated().then((result)=>{
+    authHook.checkAuthenticated().then((result)=>{
       if( result ){
         router.replace('/');
       } else {

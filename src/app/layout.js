@@ -7,8 +7,9 @@ import '@/styles/global.css';
 import { Inter } from "next/font/google";
 import { PrimeReactProvider } from 'primereact/api';
 import { ThemeProvider } from '@/context/ThemeContext';
-// import { AuthProvider } from '@/context/AuthContext';
+
 import ClientOnly from '@/components/ClientOnly';
+import OverlaySpinner from '@/components/OverlaySpinner';
 
 import WindowEventListener from '../listeners/WindowEventListener';
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
           <ClientOnly>
             <ThemeProvider>
               { children }
+              <OverlaySpinner />
             </ThemeProvider>
           </ClientOnly>
         </PrimeReactProvider>

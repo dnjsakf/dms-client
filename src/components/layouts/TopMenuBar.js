@@ -9,21 +9,36 @@ import { Avatar } from 'primereact/avatar';
 import { InputText } from 'primereact/inputtext';
 
 import jwtUtil from '@/utils/jwtUtil';
-import AuthService from '@/services/common/AuthService';
 import useAuthStore from '@/store/authStore';
 import useWindowStore from '@/store/windowStore';
-import useLayoutStore from '@/store/layoutStore';
 import useAuthHook from '@/hooks/useAuthHook';
+import useLayoutHook from '@/hooks/useLayoutHook';
 
-const TopBar = ({ children }) => {
+
+import { formatTimer } from '@/utils/commonUtil';
+
+const TopMenuBar = () => {
   const menuRight = useRef(null);
+  const timer = useRef(null);
+
+  const {
+    payloadToken,
+    authenticated,
+    doTokenRefresh,
+    doLogout,
+    goLoginPage,
+  } = useAuthHook();
+  
+  const {
+    openLeftMenu,
+  } = useLayoutHook();
+
   const [expiredLeftTime, setExpiredLeftTime] = useState(0);
   const [expiredStatus, setExpiredStatus] = useState(false);
   
-  const { openLeftMenu } = useLayoutStore();
-
-  const { authenticated, doLogout, goLoginPage, doTokenRefresh } = useAuthHook();
-  
+  /**
+   * 로그인 상태에 따라 보여줄 메뉴 구성
+   */
   const menus = [
     {
       label: authenticated ? 'Logout' : 'Login',
@@ -44,10 +59,21 @@ const TopBar = ({ children }) => {
             </a>
           </div>
         );
-      },
+      }
     },
   ];
 
+  /**
+   * 타이머 클릭 시, 토큰 재발급
+   * @param {*} e 
+   */
+  const handleClickTokenRefresh = ( e ) => {
+    doTokenRefresh();
+  }
+
+  /**
+   * 토큰 타이머 연산
+   */
   const getExpiredLeftTime = async () => {
     const { visibility } = useWindowStore.getState();
 
@@ -66,10 +92,10 @@ const TopBar = ({ children }) => {
         status = 'warning';
       }
       
-      // 화면을 보고 있을 때, 토근 시간 만료가 다가오면 갱신
+      // 화면을 보고 있을 때, 토근 시간 만료가 다가오면 자동으로 갱신
       if( visibility && time <= tokenRefreshTime ){
         // 여기서 오류가 발생하면, 인증 실패로?
-        await AuthService.refreshToken();
+      //   await doTokenRefresh();
       }
       
       setExpiredLeftTime(time);
@@ -77,21 +103,17 @@ const TopBar = ({ children }) => {
     }
   }
 
-  const formattedTime = ( time ) => {
-    const minutes = Math.floor(( time / 60 ));
-    const seconds = time - ( minutes * 60 );
-    return `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-  }
-
-  const handleClickTokenRefresh = ( e ) => {
-    doTokenRefresh();
-  }
-
+  /**
+   * 인증이 된 상태인 경우, 토큰 타이머 실행
+   */
   useEffect(()=>{
-    getExpiredLeftTime();
-    const timer = setInterval(getExpiredLeftTime, 1000);
-    return () => clearInterval(timer);
-  }, []);
+    if( timer.current !== null ) clearInterval(timer.current);
+    if( authenticated && payloadToken ){
+      getExpiredLeftTime();
+      timer.current = setInterval(getExpiredLeftTime, 1000);
+    }
+    return () => clearInterval(timer.current);  
+  }, [authenticated, payloadToken]);
 
   return (
     <Menubar
@@ -104,13 +126,14 @@ const TopBar = ({ children }) => {
             className="p-button-text"
             severity={ expiredStatus }
             /* 'secondary' | 'success' | 'info' | 'warning' | 'danger' | 'help' | 'contrast' | undefined; */
-            label={ formattedTime(expiredLeftTime) }
+            label={ formatTimer(expiredLeftTime) }
             onClick={ handleClickTokenRefresh }
           />
           <Menu
+            ref={ menuRight }
             id="popup_menu_right"
             model={ menus }
-            popup ref={ menuRight }
+            popup
             popupAlignment="right"
           />
           <Avatar
@@ -125,4 +148,4 @@ const TopBar = ({ children }) => {
   );
 }
 
-export default TopBar;
+export default TopMenuBar;

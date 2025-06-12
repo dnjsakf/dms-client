@@ -1,8 +1,10 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
-import MenuService from '@/services/common/MenuService';
+
+import menuUtil from '@/utils/menuUtil';
 
 const useLayoutStore = create(devtools((set, get)=>({
+  loading: false,
   currentMenu: null,
   menuHome: {
     icon: 'pi pi-home',
@@ -10,22 +12,15 @@ const useLayoutStore = create(devtools((set, get)=>({
   },
   breadcrumb: [],
   menus: [],
+  treeMenu: [],
   leftMenu: false,
-  setMenu: ( menu ) => {
-    set({
-      breadcrumb: MenuService.generateBreadcrumb(menu).map((menu)=>({
-        key: menu.key,
-        icon: menu.icon,
-        data: menu.data,
-        label: menu.label,
-        menuId: menu.menuId,
-      })),
-      currentMenu: menu
-    })
-  },
+  // setter
+  setLoading: ( loading ) => set({ loading }),
+  setMenu: ( menu ) => set({ currentMenu: menu }),
   setMenus: ( menus ) => set({ menus }),
-  openLeftMenu: () => set({ leftMenu: true }),
-  closeLeftMenu: () => set({ leftMenu: false }),
+  setTreeMenu: ( treeMenu ) => set({ treeMenu }),
+  setBreadcrumb: ( breadcrumb ) => set({ breadcrumb }),
+  setLeftMenu: ( leftMenu ) => set({ leftMenu }),
 })));
 
 export default useLayoutStore;

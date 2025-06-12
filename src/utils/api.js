@@ -1,6 +1,7 @@
-import useAuthStore from '@/store/authStore';
-import jwtUtil from './jwtUtil';
+// import useAuthStore from '@/store/authStore';
+// import jwtUtil from './jwtUtil';
 import commonUtil from './commonUtil';
+import APIResponse from '@/models/common/APIResponse';
 
 export const getApiUrl = () => {
   return process.env.NEXT_PUBLIC_API_BASE_URL;
@@ -45,29 +46,35 @@ export const customFetch = async (url, method, params, options) => {
 
   // 1. 인증토큰 확인, 토큰이 없으면 로그인 화면으로 이동
   //   - /api/auth/* 로 가는 요청은 제외
-  const store = await useAuthStore.getState();
-
-  const isAuth = (!fullURL.pathname?.startsWith('/api/mb')); // 특정 URL은 인증패스
-  if( isAuth ){
-    if( jwtUtil.verify(store.payloadToken) ){
-      fullOptions.headers = {
-        ...fullOptions.headers,
-        // 'Authorization': `Bearer ${store.payloadToken}`
-      }
-    } else if( !fullURL.pathname?.startsWith('/api/auth') ){
-      return store.setAuthenticated(false);
-    }
-  }
+  // const store = await useAuthStore.getState();
+  // const isAuth = (!fullURL.pathname?.startsWith('/api/mb')); // 특정 URL은 인증패스
+  // if( isAuth ){
+  //   // fullOptions.headers['Authorization'] = `Bearer ${store.payloadToken}`;
+  //   if( !fullURL.pathname?.startsWith('/api/auth') ){
+  //     // return store.setAuthenticated(false);
+  //     return APIResponse.from({
+  //       code: 401,
+  //       data: null,
+  //       message: 'Unauthorized'
+  //     });
+  //   }
+  // }
 
   // 2. API 요청, 401 오류 발생하면 로그인 화면으로 이동
   const response = await fetch(fullURL, fullOptions);
+  console.log(response);
   const data = await response.json();
   if( response.status === 401 ){
-    return store.setAuthenticated(false);
-  } if( !response.ok ) {
-    throw new Error(data.message);
+    return APIResponse.from({
+      code: 401,
+      data: null,
+      message: 'Unauthorized'
+    });
   }
-  return data;
+  // if( !response.ok ) {
+  //   throw new Error(data.message);
+  // }
+  return APIResponse.from(data);
 };
 
 export const getFetch = (url, params, options) => {

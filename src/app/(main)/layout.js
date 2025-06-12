@@ -1,140 +1,23 @@
 'use client';
 
+import { useEffect } from 'react';
+
 import MainLayout from "@/components/layouts/MainLayout";
 
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
-
-import { classNames } from 'primereact/utils';
-import { ProgressSpinner } from "primereact/progressspinner";
-import { Badge } from 'primereact/badge';
-
-import CommonService from "@/services/common/CommonService";
-import AuthService from "@/services/common/AuthService";
-import MenuService from "@/services/common/MenuService";
-
-import useWindowSize from "@/hooks/useWindowSize";
-
-import useAuthStore from "@/store/authStore";
-import useLayoutStore from "@/store/layoutStore";
 import { AuthProvider } from '@/context/AuthContext';
-
-import { getCookie } from '@/utils/commonUtil';
+import useAuthHook from "@/hooks/useAuthHook";
 
 const MainLayoutWrapper = ({ children }) => {
-  // useWindowSize();
+  const { doTokenVerifyAndRefresh } = useAuthHook();
 
-  const router = useRouter();
-  const [loading, setLoading] = useState(true);
-  const { setRoles, setPayloadToken, setAuthenticated } = useAuthStore();
-  const { setMenu, setMenus, closeLeftMenu } = useLayoutStore();
-
-  const generateCommand = (item) => {
-    if( item.target ){
-      router.push(item.target);
-      setMenu(item);
-      closeLeftMenu();
-    }
-  }
-
-  const generateTemplate = (item, options) => {
-    const hasItems = (item?.items && item.items.length > 0);
-    const expandedIconClassName = hasItems ? classNames('p-tree-toggler-icon pi pi-fw', {
-      'pi-caret-right': !options.active,
-      'pi-caret-down': options.active
-    }) : '';
-    const iconClassName = item.icon ? item.icon : '';
-
-    let label = item.label;
-
-    let wrapperClassName = ''; //'mr-1 ml-1';
-    if( item.key === useLayoutStore.getState().currentMenu?.key ){
-      wrapperClassName += " surface-300";
-    }
-
-    return (
-      <div className={ wrapperClassName }>
-        <a
-          className="flex align-items-center px-3 py-2 cursor-pointer"
-          onClick={(e)=>{
-            e.preventDefault();
-            if( !hasItems ){
-              item.command(item)
-            }
-          }}
-        >
-          <span className={`${expandedIconClassName} pr-4`} />
-          <span className={`${iconClassName}`} />
-          <span className={`mx-2 ${hasItems && 'font-semibold'}`}>{ label }</span>
-          {item.badge && <Badge className="ml-auto" value={item.badge} />}
-          {item.shortcut && <span className="ml-auto border-1 surface-border border-round surface-100 text-xs p-1">{item.shortcut}</span>}
-        </a>
-      </div>
-    );
-  };
-  
+  /**
+   * 화면 랜더링 시
+   * - 쿠키 조회해서 인증 초기값 셋팅
+   */
   useEffect(()=>{
-    // 로딩 시작
-    setLoading(true);
-
-    /**
-     * 쿠키 조회해서 인증 초기값 셋팅
-     */
-    const payloadToken = getCookie('payloadToken');
-    setPayloadToken(payloadToken);
-    if( payloadToken ){
-      setAuthenticated(true);
-    }
-
-    /**
-     * 화면 초기 설정값
-     */
-    CommonService.getInitData().then((result)=>{
-      if( !result ){
-        return false;
-      }
-      const { menus, roles } = result;
-      if( roles?.length > 0 ){
-        setRoles(roles);
-      }
-      if( menus?.length > 0 ){
-        const treeMenu = MenuService.generateTree(menus, 0, {
-          itemsField: "items",
-          fields: {
-            command: generateCommand,
-            template: generateTemplate,
-          }
-        });
-        // 메뉴 트리 저장
-        setMenus(treeMenu);
-
-        // 현재 경로의 메뉴 탐색
-        const pathname = new URL(location.href).pathname;
-        const currentMenu = MenuService.findTreeItem(treeMenu, pathname);
-        setMenu(currentMenu);
-      }
-    }).finally(()=>{
-      // 로딩 종료
-      setLoading(false);
-    });
-    return () => {
-      // 로딩 종료
-      setLoading(false);
-    }
+    console.log("여기가 메번 다시 호출됨?")
+    doTokenVerifyAndRefresh();
   }, []);
-
-  if( loading ){
-    return (
-      <div
-        className="flex justify-content-center align-items-center"
-        style={{
-          height: '100vh'
-        }}
-      >
-        <ProgressSpinner style={{width: '50px', height: '50px'}} strokeWidth="8" fill="var(--surface-ground)" animationDuration="1.0s" />
-      </div>
-    );
-  }
 
   return (
     <AuthProvider>

@@ -1,10 +1,7 @@
 'use client';
 
-import { useState, useEffect } from "react";
-
 import { Dialog } from "primereact/dialog";
 import { Button } from "primereact/button";
-import Spinner from '@/components/Spinner';
 
 const BaseDialog = ( props ) => {
   const {
@@ -18,7 +15,6 @@ const BaseDialog = ( props ) => {
     ...rest
   } = props;
 
-  const [loading, setLoading] = useState(true);
 
   const handleClickOk = async ( e ) => {
     let doClose = true;
@@ -45,12 +41,6 @@ const BaseDialog = ( props ) => {
       closeDialog();
     }
   }
-
-  useEffect(()=>{
-    if( loading ){
-      setLoading(false);
-    }
-  }, [loading]);
 
   const dialogHeader = (
     <div className="dialog-header">
@@ -84,11 +74,7 @@ const BaseDialog = ( props ) => {
       footer={ dialogFooter }
       { ...rest }
     >
-      {
-        loading
-        ? <Spinner />
-        : ( <>{ children }</> )
-      }
+      <>{ children }</>
     </Dialog>
   );
 }
