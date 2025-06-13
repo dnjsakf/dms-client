@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import throttle from 'lodash/throttle';
-import useWindowStore from "../store/windowStore";
+import useWindowStore from "../store/useWindowStore";
 
 const WindowEventListener = () => {
   const setDeviceType = useWindowStore((state) => state.setDeviceType);

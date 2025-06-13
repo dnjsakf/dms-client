@@ -1,4 +1,4 @@
-// import useAuthStore from '@/store/authStore';
+// import useAuthStore from '@/store/useAuthStore';
 // import jwtUtil from './jwtUtil';
 import commonUtil from './commonUtil';
 import APIResponse from '@/models/common/APIResponse';
@@ -62,7 +62,6 @@ export const customFetch = async (url, method, params, options) => {
 
   // 2. API 요청, 401 오류 발생하면 로그인 화면으로 이동
   const response = await fetch(fullURL, fullOptions);
-  console.log(response);
   const data = await response.json();
   if( response.status === 401 ){
     return APIResponse.from({

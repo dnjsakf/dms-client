@@ -1,5 +1,5 @@
 'use client';
-import useWindowStore from '@/store/windowStore';
+import useWindowStore from '@/store/useWindowStore';
 import { useState, useEffect } from 'react';
 
 const useWindowSize = () => {

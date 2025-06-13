@@ -7,21 +7,23 @@ import { BreadCrumb } from 'primereact/breadcrumb';
 import { Avatar } from 'primereact/avatar';
 import { PanelMenu } from 'primereact/panelmenu';
 
-import useLayoutStore from '@/store/layoutStore';
-import useAuthStore from '@/store/authStore';
-
-import useLayoutHook from '@/hooks/useLayoutHook';
+import useLayout from '@/hooks/useLayout';
 
 import TopMenuBar from './TopMenuBar';
-import { ProgressSpinner } from 'primereact/progressspinner';
 
 const MainLayout = ({ children }) => {
 
-  const { loading } = useAuthStore();
   const topbarRef = useRef();
   const breadcrumbRef = useRef();
 
-  const { menuHome, treeMenu, breadcrumb, leftMenu, closeLeftMenu } = useLayoutHook();  
+  const {
+    menuHome,
+    treeMenu,
+    breadcrumb,
+    leftMenu,
+    closeLeftMenu
+  } = useLayout();
+  
   const [expandedKeys, setExpandedKeys] = useState({});
 
   const sideBarHeader = (
@@ -38,19 +40,6 @@ const MainLayout = ({ children }) => {
     });
     setExpandedKeys(retval);
   }, [breadcrumb]);
-
-  if( loading ){
-    return (
-      <div
-        className="flex justify-content-center align-items-center"
-        style={{
-          height: '100vh'
-        }}
-      >
-        <ProgressSpinner style={{width: '50px', height: '50px'}} strokeWidth="8" fill="var(--surface-ground)" animationDuration="1.0s" />
-      </div>
-    );
-  }
 
   return (
     <div className="main-layout">

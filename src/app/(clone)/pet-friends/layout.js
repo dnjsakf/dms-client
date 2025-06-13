@@ -13,7 +13,7 @@ import Footer from "./components/layouts/Footer";
 
 import WindowEventListener from "./listeners/WindowEventListener";
 import useNavigatorStore from "./store/navigatorStore";
-import useWindowStore from './store/windowStore';
+import useWindowStore from './store/useWindowStore';
 
 export default function PetFriendsLayout ({ children }) {
   

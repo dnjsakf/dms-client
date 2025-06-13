@@ -11,7 +11,7 @@ import { Messages } from 'primereact/messages';
 
 import AuthRegisterDialog from '@/components/dialogs/AuthRegisterDialog';
 
-import useAuthHook from '@/hooks/useAuthHook';
+import useAuthService from '@/hooks/services/common/useAuthService';
 
 const LoginPage = () => {
 
@@ -22,7 +22,7 @@ const LoginPage = () => {
   const [password, setPassword] = useState('');
   const [visible, setVisible] = useState(false);
 
-  const authHook = useAuthHook();
+  const authHook = useAuthService();
 
   const callLogin = async () => {
     try {

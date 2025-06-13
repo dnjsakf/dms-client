@@ -3,26 +3,28 @@ import { usePathname, useRouter } from 'next/navigation';
 import AuthService from "@/services/common/AuthService";
 import CommonService from '@/services/common/CommonService';
 
-import useAuthStore from '@/store/authStore';
-import useLayoutStore from '@/store/layoutStore';
-import useLayoutHook from '@/hooks/useLayoutHook';
+import useAuthStore from '@/store/useAuthStore';
+import useLayoutStore from '@/store/useLayoutStore';
+import useLayout from '@/hooks/useLayout';
 
 import APIResponse from '@/models/common/APIResponse';
 
 import { getCookie, delCookie } from '@/utils/commonUtil';
 import { generateTree, findTreeItem } from '@/utils/menuUtil';
 
-const useAuthHook = () => {
+const useAuthService = () => {
 
   const router = useRouter();
   const pathname = usePathname();
 
   const {
     // variables
+    loading,
     isGuest,
     payloadToken,
     authenticated,
     // setter
+    setLoading: setAuthLoading,
     setPayloadToken,
     setLogin,
     setLogout,
@@ -40,7 +42,7 @@ const useAuthHook = () => {
 
   const {
     moveToMenu
-  } = useLayoutHook();
+  } = useLayout();
 
   /**
    * 로그인에 성공한 후, 처리할 이벤트
@@ -221,6 +223,8 @@ const useAuthHook = () => {
     }
 
     setLoading(false); // 오버레이로딩 종료
+
+    setAuthLoading(false); // 로딩 종료
   }
 
   const goHome = async () => {
@@ -248,10 +252,12 @@ const useAuthHook = () => {
     goHome,
     goLoginPage,
     // 상태 변수
+    setAuthLoading,
+    loading,
     isGuest,
     payloadToken,
     authenticated
   }
 }
 
-export default useAuthHook;
+export default useAuthService;

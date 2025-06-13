@@ -9,11 +9,10 @@ import { Avatar } from 'primereact/avatar';
 import { InputText } from 'primereact/inputtext';
 
 import jwtUtil from '@/utils/jwtUtil';
-import useAuthStore from '@/store/authStore';
-import useWindowStore from '@/store/windowStore';
-import useAuthHook from '@/hooks/useAuthHook';
-import useLayoutHook from '@/hooks/useLayoutHook';
-
+import useAuthStore from '@/store/useAuthStore';
+import useWindowStore from '@/store/useWindowStore';
+import useAuthService from '@/hooks/services/common/useAuthService';
+import useLayout from '@/hooks/useLayout';
 
 import { formatTimer } from '@/utils/commonUtil';
 
@@ -27,11 +26,11 @@ const TopMenuBar = () => {
     doTokenRefresh,
     doLogout,
     goLoginPage,
-  } = useAuthHook();
+  } = useAuthService();
   
   const {
     openLeftMenu,
-  } = useLayoutHook();
+  } = useLayout();
 
   const [expiredLeftTime, setExpiredLeftTime] = useState(0);
   const [expiredStatus, setExpiredStatus] = useState(false);

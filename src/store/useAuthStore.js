@@ -2,11 +2,13 @@ import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 
 const useAuthStore = create(devtools((set, get) => ({
+  loading: true,
   roles: [],
   menus: [],
   isGuest: false,
   authenticated: false,
   payloadToken: null,
+  setLoading: (loading) => set({ loading }),
   setRoles: (roles) => set({ roles }),
   setMenus: (menus) => set({ menus }),
   setGuest: (isGuest) => set({ isGuest }),

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import useWindowStore from "../store/windowStore";
+import useWindowStore from "../store/useWindowStore";
 
 const WindowEventListener = () => {
   const setDeviceType = useWindowStore((state) => state.setDeviceType);

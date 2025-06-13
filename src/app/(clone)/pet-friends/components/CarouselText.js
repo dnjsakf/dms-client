@@ -2,7 +2,7 @@ import { createRef, useRef, useState, useEffect} from "react";
 
 import styles from "./CarouselText.module.css";
 import { classNames } from "primereact/utils";
-import useWindowStore from "../store/windowStore";
+import useWindowStore from "../store/useWindowStore";
 
 const CarouselText = ( props ) => {
   const {

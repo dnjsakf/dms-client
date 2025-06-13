@@ -2,7 +2,7 @@
 
 import { ProgressSpinner } from "primereact/progressspinner";
 
-import useLayoutStore from '@/store/layoutStore';
+import useLayoutStore from '@/store/useLayoutStore';
 
 const OverlaySpinner = () => {
 

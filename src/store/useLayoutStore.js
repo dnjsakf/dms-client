@@ -1,11 +1,9 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 
-import menuUtil from '@/utils/menuUtil';
-
 const useLayoutStore = create(devtools((set, get)=>({
-  loading: false,
-  currentMenu: null,
+  loading: false, // 오버레이 로딩
+  currentMenu: null, // 현재 메뉴 위치
   menuHome: {
     icon: 'pi pi-home',
     target: '/',

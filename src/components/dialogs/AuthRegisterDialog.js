@@ -6,7 +6,7 @@ import { Button } from "primereact/button";
 import { InputText } from 'primereact/inputtext';
 import { Message } from "primereact/message";
 
-import useAuthHook from "@/hooks/useAuthHook";
+import useAuthService from "@/hooks/services/common/useAuthService";
 import BaseDialog from "./BaseDialog";
 
 const defaultFormData = {
@@ -32,7 +32,7 @@ const AuthRegisterDialog = ( props ) => {
   const [passLoginId, setPassLoginId] = useState(false);
   const [passLoginPwd, setPassLoginPwd] = useState(false);
   const [errors, setErrors] = useState({ });
-  const authHook = useAuthHook();
+  const authHook = useAuthService();
 
   const validate = () => {
     const invalid = {}

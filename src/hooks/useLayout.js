@@ -1,15 +1,16 @@
 import { usePathname, useRouter } from 'next/navigation';
 
-import useLayoutStore from '@/store/layoutStore';
+import useLayoutStore from '@/store/useLayoutStore';
 import menuUtil from '@/utils/menuUtil';
 
-const useLayoutHook = () => {
+const useLayout = () => {
 
   const router = useRouter();
   const pathname = usePathname();
 
   const {
     // variables
+    currentMenu,
     menuHome,
     menus,
     treeMenu,
@@ -28,6 +29,7 @@ const useLayoutHook = () => {
    */
   const handleMoveToMenu = ( menu ) => {
     if( menu.menuPath ){
+      setLoading(true); // 이동 후 오버레이 로딩 종료
       const breadcrumb = menuUtil.generateBreadcrumb(menu).map((item)=>({
         key: item.menuId,
         icon: item.menuIcon,
@@ -40,7 +42,11 @@ const useLayoutHook = () => {
       setBreadcrumb(breadcrumb);
       handleCloseLeftMenu();
 
-      router.push(menu.menuPath);
+      try {
+        router.push(menu.menuPath);
+      } finally {
+        setLoading(false); // 이동 후 오버레이 로딩 종료
+      }
     }
   }
 
@@ -56,6 +62,7 @@ const useLayoutHook = () => {
 
   return {
     // variables
+    currentMenu,
     menuHome,
     menus,
     treeMenu,
@@ -70,4 +77,4 @@ const useLayoutHook = () => {
   };
 }
 
-export default useLayoutHook;
+export default useLayout;

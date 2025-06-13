@@ -18,7 +18,6 @@ const useWindowStore = create(devtools((set, get)=>({
   setHeight: ( height ) => set({ height }),
   setVisibility: ( visibility ) => set({ visibility }),
   setMousePosition: ({ mouseX, mouseY }) => set({ mouseX, mouseY }),
-  getVisibility: () => get().visibility,
 })));
 
 export default useWindowStore;

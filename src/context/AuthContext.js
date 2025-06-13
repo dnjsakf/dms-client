@@ -1,29 +1,26 @@
   'use client';
 
-import { createContext, useContext, useRef, useEffect } from 'react';
+import { createContext, useContext, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
-import useAuthHook from '@/hooks/useAuthHook';
+import useAuthService from '@/hooks/services/common/useAuthService';
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const pathname = usePathname();
   const router = useRouter();
-  const { isGuest, authenticated, checkAuthenticated } = useAuthHook();
+  const { loading, isGuest, authenticated } = useAuthService();
 
-  // useEffect(()=>{
-  //   checkAuthenticated().then((verified)=>{
-  //     if( !verified ){
-  //       router.replace('/login');
-  //     }
-  //   });
-  // }, [pathname]);
+  useEffect(()=>{
+    if( !loading && !isGuest && !authenticated ){
+      router.replace('/login');
+    }
+  }, [isGuest, authenticated, loading, router]);
 
-  // useEffect(()=>{
-  //   if( !isGuest && !authenticated ){
-  //     router.replace('/login');
-  //   }
-  // }, [isGuest, authenticated]);
+  // 초기 인증이 진행중이면, 빈화면 출력
+  if( loading ){ return null; }
+  // 인증 진행중이면, 빈화면 출력
+  if( !isGuest && !authenticated ){ return null; }
 
   return (
     <AuthContext.Provider value={{ authenticated, pathname }}>
